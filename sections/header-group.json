@@ -1,0 +1,158 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "type": "header",
+  "name": "t:sections.header-group.name",
+  "sections": {
+    "announcement-bar": {
+      "type": "announcement-bar",
+      "blocks": {
+        "announcement-1": {
+          "type": "announcement",
+          "settings": {
+            "icon": "truck",
+            "text": "Free shipping and returns",
+            "link": "",
+            "hide_icon_mobile": true,
+            "text_mobile": "",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "announcement-2": {
+          "type": "announcement",
+          "settings": {
+            "icon": "email",
+            "text": "A question? Visit our contact page",
+            "link": "",
+            "hide_icon_mobile": true,
+            "text_mobile": "",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "announcement-1",
+        "announcement-2"
+      ],
+      "settings": {
+        "show_social": true,
+        "enable_language_selector": true,
+        "enable_country_selector": true,
+        "invert_icons_selectors": false,
+        "announcement_position": "center",
+        "autoplay": true,
+        "autoplay_speed": 5,
+        "show_navigation": true,
+        "color_text": "#fcfbe7",
+        "color_background": "#0d253f",
+        "gradient_background": "",
+        "color_highlight": "#a62f36",
+        "gradient_highlight": "",
+        "hide_homepage": false,
+        "full_width": true,
+        "rounded": true
+      }
+    },
+    "header": {
+      "type": "header",
+      "blocks": {
+        "mega_menu_bF4wbn": {
+          "type": "mega_menu",
+          "settings": {
+            "menu_title": "Shop",
+            "menu_width": "medium",
+            "show_menu_image": true,
+            "button_label": "Shop All",
+            "button_link": "shopify://collections/all",
+            "promo_image_1": "shopify://shop_images/LIC-Lime-Image.png",
+            "promo_image_ratio_1": "adapt",
+            "promo_heading_1": "Liberty in a Can™ LIME",
+            "promo_subtext_1": "THC SELTZER",
+            "promo_overlay_content_1": true,
+            "promo_link_1": "shopify://products/5mg-δ9-thc-live-resin-seltzer-with-lime-essence",
+            "promo_tag_1": "{{ shop.metaobjects[\"shopify--flavor\"].lime.label.value }}",
+            "promo_color_text_1": "#fcfbe7",
+            "promo_color_overlay_1": "#000000",
+            "promo_overlay_opacity_1": 40,
+            "promo_image_2": "shopify://shop_images/LIC-Watermelon-Image.png",
+            "promo_image_ratio_2": "adapt",
+            "promo_heading_2": "Liberty in a Can™ Watermelon",
+            "promo_subtext_2": "THC SELTZER",
+            "promo_overlay_content_2": true,
+            "promo_link_2": "shopify://products/5mg-δ9-thc-live-resin-seltzer-with-lime-essence-copy",
+            "promo_tag_2": "{{ shop.metaobjects[\"shopify--flavor\"].watermelon.label.value }}",
+            "promo_color_text_2": "#fcfbe7",
+            "promo_color_overlay_2": "#000000",
+            "promo_overlay_opacity_2": 40,
+            "promo_image_ratio_3": "adapt",
+            "promo_heading_3": "",
+            "promo_subtext_3": "",
+            "promo_overlay_content_3": true,
+            "promo_link_3": "",
+            "promo_tag_3": "",
+            "promo_color_text_3": "#ffffff",
+            "promo_color_overlay_3": "#000000",
+            "promo_overlay_opacity_3": 40,
+            "promo_image_ratio_4": "adapt",
+            "promo_heading_4": "",
+            "promo_subtext_4": "",
+            "promo_overlay_content_4": true,
+            "promo_link_4": "",
+            "promo_tag_4": "",
+            "promo_color_text_4": "#ffffff",
+            "promo_color_overlay_4": "#000000",
+            "promo_overlay_opacity_4": 40,
+            "promo_image_ratio_5": "adapt",
+            "promo_heading_5": "",
+            "promo_subtext_5": "",
+            "promo_overlay_content_5": true,
+            "promo_link_5": "",
+            "promo_tag_5": "",
+            "promo_color_text_5": "#ffffff",
+            "promo_color_overlay_5": "#000000",
+            "promo_overlay_opacity_5": 40
+          }
+        }
+      },
+      "block_order": [
+        "mega_menu_bF4wbn"
+      ],
+      "settings": {
+        "menu": "main-menu",
+        "menu_mobile": "main-menu",
+        "menu_active": "block",
+        "hover_menu": true,
+        "header_layout": "center-split",
+        "sticky_header_type": "always",
+        "enable_language_selector_desktop": false,
+        "enable_country_selector_desktop": false,
+        "show_country_name_dekstop": false,
+        "show_country_flag_desktop": false,
+        "logo_position_mobile": "center",
+        "show_social": true,
+        "enable_language_selector": true,
+        "enable_country_selector": true,
+        "transparent_color_text": "#fcfbe7",
+        "color_text": "#0d253f",
+        "color_background": "#7bc3b9",
+        "padding_top": 30,
+        "padding_bottom": 30,
+        "full_width": true,
+        "rounded": true
+      }
+    }
+  },
+  "order": [
+    "announcement-bar",
+    "header"
+  ]
+}
