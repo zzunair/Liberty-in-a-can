@@ -49,6 +49,12 @@
           </div>
         {%- endif -%}
         <div class="drawer__scrollable relative w-full">
+          {%- if section.settings.secondary-image != blank -%}
+            <div class="age__image secondary-image">
+              {{- section.settings.secondary-image | image_url: width: 100 | image_tag: loading: 'lazy', widths: widths, sizes: sizes, is: 'lazy-image' -}}
+            </div>
+          {%- endif -%}
+
           <div class="rich-text text-{{ section.settings.text_alignment }}">
             {%- liquid
               assign with_gradient = false
@@ -227,6 +233,11 @@
       "type": "image_picker",
       "id": "image",
       "label": "t:sections.global.settings.image.label"
+    },
+    {
+      "type": "image_picker",
+      "id": "secondary-image",
+      "label": "Secondary Image"
     },
     {
       "type": "header",

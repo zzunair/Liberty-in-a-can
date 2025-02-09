@@ -13,8 +13,8 @@
   endif
 -%}
 
-<div class="section section--padding{% if section.settings.divider %} section--divider{% endif %}{% if section.settings.rounded %} section--rounded{% endif %}"{% if section.settings.enable_parallax %} is="footer-parallax"{% endif %}>
-  <footer class="footer{% if enable_footer_info %}{% if section.settings.invert_newsletter_others %} footer--inverted{% endif %}{% else %} footer--no-info{% endif %} page-width{% if section.settings.full_width %} page-width--full{% endif %} relative grid">
+<div class="section{% if section.settings.divider %} section--divider{% endif %}{% if section.settings.rounded %} section--rounded{% endif %}"{% if section.settings.enable_parallax %} is="footer-parallax"{% endif %}>
+  <footer class="section--padding footer{% if enable_footer_info %}{% if section.settings.invert_newsletter_others %} footer--inverted{% endif %}{% else %} footer--no-info{% endif %} page-width{% if section.settings.full_width %} page-width--full{% endif %} relative grid" style="background-image: url({{ section.settings.background-image | image_url: width: 1920 }}); background-size: contain; background-position: top right; background-repeat: no-repeat;">
     {%- if section.blocks.size > 0 -%}
       <div class="footer__left flex flex-col md:flex-row gap-10">
         {%- liquid
@@ -93,6 +93,11 @@
   "name": "t:sections.footer.name",
   "max_blocks": 12,
   "settings": [
+    {
+      "type": "image_picker",
+      "id": "background-image",
+      "label": "Background-image"
+    },
     {
       "type": "checkbox",
       "id": "invert_newsletter_others",
