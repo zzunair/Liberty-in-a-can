@@ -11,8 +11,10 @@
   "sections": {
     "main-page": {
       "type": "main-page",
+      "disabled": true,
       "settings": {
         "heading_size": "title-xl tracking-heading",
+        "heading_alignment": "text-left",
         "heading_tag": "h1",
         "text_size": "text-base",
         "padding_top": 72,
@@ -21,9 +23,24 @@
         "narrow": true,
         "rounded": false
       }
+    },
+    "whole_sale_page_main_section_LNKUNT": {
+      "type": "WholeSale-Page-Main-Section",
+      "settings": {
+        "title": "Join Us",
+        "title_color": "#000000",
+        "apply_button_text": "APPLY",
+        "contact_section_image": "shopify://shop_images/black_currant_seltzer_wholesale_application.webp",
+        "login_button_text": "LOGIN",
+        "login_section_image": "shopify://shop_images/BlueRazz_gummies_wholesale_login.webp",
+        "login_url": "",
+        "description_title": "WE'RE LOOKING FOR A FEW GOOD WHOLESALE PARTNERS.",
+        "description_text": "<p>Partner with us today to sell some of the highest quality and lowest-priced THC beverages, brownies, gummies, mints and more! Join us on the cutting edge of the beverage space and crack open a new era of refreshment—one sip at a time.<br/><br/><a href=\"https://share.hsforms.com/1Cbr9PNhgS4K6O41sUNZpRAcfpd2?__hstc=225830853.03d914ead69e10d7e27fbc98d94f8770.1677008515930.1681146538154.1681157931616.94&__hssc=225830853.2.1681157931616&__hsfp=183034242\" target=\"_blank\" title=\"Wholesale Application\">Sign up today</a> and a member of our sales team will be in touch.</p>"
+      }
     }
   },
   "order": [
-    "main-page"
+    "main-page",
+    "whole_sale_page_main_section_LNKUNT"
   ]
 }
