@@ -148,6 +148,7 @@
         "brand_information"
       ],
       "settings": {
+        "background-image": "shopify://shop_images/FooterBackground.png",
         "invert_newsletter_others": true,
         "enable_newsletter": true,
         "newsletter_heading": "Stay in the loop with our newsletter",
