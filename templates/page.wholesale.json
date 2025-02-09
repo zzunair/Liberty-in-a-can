@@ -37,10 +37,22 @@
         "description_title": "WE'RE LOOKING FOR A FEW GOOD WHOLESALE PARTNERS.",
         "description_text": "<p>Partner with us today to sell some of the highest quality and lowest-priced THC beverages, brownies, gummies, mints and more! Join us on the cutting edge of the beverage space and crack open a new era of refreshment—one sip at a time.<br/><br/><a href=\"https://share.hsforms.com/1Cbr9PNhgS4K6O41sUNZpRAcfpd2?__hstc=225830853.03d914ead69e10d7e27fbc98d94f8770.1677008515930.1681146538154.1681157931616.94&__hssc=225830853.2.1681157931616&__hsfp=183034242\" target=\"_blank\" title=\"Wholesale Application\">Sign up today</a> and a member of our sales team will be in touch.</p>"
       }
+    },
+    "whole_sale_faq_a9bjmL": {
+      "type": "WholeSale-Faq",
+      "settings": {
+        "shipping_answer": "We ship via trusted carriers with tracking provided.",
+        "shipping_time_answer": "Orders typically ship within 1-2 business days.",
+        "payment_answer": "We accept all major credit cards and PayPal.",
+        "shipping_states_answer": "Yes, we ship to all 50 states.",
+        "discounts_answer": "Yes, volume discounts are available for larger orders.",
+        "contact_answer": "Please contact our wholesale support team."
+      }
     }
   },
   "order": [
     "main-page",
-    "whole_sale_page_main_section_LNKUNT"
+    "whole_sale_page_main_section_LNKUNT",
+    "whole_sale_faq_a9bjmL"
   ]
 }
