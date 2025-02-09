@@ -1,0 +1,205 @@
+<link rel="stylesheet" href="{{ 'wholesale-page-main-section.css' | asset_url }}">
+<link rel="stylesheet" href="{{ 'custom-global.css' | asset_url }}">
+
+<section class="wholesale-page-main-section pt-5 pb-5">
+    <div class="wholesale-page-main-section__container custom-container">
+        <div class="wholesale-page-main-section__title-wrapper">
+            <div class="wholesale-page-main-section__content-title text-center">
+                <h3 style=" color: {{ section.settings.title_color }};">{{ section.settings.title }}</h3>
+            </div>
+            <div class="wholesale-page-main-section__content mt-3">
+                <div class="wholesale-page-main-section__content-form" style="background-image: url({{ section.settings.contact_section_image | img_url: 'master' }});">
+                    <a href="javascript:void(0)" class="wholesale-page-main-section__content-form-button js-open-wholesale-popup">{{ section.settings.apply_button_text }}</a>
+                </div>
+                <div class="wholesale-page-main-section__content-login" style="background-image: url({{ section.settings.login_section_image | img_url: 'master' }});">
+                    <a href="{{ section.settings.login_url }}" class="wholesale-page-main-section__content-login-button">{{ section.settings.login_button_text }}</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="wholesale-page-main-section__descriptions mt-4 mb-4">
+        <div class="wholesale-page-main-section__descriptions-container custom-container">
+            <div class="wholesale-page-main-section__descriptions-item text-center">
+                <h2>{{ section.settings.description_title }}</h2>
+                <div class="wholesale-page-main-section__descriptions-item-text text-center mt-2">
+                    {{ section.settings.description_text }}
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    
+    <!-- Popup -->
+    <div class="wholesale-popup" id="wholesale-popup">
+        <div class="wholesale-popup__content">
+            <button class="wholesale-popup__close js-close-wholesale-popup" aria-label="Close popup"></button>
+            <h2 class="text-center mb-4">Wholesale Application</h2>
+            <div class="wholesale-page-contact-form">
+                <div class="wholesale-page-contact-form__container">
+                    {% form 'contact' %}
+                        <div class="wholesale-page-contact-form__form-wrapper">
+                            <div class="wholesale-page-contact-form__form-group half-width">
+                                <label for="first-name">First name <span class="required">*</span></label>
+                                <input type="text" id="first-name" name="first-name" required>
+                            </div>
+                            <div class="wholesale-page-contact-form__form-group half-width">
+                                <label for="last-name">Last name <span class="required">*</span></label>
+                                <input type="text" id="last-name" name="last-name" required>
+                            </div>
+                            <div class="wholesale-page-contact-form__form-group full-width">
+                                <label for="company-name">Company name <span class="required">*</span></label>
+                                <input type="text" id="company-name" name="company-name" required>
+                            </div>
+                            <div class="wholesale-page-contact-form__form-group half-width">
+                                <label for="city">City</label>
+                                <input type="text" id="city" name="city">
+                            </div>
+                            <div class="wholesale-page-contact-form__form-group half-width">
+                                <label for="state">State/Region <span class="required">*</span></label>
+                                <input type="text" id="state" name="state" required>
+                            </div>
+                            <div class="wholesale-page-contact-form__form-group full-width">
+                                <label>Business Type <span class="required">*</span></label>
+                                <div class="checkbox-group">
+                                    <label><input type="checkbox" name="business-type[]" value="Retail Store - Smoke & Vape"> Retail Store - Smoke & Vape</label>
+                                    <label><input type="checkbox" name="business-type[]" value="Retail Store - Supplements"> Retail Store - Supplements</label>
+                                    <label><input type="checkbox" name="business-type[]" value="Retail Store - Speciality"> Retail Store - Speciality</label>
+                                    <label><input type="checkbox" name="business-type[]" value="Retailer - Beer, Wine & Spirits"> Retailer - Beer, Wine & Spirits</label>
+                                    <label><input type="checkbox" name="business-type[]" value="Online Retailer"> Online Retailer</label>
+                                    <label><input type="checkbox" name="business-type[]" value="Distributor - Beer, Wine & Spirits"> Distributor - Beer, Wine & Spirits</label>
+                                    <label><input type="checkbox" name="business-type[]" value="Distributor - Smoke & Vape"> Distributor - Smoke & Vape</label>
+                                    <label><input type="checkbox" name="business-type[]" value="Distributor - Broadline"> Distributor - Broadline</label>
+                                    <label><input type="checkbox" name="business-type[]" value="Other"> Other</label>
+                                </div>
+                            </div>
+                            <div class="wholesale-page-contact-form__form-group half-width">
+                                <label for="job-title">Job title</label>
+                                <input type="text" id="job-title" name="job-title">
+                            </div>
+                            <div class="wholesale-page-contact-form__form-group half-width">
+                                <label for="phone">Phone number <span class="required">*</span></label>
+                                <input type="tel" id="phone" name="phone" required>
+                            </div>
+                            <div class="wholesale-page-contact-form__form-group full-width">
+                                <label for="email">Email <span class="required">*</span></label>
+                                <input type="email" id="email" name="email" required>
+                                {% if form.errors contains 'email' %}
+                                    <span class="error-message">Please complete this required field.</span>
+                                {% endif %}
+                            </div>
+                            <div class="wholesale-page-contact-form__form-group full-width">
+                                <label for="website">Website URL</label>
+                                <input type="url" id="website" name="website">
+                            </div>
+                            <div class="wholesale-page-contact-form__form-group half-width">
+                                <label for="revenue">Annual revenue</label>
+                                <input type="text" id="revenue" name="revenue">
+                            </div>
+                            <div class="wholesale-page-contact-form__form-group half-width">
+                                <label for="locations"># of Locations</label>
+                                <input type="number" id="locations" name="locations">
+                            </div>
+                            <div class="wholesale-page-contact-form__form-group full-width">
+                                <label>How did you hear about us? <span class="required">*</span></label>
+                                <div class="checkbox-group">
+                                    <label><input type="checkbox" name="source[]" value="Referral"> Referral</label>
+                                    <label><input type="checkbox" name="source[]" value="Social Media"> Social Media</label>
+                                    <label><input type="checkbox" name="source[]" value="Review"> Review</label>
+                                    <label><input type="checkbox" name="source[]" value="Company Outreach"> Company Outreach</label>
+                                    <label><input type="checkbox" name="source[]" value="Search Engine"> Search Engine</label>
+                                    <label><input type="checkbox" name="source[]" value="Champs Eblast"> Champs Eblast</label>
+                                    <label><input type="checkbox" name="source[]" value="Instagram"> Instagram</label>
+                                </div>
+                            </div>
+                            <button type="submit" class="wholesale-page-contact-form__form-button">Submit</button>
+                        </div>
+                    {% endform %}
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</section>
+
+
+<script src="{{ 'wholesale-page-main-section.js' | asset_url }}" defer></script>
+
+
+
+{% schema %}
+{
+    "name": "WholeSale Main Section",
+    "settings": [
+        {
+            "type": "text",
+            "id": "title",
+            "label": "Title",
+            "default": "Join Us"
+        },
+        {
+          "type": "color",
+          "id": "title_color",
+          "label": "Title Color",
+          "default": "#000000"
+        },
+        {
+          "type": "header",
+          "content": "Form Section"
+        },
+        {
+            "type": "text",
+            "id": "apply_button_text",
+            "label": "Apply Button Text",
+            "default": "APPLY"
+        },
+        {
+          "type": "image_picker",
+          "id": "contact_section_image",
+          "label": "Contact Image"
+        },
+        {
+            "type": "header",
+            "content": "Login Section"
+        },
+        {
+            "type": "text",
+            "id": "login_button_text",
+            "label": "Login Button Text",
+            "default": "LOGIN"
+        },
+        {
+            "type": "image_picker",
+            "id": "login_section_image",
+            "label": "Login Image"
+        },
+        {
+          "type": "url",
+          "id": "login_url",
+          "label": "Login URL"
+        },
+        {
+            "type": "header",
+            "content": "Descriptions"
+        },
+        {
+            "type": "text",
+            "id": "description_title",
+            "label": "Description Title"
+        },
+        {
+            "type": "richtext",
+            "id": "description_text",
+            "label": "Description Text"
+        }
+        
+    ],
+    "presets": [
+        {
+            "name": "WholeSale Main Section"
+        }
+    ]
+}
+{% endschema %}

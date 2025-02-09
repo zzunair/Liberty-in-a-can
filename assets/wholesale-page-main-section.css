@@ -1,0 +1,327 @@
+.page-width .title-wrapper{
+    display: none;
+}
+
+.wholesale-page-main-section__content-title{
+    font-size: 48px;
+    font-weight: 700; 
+}
+
+.wholesale-page-main-section__content{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+}
+
+.wholesale-page-main-section__content-form{
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 320px;
+    place-content: center;
+    text-align: center;
+    transition: background-size 0.5s ease;
+}
+
+.wholesale-page-main-section__content-form:hover{
+    background-size: 110%;
+}
+
+
+.wholesale-page-main-section__content-form a{
+    background-color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+}
+
+.wholesale-page-main-section__content-login{
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 320px;
+    place-content: center;
+    text-align: center;
+    transition: background-size 0.5s ease;
+}
+
+.wholesale-page-main-section__content-login:hover{
+    background-size: 110%;
+}
+
+.wholesale-page-main-section__content-login a{
+    background-color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+}
+
+.wholesale-page-contact-form {
+    padding: 40px 0;
+}
+
+.wholesale-page-contact-form__container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.wholesale-page-contact-form__form-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.wholesale-page-contact-form__form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.wholesale-page-contact-form__form-group.half-width {
+    width: calc(50% - 10px);
+}
+
+.wholesale-page-contact-form__form-group.full-width {
+    width: 100%;
+}
+
+/* Labels */
+.wholesale-page-contact-form__form-group label {
+    font-size: 16px;
+    color: #333;
+    font-weight: 500;
+}
+
+.wholesale-page-contact-form__form-group .required {
+    color: #ff0000;
+    margin-left: 2px;
+}
+
+/* Inputs */
+.wholesale-page-contact-form__form-group input[type="text"],
+.wholesale-page-contact-form__form-group input[type="email"],
+.wholesale-page-contact-form__form-group input[type="tel"],
+.wholesale-page-contact-form__form-group input[type="url"],
+.wholesale-page-contact-form__form-group input[type="number"] {
+    padding: 12px 16px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+    width: 100%;
+    background-color: #fff;
+}
+
+.wholesale-page-contact-form__form-group input:focus {
+    outline: none;
+    border-color: #666;
+}
+
+/* Checkbox groups */
+.checkbox-group {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 8px 0;
+}
+
+.checkbox-group label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+.checkbox-group input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+/* Error messages */
+.error-message {
+    color: #ff0000;
+    font-size: 14px;
+    margin-top: 4px;
+}
+
+/* Submit button */
+.wholesale-page-contact-form__form-button {
+    background-color: #000;
+    color: #fff;
+    padding: 14px 32px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    margin-top: 20px;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+.wholesale-page-contact-form__form-button:hover {
+    background-color: #333;
+}
+
+@media all and (max-width: 1024px) {
+    .wholesale-page-main-section__content{
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    .wholesale-page-main-section__content-form{
+        height: 250px;
+    }
+    .wholesale-page-main-section__content-login{
+        height: 250px;
+    }
+}
+
+
+/* Updated Popup Styles */
+.wholesale-popup {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.wholesale-popup.active {
+    display: flex;
+}
+
+.wholesale-popup__content {
+    background: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    max-height: 90vh;
+    overflow-y: auto;
+    margin: 50px 20px 20px 20px;
+    /* Hide default scrollbar for webkit browsers */
+    &::-webkit-scrollbar {
+        width: 0;
+        background: transparent;
+    }
+    
+    /* For Firefox */
+    scrollbar-width: none;
+    
+    /* For IE and Edge */
+    -ms-overflow-style: none;
+}
+
+/* Adjust form styles inside popup */
+.wholesale-popup .wholesale-page-contact-form {
+    padding: 0;
+}
+
+.wholesale-popup .wholesale-page-contact-form__container {
+    padding: 0;
+}
+
+/* Close button styling */
+.wholesale-popup__close {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    background: none;
+    border: none;
+    padding: 0;
+}
+
+.wholesale-popup__close::before,
+.wholesale-popup__close::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 20px;
+    height: 2px;
+    background-color: #333;
+}
+
+.wholesale-popup__close::before {
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.wholesale-popup__close::after {
+    transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+/* Prevent body scroll when popup is open */
+body.popup-open {
+    overflow: hidden;
+}
+
+@media (max-width: 768px) {
+    .wholesale-popup__content {
+        margin: 15px;
+        padding: 25px;
+    }
+}
+
+/* Optional: Add custom styling for placeholder text */
+.wholesale-page-contact-form__form-group input::placeholder {
+    color: #999;
+}
+
+/* Optional: Style for disabled inputs */
+.wholesale-page-contact-form__form-group input:disabled {
+    background-color: #f5f5f5;
+    cursor: not-allowed;
+}
+
+/* Optional: Focus state with a subtle glow effect */
+.wholesale-page-contact-form__form-group input:focus {
+    box-shadow: 0 0 0 2px rgba(0,0,0,0.1);
+} 
+
+/* Description section */
+.wholesale-page-main-section__descriptions h2{
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.wholesale-page-main-section__descriptions-item-text{
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.wholesale-page-main-section__descriptions-item-text a{
+    color: #000;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+@media all and (max-width: 1024px) {
+    .wholesale-page-main-section__descriptions h2{
+        font-size: 32px;
+        line-height: 1.2;
+        margin-bottom: 15px;
+    }
+    .wholesale-page-main-section__descriptions-item-text{
+        font-size: 16px;
+        line-height: 1.2;
+        margin-bottom: 15px;
+    }
+    
+    
+}
+

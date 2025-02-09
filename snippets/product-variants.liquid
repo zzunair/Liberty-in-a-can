@@ -12,6 +12,13 @@
       break
     endif
   endfor
+
+  assign flavor_images = product.metafields.custom.flavorimages.value
+  assign is_flavor = false
+  assign option_name_downcase = block.settings.option_name | downcase
+  if option_name_downcase contains 'flavor'
+    assign is_flavor = true
+  endif
 -%}
 
 {%- if contains_product -%}
@@ -43,7 +50,6 @@
         assign is_size = true
       endif
     endif
-
   -%}
   <div class="variant-picker grid gap-5">
     <fieldset class="product-form__input variant-input-wrapper">
@@ -55,7 +61,7 @@
       -%}
       <div class="form__label flex items-center justify-between gap-2 w-full">
         <div class="flex gap-2">{{ block.settings.option_name | escape }}:
-          <span class="font-medium">{{ product.metafields[metafield_namespace][metafield_key].value | escape }}</span>
+          <span class="font-medium">{{ value | escape }}</span>
         </div>
         {%- if is_size -%}
           <div class="flex items-center gap-2">
@@ -93,11 +99,16 @@
       <ul class="swatches swatches--{{ settings.rounded_swatch }}{% if block.settings.color_swatch_type == 'variant' %} swatches--variant{% endif %} flex items-start flex-wrap gap-4">
         {%- for product_variation in block.settings.products -%}
           {%- liquid
-            assign value = product_variation.metafields[metafield_namespace][metafield_key].value
+            assign value = product_variation.metafields.custom.flavorImage.value
             if product_variation == product
               assign selected = true
             else
               assign selected = false
+            endif
+
+            # Get flavor image from metafield
+            if is_flavor
+              assign flavor_image = product_variation.metafields.custom.flavorimages | img_url: '100x100'
             endif
           -%}
           <li>
@@ -108,75 +119,95 @@
                 id="{{ section_id }}-{{ product_id }}-{{ block.settings.option_name | handle }}-{{ forloop.index0 }}"
                 {% if selected %}checked{% endif %}
                 tabindex="-1"
+                data-image = "{{ flavor_image | img_url: '50x50' }}"
+                data-is-flavor = "{{ is_flavor }}"
               />
-              {%- if is_color or value.swatch != blank -%}
-                {%- liquid
-                  if value.swatch == blank
-                    assign file_extension = swatch_file_extension | default: 'png'
-                    assign file_name = value | handle | append: '.' | append: file_extension
-                    assign swatch_fallback = value | split: ' ' | last | handle
-                    assign swatch_fallback_override = false
-    
-                    if settings.swatch_config != blank
-                      assign value_downcase = value | downcase
-                      assign swatch_config = settings.swatch_config | newline_to_br | split: '<br />'
-                      for swatch in swatch_config
-                        assign swatch_parts = swatch | strip | split: ':'
-                        assign swatch_name = swatch_parts.first | downcase | strip
-      
-                        if swatch_name == value_downcase
-                          assign swatch_value = swatch_parts.last | strip
-                          if swatch_value contains '#'
-                            assign swatch_fallback = swatch_value
-                            assign swatch_fallback_override = true
-                          else
-                            assign file_name = swatch_value
-                          endif
-                          break
-                        endif
-                      endfor
-                    endif
-    
-                    assign swatch_image = blank
-                    if images[file_name] != blank
-                      assign swatch_image = images[file_name] | image_url: width: 72
-                    elsif file_name contains '//cdn.shopify.com/'
-                      assign swatch_image = file_name
-                    endif
-                  else
-                    assign swatch_image = blank
-                    assign swatch_fallback = value | split: ' ' | last | handle
-                    if value.swatch.image
-                      assign swatch_image = value.swatch.image | image_url: width: 72
-                      assign swatch_fallback_override = false
-                    elsif value.swatch.color
-                      assign swatch_fallback = value.swatch.color
-                    endif
-                  endif
-  
-                  if block.settings.color_swatch_type == 'variant'
-                    if product_variation.featured_media
-                      assign swatch_image = product_variation.featured_media | image_url: width: 144
-                      assign swatch_fallback_override = false
-                    endif
-                  endif
-                -%}
+              {%- if is_flavor and flavor_image != blank -%}
                 <label
                   for="{{ section_id }}-{{ product_id }}-{{ block.settings.option_name | handle }}-{{ forloop.index0 }}"
-                  class="color-swatch{% if swatch_image != blank %} with-image{% endif %} relative pointer-events-none{% if block.settings.color_swatch_type == 'variant' and swatch_image != blank %} aspect-{{ image_ratio }} mobile:aspect-{{ image_ratio_mobile }}{% unless image_fill %} aspect-contain{% endunless %}{% endif %}"
+                  class="flavor-swatch relative pointer-events-none"
                   title="{{ value | escape }}"
-                  style="--swatch-background: {{ swatch_fallback }};{% if swatch_fallback_override == false and swatch_image != blank %} background-image: url({{ swatch_image }});{% endif %}"
                 >
+                  <img 
+                    src="{{ flavor_image }}" 
+                    alt="{{ value | escape }}"
+                    class="flavor-swatch__image{% if selected %} selected{% endif %}"
+                    width="100"
+                    height="100"
+                    loading="lazy"
+                  >
                   <span class="tooltip opacity-0 pointer-events-none text-xs rounded-full z-10">{{ value | escape }}</span>
                 </label>
               {%- else -%}
-                <label
-                  for="{{ section_id }}-{{ product_id }}-{{ block.settings.option_name | handle }}-{{ forloop.index0 }}"
-                  class="label-swatch text-sm font-medium leading-none cursor-pointer relative pointer-events-none"
-                  title="{{ value | escape }}"
-                >
-                  {{- value -}}
-                </label>
+                {%- if is_color or value.swatch != blank -%}
+                  {%- liquid
+                    if value.swatch == blank
+                      assign file_extension = swatch_file_extension | default: 'png'
+                      assign file_name = value | handle | append: '.' | append: file_extension
+                      assign swatch_fallback = value | split: ' ' | last | handle
+                      assign swatch_fallback_override = false
+          
+                      if settings.swatch_config != blank
+                        assign value_downcase = value | downcase
+                        assign swatch_config = settings.swatch_config | newline_to_br | split: '<br />'
+                        for swatch in swatch_config
+                          assign swatch_parts = swatch | strip | split: ':'
+                          assign swatch_name = swatch_parts.first | downcase | strip
+            
+                          if swatch_name == value_downcase
+                            assign swatch_value = swatch_parts.last | strip
+                            if swatch_value contains '#'
+                              assign swatch_fallback = swatch_value
+                              assign swatch_fallback_override = true
+                            else
+                              assign file_name = swatch_value
+                            endif
+                            break
+                          endif
+                        endfor
+                      endif
+          
+                      assign swatch_image = blank
+                      if images[file_name] != blank
+                        assign swatch_image = images[file_name] | image_url: width: 72
+                      elsif file_name contains '//cdn.shopify.com/'
+                        assign swatch_image = file_name
+                      endif
+                    else
+                      assign swatch_image = blank
+                      assign swatch_fallback = value | split: ' ' | last | handle
+                      if value.swatch.image
+                        assign swatch_image = value.swatch.image | image_url: width: 72
+                        assign swatch_fallback_override = false
+                      elsif value.swatch.color
+                        assign swatch_fallback = value.swatch.color
+                      endif
+                    endif
+    
+                    if block.settings.color_swatch_type == 'variant'
+                      if product_variation.featured_media
+                        assign swatch_image = product_variation.featured_media | image_url: width: 144
+                        assign swatch_fallback_override = false
+                      endif
+                    endif
+                  -%}
+                  <label
+                    for="{{ section_id }}-{{ product_id }}-{{ block.settings.option_name | handle }}-{{ forloop.index0 }}"
+                    class="color-swatch{% if swatch_image != blank %} with-image{% endif %} relative pointer-events-none{% if block.settings.color_swatch_type == 'variant' and swatch_image != blank %} aspect-{{ image_ratio }} mobile:aspect-{{ image_ratio_mobile }}{% unless image_fill %} aspect-contain{% endunless %}{% endif %}"
+                    title="{{ value | escape }}"
+                    style="--swatch-background: {{ swatch_fallback }};{% if swatch_fallback_override == false and swatch_image != blank %} background-image: url({{ swatch_image }});{% endif %}"
+                  >
+                    <span class="tooltip opacity-0 pointer-events-none text-xs rounded-full z-10">{{ value | escape }}</span>
+                  </label>
+                {%- else -%}
+                  <label
+                    for="{{ section_id }}-{{ product_id }}-{{ block.settings.option_name | handle }}-{{ forloop.index0 }}"
+                    class="label-swatch text-sm font-medium leading-none cursor-pointer relative pointer-events-none"
+                    title="{{ value | escape }}"
+                  >
+                    {{- value -}}
+                  </label>
+                {%- endif -%}
               {%- endif -%}
             </a>
           </li>
@@ -185,3 +216,76 @@
     </fieldset>
   </div>
 {%- endif -%}
+
+{%- if is_flavor and flavor_images != blank -%}
+  <div class="flavor-swatch-container">
+    {%- for image in flavor_images -%}
+      <div class="flavor-swatch">
+        <img 
+          src="{{ image.src | image_url }}"
+          alt="{{ image.alt | escape }}"
+          class="flavor-swatch__image"
+          width="100"
+          height="100"
+          loading="lazy"
+        >
+        <span class="tooltip opacity-0">{{ image.alt | escape }}</span>
+      </div>
+    {%- endfor -%}
+  </div>
+{%- endif -%}
+
+<style>
+  .flavor-swatch {
+    display: block;
+    width: 100px;
+    height: 100px;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 2px solid transparent;
+    transition: border-color 0.3s ease;
+}
+
+.flavor-swatch__image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.flavor-swatch__image.selected {
+    border-color: #000;
+}
+
+input[type="radio"]:checked + .flavor-swatch {
+    border-color: #000;
+}
+
+.flavor-swatch:hover .flavor-swatch__image {
+    transform: scale(1.05);
+}
+
+.flavor-swatch .tooltip {
+    position: absolute;
+    bottom: -25px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 4px 8px;
+    border-radius: 4px;
+    white-space: nowrap;
+    transition: opacity 0.3s ease;
+}
+
+.flavor-swatch:hover .tooltip {
+    opacity: 1;
+}
+
+.flavor-swatch-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-top: 15px;
+}
+</style>
