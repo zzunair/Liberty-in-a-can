@@ -39,6 +39,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    transition: color 0.3s ease;
 }
 
 .wholesale-faq__icon {
@@ -80,22 +81,27 @@
 }
 
 .wholesale-faq__answer {
-    max-height: 0;
+    height: 0;
     overflow: hidden;
-    transition: max-height 0.3s ease-out;
+    transition: height 0.3s cubic-bezier(0.4, 0, 0.2, 1);
     padding: 0 40px 0 0;
-}
-
-.wholesale-faq__answer.show {
-    max-height: 500px;
-    padding-bottom: 20px;
 }
 
 .wholesale-faq__answer p {
     margin: 0;
+    padding: 20px 0;
     font-size: 16px;
     line-height: 1.5;
     color: #666;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.2s ease, transform 0.2s ease;
+}
+
+/* When answer is visible */
+.wholesale-faq__answer[style*="height"] p {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 @media (max-width: 768px) {
