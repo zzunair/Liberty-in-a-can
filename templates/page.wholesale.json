@@ -40,13 +40,28 @@
     },
     "whole_sale_faq_a9bjmL": {
       "type": "WholeSale-Faq",
+      "blocks": {
+        "faq_9f6f9Y": {
+          "type": "faq",
+          "settings": {
+            "question": "What is the wholesale minimum order?",
+            "answer": "$250 USD."
+          }
+        },
+        "faq_yCK8qX": {
+          "type": "faq",
+          "settings": {
+            "question": "What is the wholesale minimum order?",
+            "answer": "Orders typically ship via UPS Ground. You may choose to expedite via 2-day or next air at the time of the order."
+          }
+        }
+      },
+      "block_order": [
+        "faq_9f6f9Y",
+        "faq_yCK8qX"
+      ],
       "settings": {
-        "shipping_answer": "We ship via trusted carriers with tracking provided.",
-        "shipping_time_answer": "Orders typically ship within 1-2 business days.",
-        "payment_answer": "We accept all major credit cards and PayPal.",
-        "shipping_states_answer": "Yes, we ship to all 50 states.",
-        "discounts_answer": "Yes, volume discounts are available for larger orders.",
-        "contact_answer": "Please contact our wholesale support team."
+        "title": "WHOLESALE FAQS"
       }
     }
   },
