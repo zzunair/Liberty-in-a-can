@@ -1,0 +1,152 @@
+<link rel="stylesheet" href="{{ 'wholesale-faq.css' | asset_url }}">
+<div class="wholesale-faq">
+    <div class="wholesale-faq__container custom-container">
+        <h1 class="wholesale-faq__title">WHOLESALE FAQS</h1>
+        
+        <div class="wholesale-faq__items">
+            <div class="wholesale-faq__item">
+                <button class="wholesale-faq__question active">
+                    What is the wholesale minimum order?
+                    <span class="wholesale-faq__icon"></span>
+                </button>
+                <div class="wholesale-faq__answer show">
+                    <p>$250 USD.</p>
+                </div>
+            </div>
+
+            <div class="wholesale-faq__item">
+                <button class="wholesale-faq__question">
+                    How do you ship my order?
+                    <span class="wholesale-faq__icon"></span>
+                </button>
+                <div class="wholesale-faq__answer">
+                    <p>{{ section.settings.shipping_answer }}</p>
+                </div>
+            </div>
+
+            <div class="wholesale-faq__item">
+                <button class="wholesale-faq__question">
+                    How quickly will my order ship when it is placed?
+                    <span class="wholesale-faq__icon"></span>
+                </button>
+                <div class="wholesale-faq__answer">
+                    <p>{{ section.settings.shipping_time_answer }}</p>
+                </div>
+            </div>
+
+            <div class="wholesale-faq__item">
+                <button class="wholesale-faq__question">
+                    How do I pay?
+                    <span class="wholesale-faq__icon"></span>
+                </button>
+                <div class="wholesale-faq__answer">
+                    <p>{{ section.settings.payment_answer }}</p>
+                </div>
+            </div>
+
+            <div class="wholesale-faq__item">
+                <button class="wholesale-faq__question">
+                    Do you ship to all 50 states?
+                    <span class="wholesale-faq__icon"></span>
+                </button>
+                <div class="wholesale-faq__answer">
+                    <p>{{ section.settings.shipping_states_answer }}</p>
+                </div>
+            </div>
+
+            <div class="wholesale-faq__item">
+                <button class="wholesale-faq__question">
+                    Do you offer discounts for large orders?
+                    <span class="wholesale-faq__icon"></span>
+                </button>
+                <div class="wholesale-faq__answer">
+                    <p>{{ section.settings.discounts_answer }}</p>
+                </div>
+            </div>
+
+            <div class="wholesale-faq__item">
+                <button class="wholesale-faq__question">
+                    Who do I contact with questions about my order?
+                    <span class="wholesale-faq__icon"></span>
+                </button>
+                <div class="wholesale-faq__answer">
+                    <p>{{ section.settings.contact_answer }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const faqQuestions = document.querySelectorAll('.wholesale-faq__question');
+    
+    faqQuestions.forEach(question => {
+        question.addEventListener('click', () => {
+            const answer = question.nextElementSibling;
+            const isOpen = question.classList.contains('active');
+            
+            // Close all other questions
+            faqQuestions.forEach(q => {
+                q.classList.remove('active');
+                q.nextElementSibling.classList.remove('show');
+            });
+            
+            // Toggle current question
+            if (!isOpen) {
+                question.classList.add('active');
+                answer.classList.add('show');
+            }
+        });
+    });
+});
+</script>
+
+{% schema %}
+{
+    "name": "Wholesale FAQ",
+    "settings": [
+        {
+            "type": "text",
+            "id": "shipping_answer",
+            "label": "Shipping Answer",
+            "default": "We ship via trusted carriers with tracking provided."
+        },
+        {
+            "type": "text",
+            "id": "shipping_time_answer",
+            "label": "Shipping Time Answer",
+            "default": "Orders typically ship within 1-2 business days."
+        },
+        {
+            "type": "text",
+            "id": "payment_answer",
+            "label": "Payment Answer",
+            "default": "We accept all major credit cards and PayPal."
+        },
+        {
+            "type": "text",
+            "id": "shipping_states_answer",
+            "label": "Shipping States Answer",
+            "default": "Yes, we ship to all 50 states."
+        },
+        {
+            "type": "text",
+            "id": "discounts_answer",
+            "label": "Discounts Answer",
+            "default": "Yes, volume discounts are available for larger orders."
+        },
+        {
+            "type": "text",
+            "id": "contact_answer",
+            "label": "Contact Answer",
+            "default": "Please contact our wholesale support team."
+        }
+    ],
+    "presets": [
+        {
+            "name": "Wholesale FAQ"
+        }
+    ]
+}
+{% endschema %}
