@@ -29,6 +29,14 @@
   margin-block-start: var(--sp-1d5);
 }
 
+.age-modal .secondary-image{
+  text-align: center;
+}
+
+.age-modal .secondary-image img{
+  margin: auto;
+}
+
 @media screen and (max-width: 639px) {
   html.js .age-modal .drawer__inner {
     height: auto;
