@@ -37,30 +37,30 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // Handle form submission
-    form.addEventListener('submit', function(e) {
-        e.preventDefault();
+    // form.addEventListener('submit', function(e) {
+    //     e.preventDefault();
         
-        // Create FormData object
-        const formData = new FormData(form);
+    //     // Create FormData object
+    //     const formData = new FormData(form);
         
-        // Submit form using fetch
-        fetch(form.action, {
-            method: 'POST',
-            body: formData
-        })
-        .then(response => response.json())
-        .then(data => {
-            if (data.status === 'success') {
-                alert('Thank you for your submission!');
-                closePopup();
-                form.reset();
-            } else {
-                alert('There was an error submitting the form. Please try again.');
-            }
-        })
-        .catch(error => {
-            console.error('Error:', error);
-            alert('There was an error submitting the form. Please try again.');
-        });
-    });
+    //     // Submit form using fetch
+    //     fetch(form.action, {
+    //         method: 'POST',
+    //         body: formData
+    //     })
+    //     .then(response => response.json())
+    //     .then(data => {
+    //         if (data.status === 'success') {
+    //             alert('Thank you for your submission!');
+    //             closePopup();
+    //             form.reset();
+    //         } else {
+    //             alert('There was an error submitting the form. Please try again.');
+    //         }
+    //     })
+    //     .catch(error => {
+    //         console.error('Error:', error);
+    //         alert('There was an error submitting the form. Please try again.');
+    //     });
+    // });
   });
