@@ -1206,12 +1206,39 @@
             "question": "Is it safe?",
             "answer": "<p>Yes! All of our products have been tested.</p>"
           }
+        },
+        "review_mCDCPr": {
+          "type": "review",
+          "settings": {
+            "column": "column1",
+            "question": "Will I get anxious or paranoid?",
+            "answer": "<p>Highly unlikely—due to our unique addition of Lion's Mane extract, our microdosed approach to THC, and our rapid-absorption micronization process, we've created what we see as the solution to the bad edible trip.</p>"
+          }
+        },
+        "review_Vxfbcg": {
+          "type": "review",
+          "settings": {
+            "column": "column2",
+            "question": "Where do you ship?",
+            "answer": "<p>We currently ship across the continental US - if the add to cart above is clickable we ship to you! </p>"
+          }
+        },
+        "review_rp9XqW": {
+          "type": "review",
+          "settings": {
+            "column": "column3",
+            "question": "What does it feel like?",
+            "answer": "<p>Most first feel a quick, energizing, happy euphoria followed by a sense of relief and relaxation. Unlike traditional edibles, we utilize fast-acting micronized extracts that are felt within 5 minutes and last up to 1.5 hours.</p>"
+          }
         }
       },
       "block_order": [
         "review_TW3HRN",
         "review_LqwXit",
-        "review_wMApKj"
+        "review_wMApKj",
+        "review_mCDCPr",
+        "review_Vxfbcg",
+        "review_rp9XqW"
       ],
       "settings": {
         "title": "Cannabis + Mushrooms"
