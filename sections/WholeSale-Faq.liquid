@@ -1,78 +1,20 @@
 <link rel="stylesheet" href="{{ 'wholesale-faq.css' | asset_url }}">
 <div class="wholesale-faq">
     <div class="wholesale-faq__container custom-container">
-        <h1 class="wholesale-faq__title">WHOLESALE FAQS</h1>
+        <h1 class="wholesale-faq__title">{{ section.settings.title }}</h1>
         
         <div class="wholesale-faq__items">
-            <div class="wholesale-faq__item">
-                <button class="wholesale-faq__question active">
-                    What is the wholesale minimum order?
-                    <span class="wholesale-faq__icon"></span>
-                </button>
-                <div class="wholesale-faq__answer show">
-                    <p>$250 USD.</p>
+            {%- for block in section.blocks -%}
+                <div class="wholesale-faq__item" {{ block.shopify_attributes }}>
+                    <button class="wholesale-faq__question{% if forloop.first %} active{% endif %}">
+                        {{ block.settings.question }}
+                        <span class="wholesale-faq__icon"></span>
+                    </button>
+                    <div class="wholesale-faq__answer{% if forloop.first %} show{% endif %}">
+                        <p>{{ block.settings.answer }}</p>
+                    </div>
                 </div>
-            </div>
-
-            <div class="wholesale-faq__item">
-                <button class="wholesale-faq__question">
-                    How do you ship my order?
-                    <span class="wholesale-faq__icon"></span>
-                </button>
-                <div class="wholesale-faq__answer">
-                    <p>{{ section.settings.shipping_answer }}</p>
-                </div>
-            </div>
-
-            <div class="wholesale-faq__item">
-                <button class="wholesale-faq__question">
-                    How quickly will my order ship when it is placed?
-                    <span class="wholesale-faq__icon"></span>
-                </button>
-                <div class="wholesale-faq__answer">
-                    <p>{{ section.settings.shipping_time_answer }}</p>
-                </div>
-            </div>
-
-            <div class="wholesale-faq__item">
-                <button class="wholesale-faq__question">
-                    How do I pay?
-                    <span class="wholesale-faq__icon"></span>
-                </button>
-                <div class="wholesale-faq__answer">
-                    <p>{{ section.settings.payment_answer }}</p>
-                </div>
-            </div>
-
-            <div class="wholesale-faq__item">
-                <button class="wholesale-faq__question">
-                    Do you ship to all 50 states?
-                    <span class="wholesale-faq__icon"></span>
-                </button>
-                <div class="wholesale-faq__answer">
-                    <p>{{ section.settings.shipping_states_answer }}</p>
-                </div>
-            </div>
-
-            <div class="wholesale-faq__item">
-                <button class="wholesale-faq__question">
-                    Do you offer discounts for large orders?
-                    <span class="wholesale-faq__icon"></span>
-                </button>
-                <div class="wholesale-faq__answer">
-                    <p>{{ section.settings.discounts_answer }}</p>
-                </div>
-            </div>
-
-            <div class="wholesale-faq__item">
-                <button class="wholesale-faq__question">
-                    Who do I contact with questions about my order?
-                    <span class="wholesale-faq__icon"></span>
-                </button>
-                <div class="wholesale-faq__answer">
-                    <p>{{ section.settings.contact_answer }}</p>
-                </div>
-            </div>
+            {%- endfor -%}
         </div>
     </div>
 </div>
@@ -88,17 +30,29 @@ document.addEventListener('DOMContentLoaded', function() {
             
             // Close all other questions
             faqQuestions.forEach(q => {
-                q.classList.remove('active');
-                q.nextElementSibling.classList.remove('show');
+                const otherAnswer = q.nextElementSibling;
+                if (q !== question) {
+                    q.classList.remove('active');
+                    otherAnswer.style.height = '0';
+                }
             });
             
             // Toggle current question
             if (!isOpen) {
                 question.classList.add('active');
-                answer.classList.add('show');
+                answer.style.height = answer.scrollHeight + 'px';
+            } else {
+                question.classList.remove('active');
+                answer.style.height = '0';
             }
         });
     });
+
+    // Set initial state for the first FAQ item
+    const firstAnswer = document.querySelector('.wholesale-faq__answer.show');
+    if (firstAnswer) {
+        firstAnswer.style.height = firstAnswer.scrollHeight + 'px';
+    }
 });
 </script>
 
@@ -108,39 +62,29 @@ document.addEventListener('DOMContentLoaded', function() {
     "settings": [
         {
             "type": "text",
-            "id": "shipping_answer",
-            "label": "Shipping Answer",
-            "default": "We ship via trusted carriers with tracking provided."
-        },
+            "id": "title",
+            "label": "Section Title",
+            "default": "WHOLESALE FAQS"
+        }
+    ],
+    "blocks": [
         {
-            "type": "text",
-            "id": "shipping_time_answer",
-            "label": "Shipping Time Answer",
-            "default": "Orders typically ship within 1-2 business days."
-        },
-        {
-            "type": "text",
-            "id": "payment_answer",
-            "label": "Payment Answer",
-            "default": "We accept all major credit cards and PayPal."
-        },
-        {
-            "type": "text",
-            "id": "shipping_states_answer",
-            "label": "Shipping States Answer",
-            "default": "Yes, we ship to all 50 states."
-        },
-        {
-            "type": "text",
-            "id": "discounts_answer",
-            "label": "Discounts Answer",
-            "default": "Yes, volume discounts are available for larger orders."
-        },
-        {
-            "type": "text",
-            "id": "contact_answer",
-            "label": "Contact Answer",
-            "default": "Please contact our wholesale support team."
+            "type": "faq",
+            "name": "FAQ Item",
+            "settings": [
+                {
+                    "type": "text",
+                    "id": "question",
+                    "label": "Question",
+                    "default": "What is the wholesale minimum order?"
+                },
+                {
+                    "type": "textarea",
+                    "id": "answer",
+                    "label": "Answer",
+                    "default": "$250 USD."
+                }
+            ]
         }
     ],
     "presets": [

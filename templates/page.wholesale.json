@@ -40,13 +40,60 @@
     },
     "whole_sale_faq_a9bjmL": {
       "type": "WholeSale-Faq",
+      "blocks": {
+        "faq_9f6f9Y": {
+          "type": "faq",
+          "settings": {
+            "question": "What is the wholesale minimum order?",
+            "answer": "$250 USD."
+          }
+        },
+        "faq_yCK8qX": {
+          "type": "faq",
+          "settings": {
+            "question": "How do you ship my order?",
+            "answer": "Orders typically ship via UPS Ground. You may choose to expedite via 2-day or next air at the time of the order."
+          }
+        },
+        "faq_BJtUGm": {
+          "type": "faq",
+          "settings": {
+            "question": "How quickly will my order ship when it is placed?",
+            "answer": "Fulfillment service level is 2-5 business days, dependent on whether the order is fulfilled by UPS or LTL carriers. Extra label or packaging requirements may require additional processing time."
+          }
+        },
+        "faq_AnygwA": {
+          "type": "faq",
+          "settings": {
+            "question": "How do I pay?",
+            "answer": "We accept all major credit and debit cards. Check or wire transfer are also accepted."
+          }
+        },
+        "faq_k4K3Lr": {
+          "type": "faq",
+          "settings": {
+            "question": "Do you ship to all 50 states?",
+            "answer": "We ship to all of the continental USA, with Alaska and Hawaii not being eligible to carry our products."
+          }
+        },
+        "faq_ng7XjK": {
+          "type": "faq",
+          "settings": {
+            "question": "Do you offer discounts for large orders?",
+            "answer": "Please contact the sales department at email.com comfor information."
+          }
+        }
+      },
+      "block_order": [
+        "faq_9f6f9Y",
+        "faq_yCK8qX",
+        "faq_BJtUGm",
+        "faq_AnygwA",
+        "faq_k4K3Lr",
+        "faq_ng7XjK"
+      ],
       "settings": {
-        "shipping_answer": "We ship via trusted carriers with tracking provided.",
-        "shipping_time_answer": "Orders typically ship within 1-2 business days.",
-        "payment_answer": "We accept all major credit cards and PayPal.",
-        "shipping_states_answer": "Yes, we ship to all 50 states.",
-        "discounts_answer": "Yes, volume discounts are available for larger orders.",
-        "contact_answer": "Please contact our wholesale support team."
+        "title": "WHOLESALE FAQS"
       }
     }
   },
