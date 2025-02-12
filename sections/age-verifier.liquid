@@ -51,7 +51,7 @@
         <div class="drawer__scrollable relative w-full">
           {%- if section.settings.secondary-image != blank -%}
             <div class="age__image secondary-image">
-              {{- section.settings.secondary-image | image_url: width: 100 | image_tag: loading: 'lazy', widths: widths, sizes: sizes, is: 'lazy-image' -}}
+              {{- section.settings.secondary-image | image_url: width: 200 | image_tag: loading: 'lazy', widths: widths, sizes: sizes, is: 'lazy-image' -}}
             </div>
           {%- endif -%}
 
