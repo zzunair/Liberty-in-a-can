@@ -1,0 +1,172 @@
+<link rel="stylesheet" href="{{ 'review-blocks.css' | asset_url }}">
+
+<div class="review-blocks">
+  <div class="review-blocks__container">
+    <h2 class="review-blocks__title">{{ section.settings.title }}</h2>
+
+    <div class="review-blocks__grid">
+      <div class="review-blocks__column">
+        {%- for block in section.blocks -%}
+          {%- if block.settings.column == 'column1' -%}
+            <div class="review-blocks__item" {{ block.shopify_attributes }}>
+              <button class="review-blocks__question">
+                {{ block.settings.question }}
+                <span class="review-blocks__icon"></span>
+              </button>
+              <div class="review-blocks__answer">
+                <div class="review-blocks__answer-content">
+                  {{ block.settings.answer }}
+                </div>
+              </div>
+            </div>
+          {%- endif -%}
+        {%- endfor -%}
+      </div>
+
+      <div class="review-blocks__column">
+        {%- for block in section.blocks -%}
+          {%- if block.settings.column == 'column2' -%}
+            <div class="review-blocks__item" {{ block.shopify_attributes }}>
+              <button class="review-blocks__question">
+                {{ block.settings.question }}
+                <span class="review-blocks__icon"></span>
+              </button>
+              <div class="review-blocks__answer">
+                <div class="review-blocks__answer-content">
+                  {{ block.settings.answer }}
+                </div>
+              </div>
+            </div>
+          {%- endif -%}
+        {%- endfor -%}
+      </div>
+
+      
+
+      <div class="review-blocks__column">
+        {%- for block in section.blocks -%}
+          {%- if block.settings.column == 'column3' -%}
+            <div class="review-blocks__item" {{ block.shopify_attributes }}>
+              <button class="review-blocks__question">
+                {{ block.settings.question }}
+                <span class="review-blocks__icon"></span>
+              </button>
+              <div class="review-blocks__answer">
+                <div class="review-blocks__answer-content">
+                  {{ block.settings.answer }}
+                </div>
+              </div>
+            </div>
+          {%- endif -%}
+        {%- endfor -%}
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const questions = document.querySelectorAll('.review-blocks__question');
+    
+    questions.forEach(question => {
+        question.addEventListener('click', () => {
+            const answer = question.nextElementSibling;
+            const content = answer.querySelector('.review-blocks__answer-content');
+            const isOpen = question.classList.contains('active');
+            
+            if (!isOpen) {
+                question.classList.add('active');
+                answer.style.height = content.offsetHeight + 'px';
+            } else {
+                question.classList.remove('active');
+                answer.style.height = '0';
+            }
+        });
+    });
+});
+</script>
+
+{% schema %}
+{
+    "name": "Review Blocks",
+    "settings": [
+        {
+            "type": "text",
+            "id": "title",
+            "label": "Title",
+            "default": "Cannabis + Mushrooms"
+        }
+    ],
+    "blocks": [
+        {
+            "type": "review",
+            "name": "Review Item",
+            "settings": [
+                {
+                    "type": "select",
+                    "id": "column",
+                    "label": "Column",
+                    "options": [
+                        {
+                            "value": "column1",
+                            "label": "Column 1"
+                        },
+                        {
+                            "value": "column2",
+                            "label": "Column 2"
+                        },
+                        {
+                            "value": "column3",
+                            "label": "Column 3"
+                        }
+                    ],
+                    "default": "column1"
+                },
+                {
+                    "type": "text",
+                    "id": "question",
+                    "label": "Question",
+                    "default": "Is it legal?"
+                },
+                {
+                    "type": "richtext",
+                    "id": "answer",
+                    "label": "Answer",
+                    "default": "<p>Yes, we utilized federally legal hemp.</p>"
+                }
+            ]
+        }
+    ],
+    "presets": [
+        {
+            "name": "Review Blocks",
+            "blocks": [
+                {
+                    "type": "review",
+                    "settings": {
+                        "column": "column1",
+                        "question": "Is it legal?",
+                        "answer": "<p>Yes, we utilized federally legal hemp.</p>"
+                    }
+                },
+                {
+                    "type": "review",
+                    "settings": {
+                        "column": "column2",
+                        "question": "What does microdosed mean?",
+                        "answer": "<p>Our products contain precise amounts.</p>"
+                    }
+                },
+                {
+                    "type": "review",
+                    "settings": {
+                        "column": "column3",
+                        "question": "Is it safe?",
+                        "answer": "<p>Yes! All of our products have been tested.</p>"
+                    }
+                }
+            ]
+        }
+    ]
+}
+{% endschema %}
