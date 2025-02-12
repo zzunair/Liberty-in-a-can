@@ -9,6 +9,67 @@
  */
 {
   "sections": {
+    "rich_text_YJfRWA": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_TamXDH": {
+          "type": "heading",
+          "settings": {
+            "heading": "PARTNER UP AS A WHOLESALER",
+            "heading_size": "title-lg tracking-heading",
+            "heading_tag": "h2",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "text_iBg3kg": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Calling all distributor partners! Come on board as wholesalers for Liberty in a Can. Remember, you can sign-in or apply for an account to get in on the action!</p>",
+            "text_size": "subtext-md",
+            "text_max_size": 32,
+            "text_font": "body",
+            "secondary_color": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "heading_TamXDH",
+        "text_iBg3kg"
+      ],
+      "settings": {
+        "text_alignment": "left",
+        "text_alignment_mobile": "left",
+        "heading": "",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_width": "small",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": true,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 40,
+        "divider": false,
+        "narrow": true,
+        "rounded": false
+      }
+    },
     "portfolio_gDY7wY": {
       "type": "portfolio",
       "blocks": {
@@ -162,6 +223,7 @@
     }
   },
   "order": [
+    "rich_text_YJfRWA",
     "portfolio_gDY7wY",
     "main-page",
     "whole_sale_page_main_section_LNKUNT",
