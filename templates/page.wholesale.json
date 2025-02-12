@@ -9,6 +9,70 @@
  */
 {
   "sections": {
+    "portfolio_gDY7wY": {
+      "type": "portfolio",
+      "blocks": {
+        "profile_KVWtw6": {
+          "type": "profile",
+          "settings": {
+            "image": "shopify://shop_images/silhouette-of-people-holding-surfboards-on-beach.jpg",
+            "image_mobile": "shopify://shop_images/beach-surf-on-stones.jpg",
+            "heading": "APPLY",
+            "text": "<p>Looking to rock with Liberty in a Can as a wholesaler? Apply now to score your own account.</p><h4><a href=\"/pages/wholesale\" title=\"Wholesale\">APPLY FOR AN ACCOUNT</a></h4>",
+            "color_text": "#ffffff",
+            "color_background": "#0b61cd"
+          }
+        },
+        "profile_MWHi9b": {
+          "type": "profile",
+          "settings": {
+            "image": "shopify://shop_images/beach-surf-on-stones.jpg",
+            "heading": "LOGIN",
+            "text": "<p>Wholesalers, it's time to use your magic words and access your account!</p><h4><a href=\"/pages/wholesale\" title=\"Wholesale\"><strong>LOGIN TO YOUR ACCOUNT</strong></a></h4>",
+            "color_text": "#ffffff",
+            "color_background": "#7bc3b9"
+          }
+        }
+      },
+      "block_order": [
+        "profile_KVWtw6",
+        "profile_MWHi9b"
+      ],
+      "settings": {
+        "columns": 2,
+        "carousel_on_desktop": false,
+        "layout": "grid",
+        "image_ratio": "landscape",
+        "image_ratio_mobile": "landscape",
+        "columns_mobile": "2",
+        "swipe_on_mobile": true,
+        "heading": "Join Us",
+        "heading_size": "title-xl tracking-heading",
+        "heading_alignment": "text-left justify-start",
+        "heading_tag": "h2",
+        "subheading": "WE'RE LOOKING FOR A FEW GOOD WHOLESALE PARTNERS.",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": true,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "#0d253f",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    },
     "main-page": {
       "type": "main-page",
       "disabled": true,
@@ -98,6 +162,7 @@
     }
   },
   "order": [
+    "portfolio_gDY7wY",
     "main-page",
     "whole_sale_page_main_section_LNKUNT",
     "whole_sale_faq_a9bjmL"

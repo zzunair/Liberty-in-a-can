@@ -152,7 +152,7 @@
         "buttons"
       ],
       "settings": {
-        "mode": "testing",
+        "mode": "enabled",
         "delay": 5,
         "text_alignment": "center",
         "content_position": "left-0",
