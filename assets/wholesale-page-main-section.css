@@ -17,7 +17,8 @@
     background-size: 100%;
     background-position: center;
     background-repeat: no-repeat;
-    height: 320px;
+    height: 450px;
+    border-radius: 20px;
     place-content: center;
     text-align: center;
     transition: background-size 0.5s ease;
@@ -40,7 +41,8 @@
     background-size: 100%;
     background-position: center;
     background-repeat: no-repeat;
-    height: 320px;
+    border-radius: 20px;
+    height: 450px;
     place-content: center;
     text-align: center;
     transition: background-size 0.5s ease;
@@ -295,8 +297,8 @@ body.popup-open {
 
 /* Description section */
 .wholesale-page-main-section__descriptions h2{
-    font-size: 48px;
-    font-weight: 700;
+    font-size: 36px;
+    font-weight: 500;
 }
 
 .wholesale-page-main-section__descriptions-item-text{
