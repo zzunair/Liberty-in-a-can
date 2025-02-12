@@ -39,6 +39,7 @@
         "heading_TamXDH",
         "text_iBg3kg"
       ],
+      "disabled": true,
       "settings": {
         "text_alignment": "left",
         "text_alignment_mobile": "left",
@@ -79,7 +80,7 @@
             "image": "shopify://shop_images/silhouette-of-people-holding-surfboards-on-beach.jpg",
             "image_mobile": "shopify://shop_images/beach-surf-on-stones.jpg",
             "heading": "APPLY",
-            "text": "<p>Looking to rock with Liberty in a Can as a wholesaler? Apply now to score your own account.</p><h4><a href=\"/pages/wholesale\" title=\"Wholesale\">APPLY FOR AN ACCOUNT</a></h4>",
+            "text": "<p>Looking to rock with Liberty in a Can as a wholesaler? Apply now to score your own account.</p><h4><a href=\"https://share.hsforms.com/1Cbr9PNhgS4K6O41sUNZpRAcfpd2?__hstc=225830853.03d914ead69e10d7e27fbc98d94f8770.1677008515930.1681146538154.1681157931616.94&__hssc=225830853.2.1681157931616&__hsfp=183034242\" target=\"_blank\" title=\"https://share.hsforms.com/1Cbr9PNhgS4K6O41sUNZpRAcfpd2?__hstc=225830853.03d914ead69e10d7e27fbc98d94f8770.1677008515930.1681146538154.1681157931616.94&__hssc=225830853.2.1681157931616&__hsfp=183034242\">APPLY FOR AN ACCOUNT</a></h4>",
             "color_text": "#ffffff",
             "color_background": "#0b61cd"
           }
@@ -102,17 +103,17 @@
       "settings": {
         "columns": 2,
         "carousel_on_desktop": false,
-        "layout": "grid",
+        "layout": "default",
         "image_ratio": "landscape",
         "image_ratio_mobile": "landscape",
         "columns_mobile": "2",
         "swipe_on_mobile": true,
-        "heading": "Join Us",
-        "heading_size": "title-xl tracking-heading",
+        "heading": "WE'RE LOOKING FOR A FEW GOOD WHOLESALE PARTNERS",
+        "heading_size": "title-lg tracking-heading",
         "heading_alignment": "text-left justify-start",
         "heading_tag": "h2",
-        "subheading": "WE'RE LOOKING FOR A FEW GOOD WHOLESALE PARTNERS.",
-        "description": "",
+        "subheading": "JOIN US",
+        "description": "<p>Calling all distributor partners! Come on board as wholesalers for Liberty in a Can. Remember, you can sign-in or apply for an account to get in on the action!</p>",
         "button_label": "",
         "button_link": "",
         "button_external": false,
@@ -151,6 +152,7 @@
     },
     "whole_sale_page_main_section_LNKUNT": {
       "type": "WholeSale-Page-Main-Section",
+      "disabled": true,
       "settings": {
         "title": "Join Us",
         "title_color": "#000000",
