@@ -101,9 +101,8 @@
       "blocks": {
         "logo_social": {
           "type": "logo_social",
-          "disabled": true,
           "settings": {
-            "logo": "shopify://shop_images/2024_LIC_LOGO_ICON_4644a731-739a-409c-b5f7-0a03cc9f5cd9.svg",
+            "logo": "shopify://shop_images/Zm88bSmP.png",
             "logo_height": 85,
             "show_social": false,
             "enable_follow_on_shop": false
