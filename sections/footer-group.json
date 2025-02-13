@@ -151,6 +151,14 @@
             "container_width": 20
           }
         },
+        "link_list_rW4HDb": {
+          "type": "link_list",
+          "settings": {
+            "heading": "Wholesale",
+            "menu": "footer-wholesale",
+            "container_width": 20
+          }
+        },
         "brand_information": {
           "type": "brand_information",
           "settings": {
@@ -174,6 +182,7 @@
         "link_list_h7KQbf",
         "link_list_FKyejP",
         "link_list_8EfpNC",
+        "link_list_rW4HDb",
         "brand_information"
       ],
       "settings": {
