@@ -1147,6 +1147,7 @@
     },
     "blog-posts-collage": {
       "type": "blog-posts-collage",
+      "disabled": true,
       "settings": {
         "blog": "news",
         "post_limit": 3,
@@ -1175,6 +1176,40 @@
         "color_button_gradient": "",
         "padding_top": 100,
         "padding_bottom": 100,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
+    },
+    "173947741544d5c56e": {
+      "type": "apps",
+      "blocks": {
+        "instafeed_app_block_BcPYmc": {
+          "type": "shopify://apps/instafeed/blocks/app-block/c447db20-095d-4a10-9725-b5977662c9d5",
+          "settings": {
+            "title": "",
+            "title_color": "",
+            "alignment": "center",
+            "background_color": "",
+            "feed_id": "",
+            "html_area": ""
+          }
+        }
+      },
+      "block_order": [
+        "instafeed_app_block_BcPYmc"
+      ],
+      "settings": {
+        "color_text": "",
+        "color_background": "rgba(0,0,0,0)",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 72,
         "divider": false,
         "full_width": false,
         "rounded": false
@@ -1241,7 +1276,7 @@
         "review_rp9XqW"
       ],
       "settings": {
-        "title": "Cannabis + Mushrooms"
+        "title": "Cannabis FAQS"
       }
     }
   },
@@ -1265,6 +1300,7 @@
     "featured-collections",
     "scrolling-text-2",
     "blog-posts-collage",
+    "173947741544d5c56e",
     "review_blocks_RdF6G7"
   ]
 }
