@@ -1,0 +1,339 @@
+<style>
+    /* Updated Popup Styles */
+    .wholesale-popup {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(0, 0, 0, 0.5);
+        display: none;
+        justify-content: center;
+        align-items: center;
+        z-index: 9999;
+    }
+
+    .wholesale-popup.active {
+        display: flex;
+    }
+
+    .wholesale-popup__content {
+        background: #fff;
+        padding: 40px;
+        border-radius: 8px;
+        position: relative;
+        width: 100%;
+        max-width: 800px;
+        max-height: 90vh;
+        overflow-y: auto;
+        margin: 50px 20px 20px 20px;
+
+        /* Hide default scrollbar for webkit browsers */
+        &::-webkit-scrollbar {
+            width: 0;
+            background: transparent;
+        }
+
+        /* For Firefox */
+        scrollbar-width: none;
+
+        /* For IE and Edge */
+        -ms-overflow-style: none;
+    }
+
+    .wholesale-popup__content h2 {
+        margin-bottom: 40px;
+    }
+
+    /* Adjust form styles inside popup */
+    .wholesale-popup .wholesale-page-contact-form {
+        padding: 0;
+    }
+
+    .wholesale-popup .wholesale-page-contact-form__container {
+        padding: 0;
+    }
+
+    /* Close button styling */
+    .wholesale-popup__close {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        width: 30px;
+        height: 30px;
+        cursor: pointer;
+        background: none;
+        border: none;
+        padding: 0;
+    }
+
+    .wholesale-popup__close::before,
+    .wholesale-popup__close::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 20px;
+        height: 2px;
+        background-color: #333;
+    }
+
+    .wholesale-popup__close::before {
+        transform: translate(-50%, -50%) rotate(45deg);
+    }
+
+    .wholesale-popup__close::after {
+        transform: translate(-50%, -50%) rotate(-45deg);
+    }
+
+    /* Prevent body scroll when popup is open */
+    body.popup-open {
+        overflow: hidden;
+    }
+
+    .wholesale-page-contact-form {
+        padding: 40px 0;
+    }
+
+    .wholesale-page-contact-form__container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+    }
+
+    .wholesale-page-contact-form__form-wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .wholesale-page-contact-form__form-group {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .wholesale-page-contact-form__form-group.half-width {
+        width: calc(50% - 10px);
+    }
+
+    .wholesale-page-contact-form__form-group.full-width {
+        width: 100%;
+    }
+
+    /* Labels */
+    .wholesale-page-contact-form__form-group label {
+        font-size: 16px;
+        color: #333;
+        font-weight: 500;
+    }
+
+    .wholesale-page-contact-form__form-group .required {
+        color: #ff0000;
+        margin-left: 2px;
+    }
+
+    /* Inputs */
+    .wholesale-page-contact-form__form-group input[type="text"],
+    .wholesale-page-contact-form__form-group input[type="email"],
+    .wholesale-page-contact-form__form-group input[type="tel"],
+    .wholesale-page-contact-form__form-group input[type="url"],
+    .wholesale-page-contact-form__form-group input[type="number"] {
+        padding: 12px 16px;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        font-size: 16px;
+        width: 100%;
+        background-color: #fff;
+    }
+
+    .wholesale-page-contact-form__form-group input:focus {
+        outline: none;
+        border-color: #666;
+    }
+
+    /* Checkbox groups */
+    .checkbox-group {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        padding: 8px 0;
+    }
+
+    .checkbox-group label {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        font-weight: normal;
+        cursor: pointer;
+    }
+
+    .checkbox-group input[type="checkbox"] {
+        width: 18px;
+        height: 18px;
+        border: 1px solid #ddd;
+        border-radius: 3px;
+        cursor: pointer;
+    }
+
+    /* Error messages */
+    .error-message {
+        color: #ff0000;
+        font-size: 14px;
+        margin-top: 4px;
+    }
+
+    /* Submit button */
+    .wholesale-page-contact-form__form-button {
+        background-color: #000;
+        color: #fff;
+        padding: 14px 32px;
+        border: none;
+        border-radius: 4px;
+        font-size: 16px;
+        font-weight: 500;
+        cursor: pointer;
+        margin-top: 20px;
+        width: 100%;
+        transition: background-color 0.3s ease;
+    }
+
+    .wholesale-page-contact-form__form-button:hover {
+        background-color: #333;
+    }
+
+    @media (max-width: 768px) {
+        .wholesale-popup__content {
+            margin: 15px;
+            padding: 25px;
+        }
+    }
+</style>
+  
+  <!-- Popup -->
+  <div class="wholesale-popup" id="wholesale-popup">
+    <div class="wholesale-popup__content">
+        <button class="wholesale-popup__close js-close-wholesale-popup" aria-label="Close popup"></button>
+        <h2 class="text-center mb-4">Wholesale Application</h2>
+        <div class="wholesale-page-contact-form">
+            <div class="wholesale-page-contact-form__container">
+                {%- form 'contact', class: 'wholesale-form' -%}
+                <!-- Add a contact form tag to identify this as wholesale -->
+                <input type="hidden" name="contact[tags]" value="wholesale">
+
+                <!-- Add a form-specific subject -->
+                <input type="hidden" name="contact[subject]" value="New Wholesale Application">
+
+                {%- if form.errors -%}
+                <div class="form-status form-status-list alert alert--error">
+                    <ul class="form-status-list__list">
+                        {% for field in form.errors %}
+                        <li>{{ field }}: {{ form.errors.messages[field] }}</li>
+                        {% endfor %}
+                    </ul>
+                </div>
+                {%- endif -%}
+
+                {%- if form.posted_successfully? -%}
+                <div class="form-status-list form-status--success">
+                    <h3>Thank you for your application!</h3>
+                    <p>We will get back to you shortly.</p>
+                </div>
+                {%- endif -%}
+
+                <!-- Form fields -->
+                <div class="wholesale-page-contact-form__form-wrapper">
+                    <div class="wholesale-page-contact-form__form-group half-width">
+                        <label for="first-name">First name <span class="required">*</span></label>
+                        <input type="text" id="first-name" name="contact[first_name]" required>
+                    </div>
+                    <div class="wholesale-page-contact-form__form-group half-width">
+                        <label for="last-name">Last name <span class="required">*</span></label>
+                        <input type="text" id="last-name" name="contact[last_name]" required>
+                    </div>
+                    <div class="wholesale-page-contact-form__form-group full-width">
+                        <label for="company-name">Company name <span class="required">*</span></label>
+                        <input type="text" id="company-name" name="contact[company]" required>
+                    </div>
+                    <div class="wholesale-page-contact-form__form-group half-width">
+                        <label for="city">City</label>
+                        <input type="text" id="city" name="contact[city]">
+                    </div>
+                    <div class="wholesale-page-contact-form__form-group half-width">
+                        <label for="state">State/Region <span class="required">*</span></label>
+                        <input type="text" id="state" name="contact[state]" required>
+                    </div>
+                    <div class="wholesale-page-contact-form__form-group full-width">
+                        <label>Business Type <span class="required">*</span></label>
+                        <div class="checkbox-group">
+                            <label><input type="checkbox" name="contact[business_type]"
+                                    value="Retail Store - Smoke & Vape"> Retail Store - Smoke & Vape</label>
+                            <label><input type="checkbox" name="contact[business_type]"
+                                    value="Retail Store - Supplements"> Retail Store - Supplements</label>
+                            <label><input type="checkbox" name="contact[business_type]"
+                                    value="Retail Store - Speciality"> Retail Store - Speciality</label>
+                            <label><input type="checkbox" name="contact[business_type]"
+                                    value="Retailer - Beer, Wine & Spirits"> Retailer - Beer, Wine & Spirits</label>
+                            <label><input type="checkbox" name="contact[business_type]" value="Online Retailer"> Online
+                                Retailer</label>
+                            <label><input type="checkbox" name="contact[business_type]"
+                                    value="Distributor - Beer, Wine & Spirits"> Distributor - Beer, Wine &
+                                Spirits</label>
+                            <label><input type="checkbox" name="contact[business_type]"
+                                    value="Distributor - Smoke & Vape"> Distributor - Smoke & Vape</label>
+                            <label><input type="checkbox" name="contact[business_type]" value="Distributor - Broadline">
+                                Distributor - Broadline</label>
+                            <label><input type="checkbox" name="contact[business_type]" value="Other"> Other</label>
+                        </div>
+                    </div>
+                    <div class="wholesale-page-contact-form__form-group half-width">
+                        <label for="job-title">Job title</label>
+                        <input type="text" id="job-title" name="contact[job_title]">
+                    </div>
+                    <div class="wholesale-page-contact-form__form-group half-width">
+                        <label for="phone">Phone number <span class="required">*</span></label>
+                        <input type="tel" id="phone" name="contact[phone]" required>
+                    </div>
+                    <div class="wholesale-page-contact-form__form-group full-width">
+                        <label for="email">Email <span class="required">*</span></label>
+                        <input type="email" id="email" name="contact[email]" required>
+                    </div>
+                    <div class="wholesale-page-contact-form__form-group full-width">
+                        <label for="website">Website URL</label>
+                        <input type="url" id="website" name="contact[website]">
+                    </div>
+                    <div class="wholesale-page-contact-form__form-group half-width">
+                        <label for="revenue">Annual revenue</label>
+                        <input type="text" id="revenue" name="contact[revenue]">
+                    </div>
+                    <div class="wholesale-page-contact-form__form-group half-width">
+                        <label for="locations">Number of Locations</label>
+                        <input type="number" id="locations" name="contact[locations]">
+                    </div>
+                    <div class="wholesale-page-contact-form__form-group full-width">
+                        <label>How did you hear about us? <span class="required">*</span></label>
+                        <div class="checkbox-group">
+                            <label><input type="checkbox" name="contact[source]" value="Referral"> Referral</label>
+                            <label><input type="checkbox" name="contact[source]" value="Social Media"> Social
+                                Media</label>
+                            <label><input type="checkbox" name="contact[source]" value="Review"> Review</label>
+                            <label><input type="checkbox" name="contact[source]" value="Company Outreach"> Company
+                                Outreach</label>
+                            <label><input type="checkbox" name="contact[source]" value="Search Engine"> Search
+                                Engine</label>
+                            <label><input type="checkbox" name="contact[source]" value="Champs Eblast"> Champs
+                                Eblast</label>
+                            <label><input type="checkbox" name="contact[source]" value="Instagram"> Instagram</label>
+                            <!-- Add more checkboxes as needed -->
+                        </div>
+                    </div>
+                    <button type="submit" class="wholesale-page-contact-form__form-button">Submit</button>
+                </div>
+                {%- endform -%}
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="{{ 'wholesale-page-main-section.js' | asset_url }}" defer></script>

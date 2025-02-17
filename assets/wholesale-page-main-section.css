@@ -185,99 +185,6 @@
 }
 
 
-/* Updated Popup Styles */
-.wholesale-popup {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh;
-    background-color: rgba(0, 0, 0, 0.5);
-    display: none;
-    justify-content: center;
-    align-items: center;
-    z-index: 9999;
-}
-
-.wholesale-popup.active {
-    display: flex;
-}
-
-.wholesale-popup__content {
-    background: #fff;
-    padding: 40px;
-    border-radius: 8px;
-    position: relative;
-    width: 100%;
-    max-width: 800px;
-    max-height: 90vh;
-    overflow-y: auto;
-    margin: 50px 20px 20px 20px;
-    /* Hide default scrollbar for webkit browsers */
-    &::-webkit-scrollbar {
-        width: 0;
-        background: transparent;
-    }
-    
-    /* For Firefox */
-    scrollbar-width: none;
-    
-    /* For IE and Edge */
-    -ms-overflow-style: none;
-}
-
-/* Adjust form styles inside popup */
-.wholesale-popup .wholesale-page-contact-form {
-    padding: 0;
-}
-
-.wholesale-popup .wholesale-page-contact-form__container {
-    padding: 0;
-}
-
-/* Close button styling */
-.wholesale-popup__close {
-    position: absolute;
-    right: 15px;
-    top: 15px;
-    width: 30px;
-    height: 30px;
-    cursor: pointer;
-    background: none;
-    border: none;
-    padding: 0;
-}
-
-.wholesale-popup__close::before,
-.wholesale-popup__close::after {
-    content: '';
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    width: 20px;
-    height: 2px;
-    background-color: #333;
-}
-
-.wholesale-popup__close::before {
-    transform: translate(-50%, -50%) rotate(45deg);
-}
-
-.wholesale-popup__close::after {
-    transform: translate(-50%, -50%) rotate(-45deg);
-}
-
-/* Prevent body scroll when popup is open */
-body.popup-open {
-    overflow: hidden;
-}
-
-@media (max-width: 768px) {
-    .wholesale-popup__content {
-        margin: 15px;
-        padding: 25px;
-    }
-}
 
 /* Optional: Add custom styling for placeholder text */
 .wholesale-page-contact-form__form-group input::placeholder {
@@ -323,7 +230,5 @@ body.popup-open {
         line-height: 1.2;
         margin-bottom: 15px;
     }
-    
-    
 }
 

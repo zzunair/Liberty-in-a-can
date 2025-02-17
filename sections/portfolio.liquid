@@ -126,6 +126,9 @@
   </div>
 </div>
 
+{%- render 'contact-form-popup' -%}
+
+
 {% schema %}
 {
   "name": "t:sections.portfolio.name",
@@ -561,6 +564,11 @@
           "id": "text",
           "label": "t:sections.global.settings.text.label",
           "default": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
+        },
+        {
+          "type": "text",
+          "id": "button_text",
+          "label": "Button Text"
         },
         {
           "type": "header",
