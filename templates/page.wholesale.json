@@ -203,14 +203,14 @@
           "type": "faq",
           "settings": {
             "question": "Do you ship to all 50 states?",
-            "answer": "We ship to all of the continental USA, with Alaska and Hawaii not being eligible to carry our products."
+            "answer": "Almost! We currently ship everywhere in the continental US except the following states: Alaska, District of Columbia, Idaho, Kansas, Washington"
           }
         },
         "faq_ng7XjK": {
           "type": "faq",
           "settings": {
             "question": "Do you offer discounts for large orders?",
-            "answer": "Please contact the sales department at email.com comfor information."
+            "answer": "Please contact the sales department at info@drinklic.com for information."
           }
         }
       },
