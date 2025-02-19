@@ -14,6 +14,7 @@
       "disabled": true,
       "settings": {
         "heading_size": "title-xl",
+        "heading_alignment": "text-left",
         "heading_tag": "h1",
         "text_size": "text-base",
         "padding_top": 72,
@@ -39,8 +40,11 @@
         "text": {
           "type": "text",
           "settings": {
-            "text": "<p>Welcome to our FAQ, we are so happy to have you here and as a client. <br\/>We have tried to answer the most common questions.</p>",
+            "text": "<p>Welcome to our FAQ, we are so happy to have you here and as a client. <br/>We have tried to answer the most common questions.</p>",
             "text_size": "subtext-md",
+            "text_max_size": 32,
+            "text_font": "body",
+            "secondary_color": false,
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
@@ -56,11 +60,13 @@
         "heading": "",
         "heading_size": "title-md",
         "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_width": "small",
         "heading_tag": "h2",
         "subheading": "",
         "description": "",
         "button_label": "",
         "button_link": "",
+        "button_external": false,
         "button_icon": true,
         "highlighted_text": "none",
         "highlighted_scribble": "circle",
@@ -91,11 +97,11 @@
     "faq": {
       "type": "faq",
       "blocks": {
-        "rich-text-1": {
+        "rich-text-3": {
           "type": "rich-text",
           "settings": {
-            "heading": "Shipping & Returns",
-            "text": "<p>Below are some common questions about shipping, returns, and exchanges</p>",
+            "heading": "Products",
+            "text": "<p>Below are some common questions about our products</p>",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
@@ -103,8 +109,8 @@
         "question-1": {
           "type": "question",
           "settings": {
-            "title": "Frequently asked question",
-            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.</p>",
+            "title": "How many should I drink in one sitting? ",
+            "text": "<p>Depending on your tolerance, we’ve found that one will relax you while a second will create a nice buzz. However, everyone is different! We recommend starting slow until you find your perfect dosage.</p>",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
@@ -112,8 +118,8 @@
         "question-2": {
           "type": "question",
           "settings": {
-            "title": "Frequently asked question",
-            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.</p>",
+            "title": "Will I get anxious? ",
+            "text": "<p>Our unique premium input of Live resin goes beyond standard THC distillate - the combination of terpenes and minor cannabinoids  with THC create a synergistic effect, creating a blissful high for everyone to enjoy.</p>",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
@@ -121,8 +127,8 @@
         "question-4": {
           "type": "question",
           "settings": {
-            "title": "Frequently asked question",
-            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.</p>",
+            "title": "How will Liberty make me feel? ",
+            "text": "<p>Liberty In a Can offers an unmatched drinking experience. You’ll first feel a quick, energized elevation followed by a sensation of comfort and bliss. Liberty is alcohol-free but said to feel similar to a glass of wine or beer: light, buzzy, and sociable without feeling out of control. The drinking experience you’ve always wanted.</p>",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
@@ -130,10 +136,46 @@
         "question-5": {
           "type": "question",
           "settings": {
-            "title": "Frequently asked question",
-            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.</p>",
+            "title": "How many seltzers should I have? ",
+            "text": "<p>Liberty is intended to be a sessionable drink, meaning you can control and build your buzz. But your limit is unique to you.</p><ul><li><strong>New(ish) to cannabis?</strong> We typically recommend starting slow and low. Try one Liberty In a Can, wait 10 minutes, and see how you feel. </li><li><strong>Slightly more cannabis experience?</strong> We suggest opting for our double strength 10mg dose). </li><li><strong>Cannabis veterans? </strong>Pair Liberty with a pre-roll or your favorite way to co-consume. </li></ul>",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
+          }
+        },
+        "question-8": {
+          "type": "question",
+          "settings": {
+            "title": "What is Live Resin? ",
+            "text": "<p>At Liberty, quality is our top priority. That's why we use live resin in our beverages, guaranteeing the best flavors and effects that cannabis has to offer. </p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "question-9": {
+          "type": "question",
+          "settings": {
+            "title": "How are America’s THC Seltzers different from traditional edibles? ",
+            "text": "<p>Traditional edibles (like gummies or chocolate bars) typically take anywhere from 45 minutes to two-plus hours to kick in. Why so long? </p><p>THC-infused beverages are infused with a water-soluble formulation, meaning the cannabinoids are absorbed through your mouth then your tongue then the digestive tract. The immediate absorption in your mouth means you can feel the effects 5 to 15 minutes later. Consumers new to cannabis might feel effects more immediately or intensely. </p><p> </p><p>The perk of a faster onset? You’ll quickly know how you feel so you’re in control of your buzz. Take a few sips, wait 10-15 minutes, and adjust. We allow all consumers – new or experienced – the ability to confidently control their buzz.  </p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "question-10": {
+          "type": "question",
+          "settings": {
+            "title": "How is this legal? ",
+            "text": "<p>Our THC seltzers are fully compliant and federally legal under the 2018 Farm Bill. We use naturally extracted Delta-9 THC derived from hemp which accounts for no more than 0.3% of the net weight of the product. Compliant and responsibly crafted for your enjoyment.</p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "question-11": {
+          "type": "question",
+          "settings": {
+            "title": "Is it legal everywhere? ",
+            "text": "<p>Almost! We currently ship everywhere in the continental US <strong>except the following states</strong><em>:</em> Alaska, District of Columbia, Idaho, Kansas, Washington.</p>",
+            "highlighted_text": "text",
+            "highlighted_scribble": "sketch-underline"
           }
         },
         "rich-text-2": {
@@ -145,65 +187,11 @@
             "highlighted_scribble": "circle"
           }
         },
-        "question-6": {
-          "type": "question",
-          "settings": {
-            "title": "Frequently asked question",
-            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.</p>",
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        },
-        "question-7": {
-          "type": "question",
-          "settings": {
-            "title": "Frequently asked question",
-            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.</p>",
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        },
-        "question-8": {
-          "type": "question",
-          "settings": {
-            "title": "Frequently asked question",
-            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.</p>",
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        },
-        "question-9": {
-          "type": "question",
-          "settings": {
-            "title": "Frequently asked question",
-            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.</p>",
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        },
-        "rich-text-3": {
+        "rich-text-1": {
           "type": "rich-text",
           "settings": {
-            "heading": "Products",
-            "text": "<p>Below are some common questions about our products</p>",
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        },
-        "question-10": {
-          "type": "question",
-          "settings": {
-            "title": "Frequently asked question",
-            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.</p>",
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        },
-        "question-11": {
-          "type": "question",
-          "settings": {
-            "title": "Frequently asked question",
-            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.</p>",
+            "heading": "Shipping & Returns",
+            "text": "<p>Below are some common questions about shipping, returns, and exchanges</p>",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
@@ -211,8 +199,17 @@
         "question-12": {
           "type": "question",
           "settings": {
-            "title": "Frequently asked question",
-            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.</p>",
+            "title": "How long does it typically take to prepare orders for shipment and deliver them?",
+            "text": "<p>It typically takes 1-2 business days to prepare orders for shipment. After entering the shipping provider’s network, it can take up to 7 business days for shipment to be delivered. </p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "question_WgxBmi": {
+          "type": "question",
+          "settings": {
+            "title": "What should customers do if an order is damaged upon arrival?",
+            "text": "<p>If an order arrives damaged, please take clear photos showing the damage, and send the photos & corresponding order number to <a href=\"mailto:info@drinklic.com\"><strong>info@drinklic.com</strong></a> so a replacement may be granted.  Customers have to contact <a href=\"mailto:info@drinklic.com\"><strong>info@drinklic.com</strong></a> within 48 hours of shipment delivery regarding damaged or missing goods.</p>",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
@@ -230,20 +227,19 @@
         }
       },
       "block_order": [
-        "rich-text-1",
+        "rich-text-3",
         "question-1",
         "question-2",
         "question-4",
         "question-5",
-        "rich-text-2",
-        "question-6",
-        "question-7",
         "question-8",
         "question-9",
-        "rich-text-3",
         "question-10",
         "question-11",
+        "rich-text-2",
+        "rich-text-1",
         "question-12",
+        "question_WgxBmi",
         "contact"
       ],
       "settings": {
@@ -256,17 +252,20 @@
         "description": "",
         "button_label": "",
         "button_link": "",
+        "button_external": false,
         "button_icon": true,
         "highlighted_text": "none",
         "highlighted_scribble": "circle",
         "color_text": "",
         "color_background": "",
         "gradient_background": "",
-        "color_highlight": "",
+        "color_highlight": "#e11d48",
         "gradient_highlight": "",
         "color_button_text": "",
         "color_button_background": "",
         "color_button_gradient": "",
+        "color_overlay": "#ffffff",
+        "overlay_opacity": 4,
         "padding_top": 0,
         "padding_bottom": 120,
         "divider": false,
