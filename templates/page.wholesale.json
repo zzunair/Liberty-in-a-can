@@ -77,8 +77,8 @@
         "profile_KVWtw6": {
           "type": "profile",
           "settings": {
-            "image": "shopify://shop_images/silhouette-of-people-holding-surfboards-on-beach.jpg",
-            "image_mobile": "shopify://shop_images/beach-surf-on-stones.jpg",
+            "image": "shopify://shop_images/IMG_6984.jpg",
+            "image_mobile": "shopify://shop_images/IMG_6984.jpg",
             "heading": "APPLY",
             "text": "<p>Looking to rock with Liberty in a Can as a wholesaler? Apply now to score your own account.</p>",
             "button_text": "APPLY FOR AN ACCOUNT",
@@ -89,7 +89,8 @@
         "profile_MWHi9b": {
           "type": "profile",
           "settings": {
-            "image": "shopify://shop_images/beach-surf-on-stones.jpg",
+            "image": "shopify://shop_images/IMG_6239.jpg",
+            "image_mobile": "shopify://shop_images/IMG_6239.jpg",
             "heading": "LOGIN",
             "text": "<p>Wholesalers, it's time to use your magic words and access your account!</p><h4><a href=\"/pages/wholesale\" title=\"Wholesale\"><strong>LOGIN TO YOUR ACCOUNT</strong></a></h4>",
             "button_text": "",
