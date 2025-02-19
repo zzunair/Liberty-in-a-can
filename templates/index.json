@@ -1278,6 +1278,60 @@
       "settings": {
         "title": "Cannabis FAQS"
       }
+    },
+    "newsletter_RxDNzw": {
+      "type": "newsletter",
+      "blocks": {
+        "heading_9R6cQW": {
+          "type": "heading",
+          "settings": {
+            "heading": "SIGN UP AND GET <em>20% OFF</em> YOUR FIRST ORDER",
+            "heading_size": "title-lg tracking-heading",
+            "heading_tag": "h2",
+            "highlighted_text": "scribble",
+            "highlighted_scribble": "basic-underline"
+          }
+        },
+        "text_d7de8W": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Subscribe to our newsletter and be the first to hear about our new arrivals, special promotions and online exclusives.</p>",
+            "text_size": "subtext-md",
+            "text_max_size": 34,
+            "text_font": "body",
+            "secondary_color": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "form_cx9RNQ": {
+          "type": "form",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "heading_9R6cQW",
+        "text_d7de8W",
+        "form_cx9RNQ"
+      ],
+      "settings": {
+        "content_width": "large",
+        "text_alignment": "center",
+        "text_alignment_mobile": "center",
+        "color_text": "#fcfbe7",
+        "color_background": "#0d253f",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "#e11d48",
+        "color_button_background": "#fcfbe7",
+        "color_button_gradient": "",
+        "padding_top": 32,
+        "padding_bottom": 32,
+        "divider": false,
+        "narrow": true,
+        "rounded": false
+      }
     }
   },
   "order": [
@@ -1301,6 +1355,7 @@
     "scrolling-text-2",
     "blog-posts-collage",
     "173947741544d5c56e",
-    "review_blocks_RdF6G7"
+    "review_blocks_RdF6G7",
+    "newsletter_RxDNzw"
   ]
 }
