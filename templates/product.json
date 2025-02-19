@@ -133,9 +133,29 @@
         "collapsible_tab_aWihKd": {
           "type": "collapsible_tab",
           "settings": {
-            "icon": "lightning",
-            "heading": "What Is THC?",
-            "content": "<p>Use collapsible tabs for more detailed information that will help customers make a purchasing decision.</p><p>Ex: Shipping and return policies, size guides, and other common questions.</p>",
+            "icon": "organic",
+            "heading": "New(Ish) to cannabis?",
+            "content": "<p>We typically recommend starting slow and low. Try one Liberty In a Can, wait 10 minutes, and see how you feel.</p>",
+            "page": "",
+            "liquid": ""
+          }
+        },
+        "collapsible_tab_DmMCiG": {
+          "type": "collapsible_tab",
+          "settings": {
+            "icon": "star",
+            "heading": "Slightly more cannabis experience?",
+            "content": "<p>We suggest opting for our double strength 10mg dose).</p>",
+            "page": "",
+            "liquid": ""
+          }
+        },
+        "collapsible_tab_MqrNUz": {
+          "type": "collapsible_tab",
+          "settings": {
+            "icon": "trophy",
+            "heading": "Cannabis veteran?",
+            "content": "<p>Pair Liberty with a pre-roll or your favorite way to co-consume.</p>",
             "page": "",
             "liquid": ""
           }
@@ -155,7 +175,9 @@
         "share",
         "complementary",
         "sticky_buy_button",
-        "collapsible_tab_aWihKd"
+        "collapsible_tab_aWihKd",
+        "collapsible_tab_DmMCiG",
+        "collapsible_tab_MqrNUz"
       ],
       "settings": {
         "enable_sticky_info": true,
@@ -185,8 +207,8 @@
           "settings": {
             "icon": "none",
             "icon_width": 24,
-            "heading": "Collapsible row 1",
-            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>",
+            "heading": "How many should I drink in one sitting? ",
+            "content": "<p>Depending on your tolerance, we’ve found that one will relax you while a second will create a nice buzz. However, everyone is different! We recommend starting slow until you find your perfect dosage.</p>",
             "metafields": ""
           }
         },
@@ -195,8 +217,8 @@
           "settings": {
             "icon": "none",
             "icon_width": 24,
-            "heading": "Collapsible row 2",
-            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>",
+            "heading": "Will I get anxious?",
+            "content": "<p>Our unique premium input of Live resin goes beyond standard THC distillate - the combination of terpenes and minor cannabinoids  with THC create a synergistic effect, creating a blissful high for everyone to enjoy.</p>",
             "metafields": ""
           }
         },
@@ -205,8 +227,8 @@
           "settings": {
             "icon": "none",
             "icon_width": 24,
-            "heading": "Collapsible row 3",
-            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>",
+            "heading": "How will Liberty make me feel?",
+            "content": "<p>Liberty In a Can offers an unmatched drinking experience. You’ll first feel a quick, energized elevation followed by a sensation of comfort and bliss. Liberty is alcohol-free but said to feel similar to a glass of wine or beer: light, buzzy, and sociable without feeling out of control. The drinking experience you’ve always wanted.</p>",
             "metafields": ""
           }
         },
@@ -215,8 +237,8 @@
           "settings": {
             "icon": "none",
             "icon_width": 24,
-            "heading": "Collapsible row 4",
-            "content": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>",
+            "heading": "How many seltzers should I have? ",
+            "content": "<p>Liberty is intended to be a sessionable drink, meaning you can control and build your buzz. But your limit is unique to you. With a typical onset of just 10-15 minutes (and the potential to last two-plus hours), we recommend sipping one Liberty and building from there.</p>",
             "metafields": ""
           }
         }
@@ -230,9 +252,9 @@
       "disabled": true,
       "settings": {
         "style": "with-border",
-        "open_first_row": true,
+        "open_first_row": false,
         "specifications_heading": "",
-        "heading": "Product details",
+        "heading": "FREQUENTLY ASKED QUESTIONS",
         "heading_size": "title-md",
         "heading_alignment": "text-left md:items-end md:flex-row",
         "heading_tag": "h2",
@@ -265,8 +287,8 @@
         "question-1": {
           "type": "question",
           "settings": {
-            "title": "Frequently asked question",
-            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.</p>",
+            "title": "How many should I drink In one sitting?",
+            "text": "<p>Depending on your tolerance, we’ve found that one will relax you while a second will create a nice buzz. However, everyone is different! We recommend starting slow until you find your perfect dosage.</p>",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
@@ -274,8 +296,8 @@
         "question-2": {
           "type": "question",
           "settings": {
-            "title": "Frequently asked question",
-            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.</p>",
+            "title": "Will I get anxious?",
+            "text": "<p>Our unique premium input of Live resin goes beyond standard THC distillate - the combination of terpenes and minor cannabinoids  with THC create a synergistic effect, creating a blissful high for everyone to enjoy.</p>",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
@@ -283,8 +305,8 @@
         "question-3": {
           "type": "question",
           "settings": {
-            "title": "Frequently asked question",
-            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.</p>",
+            "title": "How will It make me feel?",
+            "text": "<p>Liberty In a Can offers an unmatched drinking experience. You’ll first feel a quick, energized elevation followed by a sensation of comfort and bliss. Liberty is alcohol-free but said to feel similar to a glass of wine or beer: light, buzzy, and sociable without feeling out of control. The drinking experience you’ve always wanted.</p>",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
@@ -292,8 +314,8 @@
         "question-4": {
           "type": "question",
           "settings": {
-            "title": "Frequently asked question",
-            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.</p>",
+            "title": "How many seltzers should I have?",
+            "text": "<p>Liberty is intended to be a sessionable drink, meaning you can control and build your buzz. But your limit is unique to you. With a typical onset of just 10-15 minutes (and the potential to last two-plus hours), we recommend sipping one Liberty and building from there.</p>",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
@@ -301,8 +323,17 @@
         "question-5": {
           "type": "question",
           "settings": {
-            "title": "Frequently asked question",
-            "text": "<p>Use this text to answer questions in as much detail as possible for your customers.</p>",
+            "title": "How Is this legal?",
+            "text": "<p>Our THC seltzers are fully compliant and federally legal under the 2018 Farm Bill. We use naturally extracted Delta-9 THC derived from hemp which accounts for no more than 0.3% of the net weight of the product. Compliant and responsibly crafted for your enjoyment</p>",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "question_rTVR8V": {
+          "type": "question",
+          "settings": {
+            "title": "Is It legal everywhere?",
+            "text": "<p>Almost! We currently ship everywhere in the continental <strong>US except the following states:</strong> Alaska, District of Columbia, Idaho, Kansas, Washington</p>",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
@@ -325,6 +356,7 @@
         "question-3",
         "question-4",
         "question-5",
+        "question_rTVR8V",
         "contact"
       ],
       "settings": {
@@ -334,7 +366,7 @@
         "heading_alignment": "text-left md:items-end md:flex-row",
         "heading_tag": "h2",
         "subheading": "",
-        "description": "<p>Please read our <a href=\"#\" title=\"FAQ's\">FAQs</a> page to find out more.</p>",
+        "description": "<p>Please read our <a href=\"/pages/faqs\" title=\"FAQs\">FAQs</a> page to find out more.</p>",
         "button_label": "",
         "button_link": "",
         "button_external": false,
