@@ -56,7 +56,7 @@
       ],
       "settings": {
         "transparent_header": true,
-        "image": "shopify://shop_images/two-people-surfing-in-blue-choppy-water.jpg",
+        "image": "shopify://shop_images/IMG_8066.jpg",
         "image_height": "750px",
         "content_width": "large",
         "content_position": "md:items-center md:justify-start",
@@ -109,8 +109,8 @@
         "button": {
           "type": "button",
           "settings": {
-            "button_label": "Button label",
-            "button_link": "",
+            "button_label": "Shop Now",
+            "button_link": "shopify://collections/beverages",
             "button_style": "secondary",
             "button_size": "md",
             "button_external": false,
@@ -124,8 +124,8 @@
         "button"
       ],
       "settings": {
-        "image": "shopify://shop_images/person-carries-their-blue-and-white-surfboard-to-the-ocean.jpg",
-        "image_2": "shopify://shop_images/DonovanStraussHeroCard_Liberty-600x388.webp",
+        "image": "shopify://shop_images/20250111_001044212_iOS.heic",
+        "image_2": "shopify://shop_images/IMG_2204.jpg",
         "image_ratio": "portrait",
         "image_width": "medium",
         "layout": "image_first",
@@ -155,6 +155,7 @@
           "settings": {
             "heading": "Example title",
             "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<br/><br/>Share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store. Share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>",
+            "button_text": "",
             "color_text": "#ffffff",
             "color_background": "#000000"
           }
@@ -164,6 +165,7 @@
           "settings": {
             "heading": "Example title",
             "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<br/><br/>Share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store. Share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>",
+            "button_text": "",
             "color_text": "#ffffff",
             "color_background": "#000000"
           }
@@ -173,6 +175,7 @@
           "settings": {
             "heading": "Example title",
             "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.<br/><br/>Share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store. Share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>",
+            "button_text": "",
             "color_text": "#ffffff",
             "color_background": "#000000"
           }
@@ -268,6 +271,87 @@
         "mobile_height": 28,
         "color_background": "",
         "gradient_background": ""
+      }
+    },
+    "images_with_text_overlay_LhcRj4": {
+      "type": "images-with-text-overlay",
+      "blocks": {
+        "subheading_HepeX8": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "Liberty In A Can™ Hits the Track",
+            "subheading_size": "subtitle-md",
+            "secondary_color": true
+          }
+        },
+        "heading_AnfxyL": {
+          "type": "heading",
+          "settings": {
+            "heading": "<strong>FUELED BY FREEDOM</strong>",
+            "heading_size": "title-lg tracking-heading",
+            "heading_tag": "h2",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "text_DVTCHt": {
+          "type": "text",
+          "settings": {
+            "text": "<p>rom high-speed waters to the open road, Liberty In A Can™ is bringing our passion for adventure to the world of motorsports. Join us as we embrace the thrill, energy, and competitive spirit that drives champions forward.</p>",
+            "text_size": "subtext-md",
+            "text_max_size": 32,
+            "text_font": "body",
+            "secondary_color": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "button_iqgXyx": {
+          "type": "button",
+          "settings": {
+            "button_label": "Learn More",
+            "button_link": "shopify://blogs/news/liberty-in-a-can™-makes-a-splash-at-the-madison-regatta-a-resounding-success",
+            "button_style": "primary",
+            "button_size": "md",
+            "button_external": false,
+            "button_icon": true
+          }
+        }
+      },
+      "block_order": [
+        "subheading_HepeX8",
+        "heading_AnfxyL",
+        "text_DVTCHt",
+        "button_iqgXyx"
+      ],
+      "settings": {
+        "transparent_header": false,
+        "image_height": "500px",
+        "content_width": "small",
+        "content_position": "md:items-center md:justify-start",
+        "text_alignment": "left",
+        "image_1": "shopify://shop_images/IMG_3522.jpg",
+        "image_2": "shopify://shop_images/20240604_085906000_iOS.heic",
+        "image_3": "shopify://shop_images/20240803_223522545_iOS.heic",
+        "image_4": "shopify://shop_images/6.8_51_Donovan-12.jpg",
+        "image_5": "shopify://shop_images/20240714_010446840_iOS.heic",
+        "image_height_mobile": "auto",
+        "content_position_mobile": "items-end justify-start",
+        "text_alignment_mobile": "left",
+        "color_text": "#ffffff",
+        "color_background": "#0d253f",
+        "gradient_background": "",
+        "color_highlight": "#e11d48",
+        "gradient_highlight": "linear-gradient(320deg, rgba(56, 78, 197, 1) 16%, rgba(203, 68, 194, 1) 52%, rgba(255, 201, 104, 1) 87%)",
+        "color_button_text": "#fcfbe7",
+        "color_button_background": "#0b61cd",
+        "color_button_gradient": "",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "divider": false,
+        "full_width": true,
+        "rounded": false,
+        "enable_parallax": true
       }
     },
     "testimonials": {
@@ -414,6 +498,7 @@
         "content-4",
         "content-5"
       ],
+      "disabled": true,
       "settings": {
         "image_ratio": "portrait",
         "image_ratio_mobile": "wide",
@@ -605,6 +690,7 @@
     "portfolio",
     "scrolling-text",
     "empty_space_n7g9J4",
+    "images_with_text_overlay_LhcRj4",
     "testimonials",
     "timeline",
     "rich-text",
