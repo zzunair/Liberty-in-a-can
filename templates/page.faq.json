@@ -178,15 +178,6 @@
             "highlighted_scribble": "sketch-underline"
           }
         },
-        "rich-text-2": {
-          "type": "rich-text",
-          "settings": {
-            "heading": "Orders",
-            "text": "<p>Below are some of are common questions about orders</p>",
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        },
         "rich-text-1": {
           "type": "rich-text",
           "settings": {
@@ -236,7 +227,6 @@
         "question-9",
         "question-10",
         "question-11",
-        "rich-text-2",
         "rich-text-1",
         "question-12",
         "question_WgxBmi",
