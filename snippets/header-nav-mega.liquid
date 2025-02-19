@@ -11,27 +11,41 @@
       <li class="mega-menu__item mega-menu__item--nav mega-menu__item--{{ block.settings.menu_width }}{% unless show_promotions %} mega-menu__item--full{% endunless %} opacity-0 w-full grid">
         <ul class="mega-menu__nav{% if link.links.size > 6 %} mega-menu__nav--more{% endif %}{% if show_promotions %} grid{% else %} flex flex-wrap{% endif %}">
           {%- for childlink in link.links -%}
-            <li class="opacity-0">
-              {%- if block.settings.show_menu_image and childlink.type == 'collection_link' and childlink.object.image != blank -%}
-                <a href="{{ childlink.url }}" class="media media--wide block relative overflow-hidden">
-                  {{- childlink.object.image | image_url: width: childlink.object.image.width | image_tag: loading: 'lazy', widths: '180,360,540,720,900,1080', is: 'lazy-image' -}}
+            {%- liquid
+              assign show_menu_item = true
+              assign childlink_title_handle = childlink.title | downcase | handle
+              
+              if childlink_title_handle == 'wholesale'
+                if customer and customer.tags contains 'wholesale-customer'
+                  assign show_menu_item = true
+                else
+                  assign show_menu_item = false
+                endif
+              endif
+            -%}
+            {%- if show_menu_item -%}
+              <li class="opacity-0">
+                {%- if block.settings.show_menu_image and childlink.type == 'collection_link' and childlink.object.image != blank -%}
+                  <a href="{{ childlink.url }}" class="media media--wide block relative overflow-hidden">
+                    {{- childlink.object.image | image_url: width: childlink.object.image.width | image_tag: loading: 'lazy', widths: '180,360,540,720,900,1080', is: 'lazy-image' -}}
+                  </a>
+                {%- endif -%}
+                <a href="{{ childlink.url }}" class="{% if block.settings.menu_width != 'small' %}heading {% endif %}reversed-link text-base-xl leading-tight tracking-tight{% if childlink.current %} is-active{% endif %}"{% if childlink.current %} aria-current="page"{% endif %}>
+                  {{- childlink.title | escape -}}
                 </a>
-              {%- endif -%}
-              <a href="{{ childlink.url }}" class="{% if block.settings.menu_width != 'small' %}heading {% endif %}reversed-link text-base-xl leading-tight tracking-tight{% if childlink.current %} is-active{% endif %}"{% if childlink.current %} aria-current="page"{% endif %}>
-                {{- childlink.title | escape -}}
-              </a>
-              {%- if childlink.links != blank -%}
-                <ul>
-                  {%- for grandchildlink in childlink.links -%}
-                    <li>
-                      <a href="{{ grandchildlink.url }}" class="{% if block.settings.menu_width != 'small' %}reversed-link text-base xl:text-lg{% else %}heading reversed-link text-xl-3xl tracking-tighter leading-tight{% endif %}{% if grandchildlink.current %} is-active{% endif %}"{% if grandchildlink.current %} aria-current="page"{% endif %}>
-                        {{- grandchildlink.title | escape -}}
-                      </a>
-                    </li>
-                  {%- endfor -%}
-                </ul>
-              {%- endif -%}
-            </li>
+                {%- if childlink.links != blank -%}
+                  <ul>
+                    {%- for grandchildlink in childlink.links -%}
+                      <li>
+                        <a href="{{ grandchildlink.url }}" class="{% if block.settings.menu_width != 'small' %}reversed-link text-base xl:text-lg{% else %}heading reversed-link text-xl-3xl tracking-tighter leading-tight{% endif %}{% if grandchildlink.current %} is-active{% endif %}"{% if grandchildlink.current %} aria-current="page"{% endif %}>
+                          {{- grandchildlink.title | escape -}}
+                        </a>
+                      </li>
+                    {%- endfor -%}
+                  </ul>
+                {%- endif -%}
+              </li>
+            {%- endif -%}
           {%- endfor -%}
         </ul>
         {%- if block.settings.button_label != blank -%}
