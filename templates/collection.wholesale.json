@@ -64,7 +64,7 @@
         "subcollections": {
           "type": "subcollections",
           "settings": {
-            "menu": "subcollections",
+            "menu": "",
             "per_row": 5,
             "show_count": true
           }
@@ -73,12 +73,14 @@
           "type": "promotion",
           "settings": {
             "position": 8,
-            "image": "",
-            "icon": "",
+            "column_size": "1",
             "heading": "Example heading",
             "content": "<p>Share information about your brand with your customers.</p>",
             "button_label": "Shop now",
             "button_link": "",
+            "button_style": "secondary",
+            "button_external": false,
+            "button_icon": true,
             "content_position": "md:items-center",
             "text_alignment": "center",
             "content_position_mobile": "items-center",
@@ -96,11 +98,12 @@
         "subcollections",
         "promotion"
       ],
+      "disabled": true,
       "settings": {
         "products_per_page": 11,
-        "pagination": "paginated",
         "columns": 4,
         "columns_mobile": "2",
+        "pagination": "paginated",
         "enable_filtering": true,
         "filter_collapsed": false,
         "filter_type": "drawer",
@@ -119,7 +122,6 @@
         "image": {
           "type": "image",
           "settings": {
-            "image": "",
             "image_width": "custom",
             "image_max_width": 50,
             "image_max_width_mobile": 50
@@ -170,17 +172,13 @@
         "heading",
         "text"
       ],
+      "disabled": true,
       "settings": {
         "transparent_header": false,
         "image_height": "650px",
         "content_width": "small",
         "content_position": "md:items-center md:justify-start",
         "text_alignment": "left",
-        "image_1": "",
-        "image_2": "",
-        "image_3": "",
-        "image_4": "",
-        "image_5": "",
         "image_height_mobile": "500px",
         "content_position_mobile": "items-center justify-start",
         "text_alignment_mobile": "left",
@@ -202,6 +200,7 @@
     },
     "recently-viewed": {
       "type": "recently-viewed",
+      "disabled": true,
       "settings": {
         "product_limit": 6,
         "columns": 4,
@@ -230,10 +229,30 @@
         "full_width": false,
         "rounded": true
       }
+    },
+    "wholesale_main_collection_RrAbh4": {
+      "type": "wholesale-main-collection",
+      "settings": {
+        "products_per_page": 16,
+        "columns": 3,
+        "columns_mobile": "2",
+        "pagination": "paginated",
+        "enable_filtering": true,
+        "filter_collapsed": false,
+        "filter_type": "sidebar",
+        "filter_color_swatches": false,
+        "enable_sorting": true,
+        "padding_top": 36,
+        "padding_bottom": 36,
+        "divider": false,
+        "full_width": false,
+        "rounded": false
+      }
     }
   },
   "order": [
     "main-collection-banner",
+    "wholesale_main_collection_RrAbh4",
     "main-collection",
     "images-with-text-overlay",
     "recently-viewed"
