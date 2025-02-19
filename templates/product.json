@@ -43,22 +43,6 @@
             "show_rating": true
           }
         },
-        "description": {
-          "type": "description",
-          "settings": {
-            "text_size": "text-base"
-          }
-        },
-        "countdown": {
-          "type": "countdown",
-          "settings": {
-            "heading": "Hurry up!",
-            "subheading": "Sale end in:",
-            "color_text": "#e11d48",
-            "color_background": "#fff1f2",
-            "gradient_background": ""
-          }
-        },
         "variant_picker": {
           "type": "variant_picker",
           "settings": {
@@ -67,15 +51,6 @@
             "enable_color_swatches": true,
             "color_swatch_type": "color",
             "size_chart": ""
-          }
-        },
-        "inventory": {
-          "type": "inventory",
-          "settings": {
-            "inventory_threshold": 15,
-            "show_inventory_transfer": true,
-            "show_inventory_quantity": "low",
-            "color_scheme": "accent-1"
           }
         },
         "product_variations_4h9aYG": {
@@ -92,6 +67,10 @@
             "size_chart": ""
           }
         },
+        "appstle_subscription_appstle_subscription_product_page_widget_kTUN3N": {
+          "type": "shopify://apps/appstle-subscription/blocks/appstle-subscription-product-page-widget/fe257d39-6f88-4f35-ab08-bd437e3aa94e",
+          "settings": {}
+        },
         "buy_buttons": {
           "type": "buy_buttons",
           "settings": {
@@ -101,6 +80,31 @@
             "enable_back_in_stock": false,
             "show_back_in_stock_name": false,
             "show_back_in_stock_phone": false
+          }
+        },
+        "description": {
+          "type": "description",
+          "settings": {
+            "text_size": "text-base"
+          }
+        },
+        "countdown": {
+          "type": "countdown",
+          "settings": {
+            "heading": "Hurry up!",
+            "subheading": "Sale end in:",
+            "color_text": "#e11d48",
+            "color_background": "#fff1f2",
+            "gradient_background": ""
+          }
+        },
+        "inventory": {
+          "type": "inventory",
+          "settings": {
+            "inventory_threshold": 15,
+            "show_inventory_transfer": true,
+            "show_inventory_quantity": "low",
+            "color_scheme": "accent-1"
           }
         },
         "pickup_availability": {
@@ -165,12 +169,13 @@
         "breadcrumb_G3FnV6",
         "vendor",
         "title",
+        "variant_picker",
+        "product_variations_4h9aYG",
+        "appstle_subscription_appstle_subscription_product_page_widget_kTUN3N",
+        "buy_buttons",
         "description",
         "countdown",
-        "variant_picker",
         "inventory",
-        "product_variations_4h9aYG",
-        "buy_buttons",
         "pickup_availability",
         "share",
         "complementary",
