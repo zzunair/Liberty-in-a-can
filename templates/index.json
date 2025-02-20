@@ -1034,8 +1034,21 @@
           "type": "testimonial",
           "settings": {
             "icon": "quote",
-            "text": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.</p>",
-            "author": "Author's name",
+            "text": "<p>I’m gonna drink this all night until you're out</p>",
+            "author": "Manny",
+            "author_info": "",
+            "author_url": "",
+            "image_ratio": "rounded",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "testimonial_h7BHaN": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "quote",
+            "text": "<p>They slapped. Watermelon is absolutely fire and my wife loved the lime</p>",
+            "author": "Mike",
             "author_info": "",
             "author_url": "",
             "image_ratio": "rounded",
@@ -1047,9 +1060,9 @@
           "type": "testimonial",
           "settings": {
             "icon": "quote",
-            "text": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.</p>",
-            "author": "Author's name",
-            "author_info": "",
+            "text": "<p>I slept 9 hours last night and have no anxiety. Some have ice cream at night, I have a 🗽Liberty In a Can. I am feeling so much better... the solitude, no alcohol. I don’t get a head high which I do not like, it’s just relaxing. I am going to become your best customer in Delray!!!</p>",
+            "author": "Pam R.",
+            "author_info": "Yoga Mom",
             "author_url": "",
             "image_ratio": "rounded",
             "highlighted_text": "none",
@@ -1060,8 +1073,21 @@
           "type": "testimonial",
           "settings": {
             "icon": "quote",
-            "text": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.</p>",
-            "author": "Author's name",
+            "text": "<p>My husband and his friends loved Liberty In a Can so much that they drank them all when I was out of town so we will definitely be ordering more!</p>",
+            "author": "Christie F.",
+            "author_info": "",
+            "author_url": "",
+            "image_ratio": "rounded",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "testimonial_LkAeRA": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "quote",
+            "text": "<p>Liberty makes me feel like I’m kicking back at the beach with a joint but I’m sipping a sparkling water feeling refreshed instead with the same effects. It tastes delicious going down and has all the things I want to feel relaxed</p>",
+            "author": "Adam",
             "author_info": "",
             "author_url": "",
             "image_ratio": "rounded",
@@ -1072,8 +1098,10 @@
       },
       "block_order": [
         "testimonial_6e3f6A",
+        "testimonial_h7BHaN",
         "testimonial_HXw3PT",
-        "testimonial_3nQLmY"
+        "testimonial_3nQLmY",
+        "testimonial_LkAeRA"
       ],
       "settings": {
         "heading": "Testimonials",
