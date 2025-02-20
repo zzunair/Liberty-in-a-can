@@ -72,14 +72,15 @@
         "content_position": "md:items-start md:justify-start",
         "text_alignment": "left",
         "video_mobile": "shopify://files/videos/LIC-Video.mp4",
+        "video_url_mobile": "",
         "image_height_mobile": "auto",
         "content_position_mobile": "items-center justify-center",
         "text_alignment_mobile": "center",
-        "color_text": "#ffffff",
+        "color_text": "#fcfbe7",
         "color_highlight": "#e11d48",
         "gradient_highlight": "",
         "color_button_text": "#0b61cd",
-        "color_button_background": "#ffffff",
+        "color_button_background": "#fcfbe7",
         "color_button_gradient": "",
         "color_overlay": "#171717",
         "overlay_opacity": 70,
@@ -287,6 +288,17 @@
             "highlighted_scribble": "circle"
           }
         },
+        "button_Y78htQ": {
+          "type": "button",
+          "settings": {
+            "button_label": "Our Story",
+            "button_link": "shopify://pages/about",
+            "button_style": "secondary",
+            "button_size": "md",
+            "button_external": false,
+            "button_icon": true
+          }
+        },
         "spacing_K7jCqD": {
           "type": "spacing",
           "settings": {
@@ -297,6 +309,7 @@
       },
       "block_order": [
         "text",
+        "button_Y78htQ",
         "spacing_K7jCqD"
       ],
       "settings": {
@@ -309,7 +322,7 @@
         "heading_tag": "h2",
         "subheading": "",
         "description": "",
-        "button_label": "Our Story",
+        "button_label": "",
         "button_link": "shopify://pages/contact",
         "button_external": false,
         "button_icon": true,
