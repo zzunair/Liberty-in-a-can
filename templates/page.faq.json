@@ -41,7 +41,7 @@
           "settings": {
             "heading": "Frequently Asked questions",
             "heading_size": "title-lg tracking-heading",
-            "heading_tag": "h2",
+            "heading_tag": "h1",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
@@ -69,13 +69,13 @@
         "transparent_header": false,
         "image": "shopify://shop_images/6.8_51_Donovan-12_10c7c0d5-d033-4c30-9db1-45ec64f8406c.jpg",
         "image_height": "450px",
-        "content_width": "medium",
+        "content_width": "large",
         "content_position": "md:items-center md:justify-center",
         "text_alignment": "center",
         "image_height_mobile": "auto",
-        "content_position_mobile": "items-end justify-start",
-        "text_alignment_mobile": "left",
-        "color_text": "#ffffff",
+        "content_position_mobile": "items-center justify-center",
+        "text_alignment_mobile": "center",
+        "color_text": "#fcfbe7",
         "color_highlight": "#e0a580",
         "gradient_highlight": "",
         "color_button_text": "#171717",
