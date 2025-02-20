@@ -81,6 +81,56 @@
         "parallax_direction": "vertical"
       }
     },
+    "rich_text_MWfgJe": {
+      "type": "rich-text",
+      "blocks": {
+        "text_cBNyaM": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Liberty In a Can is the celebration of American freedom – the pursuit of happiness. Liberty is making ordinary moments more enjoyable, memorable, and fulfilling.</strong></p>",
+            "text_size": "subtext-xl",
+            "text_max_size": 60,
+            "text_font": "body",
+            "secondary_color": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "text_cBNyaM"
+      ],
+      "settings": {
+        "text_alignment": "center",
+        "text_alignment_mobile": "center",
+        "heading": "",
+        "heading_size": "title-sm",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_width": "small",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": true,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 100,
+        "divider": false,
+        "narrow": true,
+        "rounded": false
+      }
+    },
     "images-with-text": {
       "type": "images-with-text",
       "blocks": {
@@ -686,6 +736,7 @@
   "order": [
     "main",
     "image-with-text-overlay",
+    "rich_text_MWfgJe",
     "images-with-text",
     "portfolio",
     "scrolling-text",
