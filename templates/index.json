@@ -9,6 +9,87 @@
  */
 {
   "sections": {
+    "video_with_text_overlay_TaepaX": {
+      "type": "video-with-text-overlay",
+      "blocks": {
+        "subheading_WKzbLf": {
+          "type": "subheading",
+          "settings": {
+            "subheading": "DISCOVER AMERICA'S THC SELTZER™",
+            "subheading_size": "subtitle-md",
+            "secondary_color": true
+          }
+        },
+        "heading_bUyEhV": {
+          "type": "heading",
+          "settings": {
+            "heading": "Taste the Flavors of Freedom",
+            "heading_size": "title-xl tracking-heading",
+            "heading_tag": "h2",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "text_9rdMxK": {
+          "type": "text",
+          "settings": {
+            "text": "<p><a href=\"http://www.drinklic.com/\"><strong>At Liberty In A Can™</strong></a>, we’re passionate about revolutionizing the <a href=\"https://thecannabisindustry.org/\">cannabis-industry</a> with our premium, patriotic THC seltzers.</p>",
+            "text_size": "subtext-md",
+            "text_max_size": 32,
+            "text_font": "body",
+            "secondary_color": false,
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "button_nejQTE": {
+          "type": "button",
+          "settings": {
+            "button_label": "Shop Now",
+            "button_link": "shopify://collections/all",
+            "button_style": "secondary",
+            "button_size": "sm",
+            "button_external": false,
+            "button_icon": true
+          }
+        }
+      },
+      "block_order": [
+        "subheading_WKzbLf",
+        "heading_bUyEhV",
+        "text_9rdMxK",
+        "button_nejQTE"
+      ],
+      "settings": {
+        "transparent_header": false,
+        "video": "shopify://files/videos/LIC-Video.mp4",
+        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+        "description": "",
+        "enable_video_autoplay": true,
+        "enable_video_looping": true,
+        "image_height": "650px",
+        "content_width": "small",
+        "content_position": "md:items-start md:justify-start",
+        "text_alignment": "left",
+        "video_mobile": "shopify://files/videos/LIC-Video.mp4",
+        "image_height_mobile": "auto",
+        "content_position_mobile": "items-center justify-center",
+        "text_alignment_mobile": "center",
+        "color_text": "#ffffff",
+        "color_highlight": "#e11d48",
+        "gradient_highlight": "",
+        "color_button_text": "#0b61cd",
+        "color_button_background": "#ffffff",
+        "color_button_gradient": "",
+        "color_overlay": "#171717",
+        "overlay_opacity": 70,
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "divider": false,
+        "full_width": true,
+        "rounded": false
+      }
+    },
     "image_with_text_overlay_AcnrqM": {
       "type": "image-with-text-overlay",
       "blocks": {
@@ -60,6 +141,7 @@
         "text_xraj8X",
         "button_ACn74H"
       ],
+      "disabled": true,
       "settings": {
         "transparent_header": false,
         "image": "shopify://shop_images/LIC-BANNER.png",
@@ -264,15 +346,48 @@
           "type": "text",
           "settings": {
             "text": "ZERO CALORIES",
-            "text_size": 98,
+            "text_size": 90,
             "text_font": "heading",
             "highlighted_text": "scribble",
             "highlighted_scribble": "basic-underline"
           }
+        },
+        "text_hiLzEW": {
+          "type": "text",
+          "settings": {
+            "text": "ZERO Sweeteners",
+            "text_size": 90,
+            "text_font": "heading",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "text_wDncgF": {
+          "type": "text",
+          "settings": {
+            "text": "ZER0 CARBS",
+            "text_size": 90,
+            "text_font": "heading",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "text_Xg3Wrm": {
+          "type": "text",
+          "settings": {
+            "text": "ZERO SODIUM",
+            "text_size": 90,
+            "text_font": "heading",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
         }
       },
       "block_order": [
-        "text"
+        "text",
+        "text_hiLzEW",
+        "text_wDncgF",
+        "text_Xg3Wrm"
       ],
       "settings": {
         "direction": "left",
@@ -1279,7 +1394,7 @@
         "review_rp9XqW"
       ],
       "settings": {
-        "title": "Cannabis FAQS"
+        "title": "Product FAQS"
       }
     },
     "newsletter_RxDNzw": {
@@ -1338,6 +1453,7 @@
     }
   },
   "order": [
+    "video_with_text_overlay_TaepaX",
     "image_with_text_overlay_AcnrqM",
     "images_with_text_overlay_Gp7DK8",
     "slideshow",
