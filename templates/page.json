@@ -22,22 +22,9 @@
         "narrow": true,
         "rounded": false
       }
-    },
-    "whole_sale_page_main_section_irHQXb": {
-      "type": "WholeSale-Page-Main-Section",
-      "settings": {
-        "title": "Join Us",
-        "title_color": "#000000",
-        "apply_button_text": "APPLY",
-        "login_button_text": "LOGIN",
-        "login_url": "",
-        "description_title": "",
-        "description_text": ""
-      }
     }
   },
   "order": [
-    "main-page",
-    "whole_sale_page_main_section_irHQXb"
+    "main-page"
   ]
 }
