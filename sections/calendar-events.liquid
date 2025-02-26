@@ -1,0 +1,162 @@
+<link rel="stylesheet" href="{{ 'calendar-events.css' | asset_url }}">
+
+<section class="calendar-events">
+    <div class="custom-container">
+        <div class="calendar-events__container">
+            <div class="calendar-header">
+                <button class="calendar-nav prev-month" onclick="previousMonth()">
+              {%- render 'icon', icon: 'chevron-left' -%}
+            </button>
+            <h2 id="currentMonthYear"></h2>
+            <button class="calendar-nav next-month" onclick="nextMonth()">
+              {%- render 'icon', icon: 'chevron-right' -%}
+            </button>
+          </div>
+          
+          <div class="calendar-grid">
+            <div class="weekdays">
+              <div>Sun</div>
+              <div>Mon</div>
+              <div>Tue</div>
+              <div>Wed</div>
+              <div>Thu</div>
+              <div>Fri</div>
+              <div>Sat</div>
+            </div>
+            <div id="calendar-days" class="days"></div>
+          </div>
+          <div class="calendar-actions">
+            <button onclick="clearDate()" class="clear-date-btn">Clear Date</button>
+          </div>
+        </div>
+        <div class="events-listing">
+            <div class="events-listing__container">
+                {%- liquid
+                assign calendar_events = metaobjects.calendar_events.values
+                assign sorted_events = calendar_events | sort: 'calendar_events.date_and_time'
+                -%}
+        
+                {% comment %} <button onclick="showAllEvents()" class="show-all-events">Show All Events</button> {% endcomment %}
+        
+                {%- if sorted_events.size > 0 -%}
+                <ul class="events-list">
+                    {%- for event in sorted_events -%}
+                    {%- assign event_date = event.date_and_time.value | date: '%Y-%m-%d' -%}
+                    {%- assign event_time = event.date_and_time.value | date: '%I:%M %p' -%}
+                    {%- assign event_month = event.date_and_time.value | date: '%b' -%}
+                    {%- assign event_day = event.date_and_time.value | date: '%d' -%}
+        
+                    <li class="event-item" 
+                        data-date="{{ event.date_and_time.value | date: '%Y-%m-%d' }}"
+                        data-start-time="{{ event.date_and_time.value | date: '%I:%M %p' }}"
+                        data-end-time="{{ event.ending_date_and_time.value | date: '%I:%M %p' }}"
+                        data-start-full="{{ event.date_and_time.value | date: '%Y-%m-%d %H:%M:%S' }}"
+                        data-end-full="{{ event.ending_date_and_time.value | date: '%Y-%m-%d %H:%M:%S' }}"
+                        data-event-id="{{ event.id }}"
+                        data-image="{{ event.event_image.value | image_url: width: 1000 }}"
+                        data-title="{{ event.event_name.value }}"
+                        data-description="{{ event.event_description.value | escape }}"
+                        data-location="{{ event.location.value }}"
+                        onclick="openEventPopup('{{ event.id }}')">
+                        <div class="event-date-badge">
+                            <span class="event-day">{{ event_day }}</span>
+                            <span class="event-month">{{ event_month }}</span>
+                        </div>
+                        <div class="event-content">
+                            <div class="event-details">
+                                <h3 class="event-name">{{ event.event_name.value }}</h3>
+                                <div class="event-datetime">
+                                    <span class="event-full-date">
+                                        {{ event.date_and_time.value | date: '%a, %d %b' }} | 
+                                        {{ event.date_and_time.value | date: '%I:%M %p' }} - 
+                                        {{ event.ending_date_and_time.value | date: '%I:%M %p' }}
+                                    </span>
+                                    {%- if event.location.value != blank -%}
+                                        <span class="event-location">
+                                            {%- render 'icon', icon: 'map-pin' -%}
+                                            {{ event.location.value }}
+                                        </span>
+                                    {%- endif -%}
+                                </div>
+                            </div>
+                            {%- if event.event_image.value != blank -%}
+                                <div class="event-image">
+                                    <img src="{{ event.event_image.value | image_url: width: 200 }}" alt="{{ event.event_name.value }}" loading="lazy">
+                                </div>
+                            {%- endif -%}
+                        </div>
+                    </li>
+                    {%- endfor -%}
+                </ul>
+                {%- else -%}
+                <p class="no-events">No upcoming events scheduled.</p>
+                {%- endif -%}
+            </div>
+        </div>
+    </div>
+</section>
+
+<div id="popup-overlay" class="popup-overlay" onclick="closeEventPopup()"></div>
+<div id="event-popup" class="event-popup">
+  <button class="popup-close" onclick="closeEventPopup()">
+    {%- render 'icon', icon: 'close' -%}
+  </button>
+  <div class="popup-content">
+    <div class="popup-image-container">
+      <img id="popup-image" src="" alt="">
+      <div class="event-info-bar">
+        <div class="event-info-group">
+          <div class="event-info-item">
+            {%- render 'icon', icon: 'calendar' -%}
+            <span id="popup-date"></span>
+          </div>
+          <div class="event-info-item">
+            {%- render 'icon', icon: 'clock' -%}
+            <span id="popup-time"></span>
+          </div>
+        </div>
+        <button class="add-to-calendar-btn" onclick="addToGoogleCalendar(this)" data-event-details="">
+          {%- render 'icon', icon: 'calendar-plus' -%}
+          Add To Google Calendar
+        </button>
+      </div>
+    </div>
+    <div class="popup-details">
+      <h2 id="popup-title" class="popup-title"></h2>
+      <div id="popup-description" class="popup-description"></div>
+      <div class="popup-location">
+        {%- render 'icon', icon: 'map-pin' -%}
+        <span id="popup-location"></span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="{{ 'calendar-events.js' | asset_url }}" defer></script>
+
+<script>
+  // Create a global array of event dates from the Metaobject data
+  window.eventDates = [
+    {%- for event in sorted_events -%}
+      "{{ event.date_and_time.value | date: '%Y-%m-%d' }}"{% unless forloop.last %},{% endunless %}
+    {%- endfor -%}
+  ];
+</script>
+
+{% schema %}
+{
+    "name": "Calendar Events",
+    "settings": [
+        {
+            "type": "text",
+            "id": "title",
+            "label": "Title"
+        }
+    ],
+    "presets": [
+        {
+            "name": "Calendar Events"
+        }
+    ]
+}
+{% endschema %}
