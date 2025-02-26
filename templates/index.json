@@ -1491,6 +1491,12 @@
         "narrow": true,
         "rounded": false
       }
+    },
+    "calendar_events_rMg6tN": {
+      "type": "calendar-events",
+      "settings": {
+        "title": ""
+      }
     }
   },
   "order": [
@@ -1516,6 +1522,7 @@
     "blog-posts-collage",
     "173947741544d5c56e",
     "review_blocks_RdF6G7",
-    "newsletter_RxDNzw"
+    "newsletter_RxDNzw",
+    "calendar_events_rMg6tN"
   ]
 }
