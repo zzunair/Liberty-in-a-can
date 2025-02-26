@@ -315,7 +315,7 @@
       "settings": {
         "text_alignment": "left",
         "text_alignment_mobile": "left",
-        "heading": "Live the Moments",
+        "heading": "Live the Moments™",
         "heading_size": "title-lg tracking-heading",
         "heading_alignment": "text-left md:items-end md:flex-row",
         "heading_width": "small",
@@ -1438,6 +1438,12 @@
         "title": "Product FAQS"
       }
     },
+    "calendar_events_rMg6tN": {
+      "type": "calendar-events",
+      "settings": {
+        "title": ""
+      }
+    },
     "newsletter_RxDNzw": {
       "type": "newsletter",
       "blocks": {
@@ -1478,7 +1484,7 @@
         "text_alignment": "center",
         "text_alignment_mobile": "center",
         "color_text": "#fcfbe7",
-        "color_background": "#0d253f",
+        "color_background": "#0b61cd",
         "gradient_background": "",
         "color_highlight": "",
         "gradient_highlight": "",
@@ -1490,12 +1496,6 @@
         "divider": false,
         "narrow": true,
         "rounded": false
-      }
-    },
-    "calendar_events_rMg6tN": {
-      "type": "calendar-events",
-      "settings": {
-        "title": ""
       }
     }
   },
@@ -1522,7 +1522,7 @@
     "blog-posts-collage",
     "173947741544d5c56e",
     "review_blocks_RdF6G7",
-    "newsletter_RxDNzw",
-    "calendar_events_rMg6tN"
+    "calendar_events_rMg6tN",
+    "newsletter_RxDNzw"
   ]
 }
