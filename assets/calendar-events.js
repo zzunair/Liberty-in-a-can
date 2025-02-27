@@ -67,10 +67,34 @@ function nextMonth() {
 }
 
 function selectDate(dateString) {
-  // Hide all events first
+  const clearDateBtn = document.querySelector('.clear-date-btn');
+  
+  // Show all events if no date is selected (null)
+  if (dateString === null) {
+    document.querySelectorAll('.event-item').forEach((event, index) => {
+      if (index < 3) {
+        event.style.display = 'flex';
+      } else {
+        event.classList.add('hidden-event');
+        event.style.display = 'none';
+      }
+    });
+    
+    // Reset show more button text
+    const showMoreButton = document.querySelector('.show-more-events');
+    if (showMoreButton) {
+      showMoreButton.textContent = 'Show all events';
+    }
+    return;
+  }
+
+  // Show/hide events based on date
   document.querySelectorAll('.event-item').forEach(event => {
     const eventDate = event.getAttribute('data-date');
     event.style.display = eventDate === dateString ? 'flex' : 'none';
+    if (eventDate === dateString) {
+      event.classList.remove('hidden-event');
+    }
   });
 
   // Update active state of calendar days
@@ -78,14 +102,33 @@ function selectDate(dateString) {
     day.classList.remove('active');
   });
   document.querySelector(`.calendar-day.has-event[onclick*="${dateString}"]`)?.classList.add('active');
+  
+  // Show clear date button
+  clearDateBtn.style.display = 'block';
+  clearDateBtn.style.opacity = '1';
 }
 
 function openEventPopup(eventId) {
+  console.log('Opening popup for event ID:', eventId); // Debug log
+  
   const popup = document.getElementById('event-popup');
   const overlay = document.getElementById('popup-overlay');
   const eventDetails = document.querySelector(`[data-event-id="${eventId}"]`);
   
+  console.log('Found event details:', eventDetails); // Debug log
+  
   if (eventDetails) {
+    // Get and log all data attributes
+    console.log('Event data:', {
+      id: eventDetails.getAttribute('data-event-id'),
+      title: eventDetails.getAttribute('data-title'),
+      image: eventDetails.getAttribute('data-image'),
+      description: eventDetails.getAttribute('data-description'),
+      date: eventDetails.getAttribute('data-date'),
+      startTime: eventDetails.getAttribute('data-start-time'),
+      endTime: eventDetails.getAttribute('data-end-time')
+    });
+    
     document.getElementById('popup-image').src = eventDetails.getAttribute('data-image');
     document.getElementById('popup-title').textContent = eventDetails.getAttribute('data-title');
     
@@ -116,7 +159,7 @@ function openEventPopup(eventId) {
       // Store event details for Google Calendar
       const eventData = {
         title: eventDetails.getAttribute('data-title'),
-        description: stripHtml(eventDetails.getAttribute('data-description')),
+        description: eventDetails.getAttribute('data-description'),
         location: eventDetails.getAttribute('data-location'),
         start: startDateTime.toISOString(),
         end: endDateTime.toISOString()
@@ -169,6 +212,8 @@ function closeEventPopup() {
 }
 
 function clearDate() {
+  const clearDateBtn = document.querySelector('.clear-date-btn');
+  
   // Show all events
   document.querySelectorAll('.event-item').forEach(event => {
     event.style.display = 'flex';
@@ -178,6 +223,12 @@ function clearDate() {
   document.querySelectorAll('.calendar-day').forEach(day => {
     day.classList.remove('active');
   });
+
+  // Fade out clear date button
+  clearDateBtn.style.opacity = '0';
+  setTimeout(() => {
+    clearDateBtn.style.display = 'none';
+  }, 500); // Hide after fade animation
 }
 
 // Function to parse rich text JSON into HTML
@@ -292,3 +343,28 @@ function stripHtml(html) {
 
 // Generate calendar on page load
 generateCalendar(currentMonth, currentYear);
+
+// Add this new function
+function toggleEvents() {
+  const button = document.querySelector('.show-more-events');
+  const hiddenEvents = document.querySelectorAll('.hidden-event');
+  const isShowingAll = button.textContent === 'Show less';
+
+  hiddenEvents.forEach(event => {
+    if (isShowingAll) {
+      event.classList.remove('show-event');
+    } else {
+      event.classList.add('show-event');
+    }
+  });
+
+  button.textContent = isShowingAll ? 'Show all events' : 'Show less';
+}
+
+// Add this to your existing code after the calendar generation
+document.addEventListener('DOMContentLoaded', function() {
+  const showMoreButton = document.querySelector('.show-more-events');
+  if (showMoreButton) {
+    showMoreButton.addEventListener('click', toggleEvents);
+  }
+});

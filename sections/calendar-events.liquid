@@ -39,25 +39,25 @@
                 {% comment %} <button onclick="showAllEvents()" class="show-all-events">Show All Events</button> {% endcomment %}
         
                 {%- if sorted_events.size > 0 -%}
-                <ul class="events-list">
+                <ul class="events-list" data-total-events="{{ sorted_events.size }}">
                     {%- for event in sorted_events -%}
                     {%- assign event_date = event.date_and_time.value | date: '%Y-%m-%d' -%}
                     {%- assign event_time = event.date_and_time.value | date: '%I:%M %p' -%}
                     {%- assign event_month = event.date_and_time.value | date: '%b' -%}
                     {%- assign event_day = event.date_and_time.value | date: '%d' -%}
         
-                    <li class="event-item" 
+                    <li class="event-item {% if forloop.index > 3 %}hidden-event{% endif %}"
+                        data-event-id="{{ forloop.index }}" 
                         data-date="{{ event.date_and_time.value | date: '%Y-%m-%d' }}"
                         data-start-time="{{ event.date_and_time.value | date: '%I:%M %p' }}"
                         data-end-time="{{ event.ending_date_and_time.value | date: '%I:%M %p' }}"
                         data-start-full="{{ event.date_and_time.value | date: '%Y-%m-%d %H:%M:%S' }}"
                         data-end-full="{{ event.ending_date_and_time.value | date: '%Y-%m-%d %H:%M:%S' }}"
-                        data-event-id="{{ event.id }}"
                         data-image="{{ event.event_image.value | image_url: width: 1000 }}"
                         data-title="{{ event.event_name.value }}"
                         data-description="{{ event.event_description.value | escape }}"
                         data-location="{{ event.location.value }}"
-                        onclick="openEventPopup('{{ event.id }}')">
+                        onclick="openEventPopup('{{ forloop.index }}')">
                         <div class="event-date-badge">
                             <span class="event-day">{{ event_day }}</span>
                             <span class="event-month">{{ event_month }}</span>
@@ -88,6 +88,12 @@
                     </li>
                     {%- endfor -%}
                 </ul>
+                
+                {%- if sorted_events.size > 3 -%}
+                  <div class="show-more-container">
+                    <button class="show-more-events">Show all events</button>
+                  </div>
+                {%- endif -%}
                 {%- else -%}
                 <p class="no-events">No upcoming events scheduled.</p>
                 {%- endif -%}
@@ -161,3 +167,4 @@
     ]
 }
 {% endschema %}
+ 
