@@ -592,6 +592,201 @@
         "rounded": true
       }
     },
+    "collage_irdHhw": {
+      "type": "collage",
+      "blocks": {
+        "image_tUdHm3": {
+          "type": "image",
+          "settings": {
+            "subheading": "",
+            "heading": "",
+            "link": "",
+            "invert_subheading_heading": false,
+            "image": "shopify://shop_images/IMG_9089.heic",
+            "image_ratio": "portrait",
+            "content_position": "md:items-end md:justify-start",
+            "text_alignment": "left",
+            "image_mobile": "shopify://shop_images/IMG_9089.heic",
+            "image_ratio_mobile": "portrait",
+            "content_position_mobile": "items-end justify-start",
+            "text_alignment_mobile": "left",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle",
+            "color_text": "#ffffff",
+            "color_highlight": "",
+            "gradient_highlight": "",
+            "color_overlay": "#171717",
+            "overlay_opacity": 10
+          }
+        },
+        "video_PTaaWK": {
+          "type": "video",
+          "settings": {
+            "subheading": "",
+            "heading": "",
+            "link": "",
+            "invert_subheading_heading": false,
+            "video": "shopify://files/videos/25086d6983554b29b3cb35cb91724dff.MOV",
+            "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+            "description": "",
+            "enable_video_autoplay": true,
+            "enable_video_looping": true,
+            "image_ratio": "portrait",
+            "content_position": "md:items-end md:justify-start",
+            "text_alignment": "left",
+            "video_url_mobile": "",
+            "image_ratio_mobile": "landscape",
+            "content_position_mobile": "items-end justify-start",
+            "text_alignment_mobile": "left",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle",
+            "color_text": "#ffffff",
+            "color_highlight": "",
+            "gradient_highlight": "",
+            "color_overlay": "#171717",
+            "overlay_opacity": 10
+          }
+        },
+        "image_APHpcj": {
+          "type": "image",
+          "settings": {
+            "subheading": "",
+            "heading": "",
+            "link": "",
+            "invert_subheading_heading": false,
+            "image": "shopify://shop_images/IMG_2792.heic",
+            "image_ratio": "portrait",
+            "content_position": "md:items-end md:justify-start",
+            "text_alignment": "left",
+            "image_ratio_mobile": "portrait",
+            "content_position_mobile": "items-end justify-start",
+            "text_alignment_mobile": "left",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle",
+            "color_text": "#ffffff",
+            "color_highlight": "",
+            "gradient_highlight": "",
+            "color_overlay": "#171717",
+            "overlay_opacity": 10
+          }
+        },
+        "video_JcftAX": {
+          "type": "video",
+          "settings": {
+            "subheading": "",
+            "heading": "",
+            "link": "",
+            "invert_subheading_heading": false,
+            "video": "shopify://files/videos/4ec554b48ece4f1a97498f4218bb1259.MOV",
+            "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+            "description": "",
+            "enable_video_autoplay": true,
+            "enable_video_looping": true,
+            "image_ratio": "portrait",
+            "content_position": "md:items-end md:justify-start",
+            "text_alignment": "left",
+            "video_url_mobile": "",
+            "image_ratio_mobile": "landscape",
+            "content_position_mobile": "items-end justify-start",
+            "text_alignment_mobile": "left",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle",
+            "color_text": "#ffffff",
+            "color_highlight": "",
+            "gradient_highlight": "",
+            "color_overlay": "#171717",
+            "overlay_opacity": 10
+          }
+        },
+        "image_3WnLiW": {
+          "type": "image",
+          "settings": {
+            "subheading": "",
+            "heading": "",
+            "link": "",
+            "invert_subheading_heading": false,
+            "image": "shopify://shop_images/IMG_1934.heic",
+            "image_ratio": "portrait",
+            "content_position": "md:items-end md:justify-start",
+            "text_alignment": "left",
+            "image_ratio_mobile": "portrait",
+            "content_position_mobile": "items-end justify-start",
+            "text_alignment_mobile": "left",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle",
+            "color_text": "#ffffff",
+            "color_highlight": "",
+            "gradient_highlight": "",
+            "color_overlay": "#171717",
+            "overlay_opacity": 10
+          }
+        },
+        "video_GWiXeP": {
+          "type": "video",
+          "settings": {
+            "subheading": "",
+            "heading": "",
+            "link": "",
+            "invert_subheading_heading": false,
+            "video": "shopify://files/videos/copy_609e91e0-adac-4e31-a11e-f98bd62d719c.MOV",
+            "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
+            "description": "",
+            "enable_video_autoplay": true,
+            "enable_video_looping": true,
+            "image_ratio": "portrait",
+            "content_position": "md:items-end md:justify-start",
+            "text_alignment": "left",
+            "video_url_mobile": "",
+            "image_ratio_mobile": "landscape",
+            "content_position_mobile": "items-end justify-start",
+            "text_alignment_mobile": "left",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle",
+            "color_text": "#ffffff",
+            "color_highlight": "",
+            "gradient_highlight": "",
+            "color_overlay": "#171717",
+            "overlay_opacity": 10
+          }
+        }
+      },
+      "block_order": [
+        "image_tUdHm3",
+        "video_PTaaWK",
+        "image_APHpcj",
+        "video_JcftAX",
+        "image_3WnLiW",
+        "video_GWiXeP"
+      ],
+      "settings": {
+        "heading": "share the moment",
+        "heading_size": "title-md",
+        "heading_alignment": "text-left md:items-end md:flex-row",
+        "heading_tag": "h2",
+        "subheading": "RAISE A CAN",
+        "description": "<p>Liberty In A Can™ is more than just a drink—it’s a lifestyle. We love seeing how you celebrate freedom, adventure, and good vibes with our THC seltzers. Snap a pic, tag us on <a href=\"https://www.instagram.com/drink.lic/\" target=\"_blank\" title=\"https://www.instagram.com/drink.lic/\">Instagram</a>, and share your moments with <strong>#LibertyInACan</strong> for a chance to be featured!</p>",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": true,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 0,
+        "padding_bottom": 0,
+        "divider": false,
+        "full_width": false,
+        "rounded": false,
+        "enable_parallax": true
+      }
+    },
     "featured-product": {
       "type": "featured-product",
       "blocks": {
@@ -713,64 +908,6 @@
         "divider": false,
         "full_width": false,
         "rounded": true
-      }
-    },
-    "image-comparison": {
-      "type": "image-comparison",
-      "blocks": {
-        "image-1": {
-          "type": "image",
-          "settings": {
-            "subheading": "",
-            "heading": "Before image",
-            "content_position": "end",
-            "color_text": "#ffffff"
-          }
-        },
-        "image-2": {
-          "type": "image",
-          "settings": {
-            "subheading": "",
-            "heading": "After image",
-            "content_position": "end",
-            "color_text": "#ffffff"
-          }
-        }
-      },
-      "block_order": [
-        "image-1",
-        "image-2"
-      ],
-      "disabled": true,
-      "settings": {
-        "layout": "horizontal",
-        "image_height": "750px",
-        "image_height_mobile": "300px",
-        "heading": "<em>Image comparison</em>",
-        "heading_size": "title-md",
-        "heading_alignment": "text-center md:items-center",
-        "heading_tag": "h2",
-        "subheading": "Add a tagline",
-        "description": "",
-        "button_label": "",
-        "button_link": "",
-        "button_external": false,
-        "button_icon": true,
-        "highlighted_text": "text",
-        "highlighted_scribble": "circle",
-        "color_text": "",
-        "color_background": "",
-        "gradient_background": "",
-        "color_highlight": "",
-        "gradient_highlight": "linear-gradient(90deg, rgba(249, 197, 141, 1), rgba(43, 43, 43, 1) 100%)",
-        "color_button_text": "",
-        "color_button_background": "",
-        "color_button_gradient": "",
-        "padding_top": 100,
-        "padding_bottom": 0,
-        "divider": false,
-        "full_width": false,
-        "rounded": false
       }
     },
     "rich-text-2": {
@@ -1441,7 +1578,7 @@
     "calendar_events_rMg6tN": {
       "type": "calendar-events",
       "settings": {
-        "title": ""
+        "bg-color": "#0D253F"
       }
     },
     "newsletter_RxDNzw": {
@@ -1509,8 +1646,8 @@
     "scrolling-text-1",
     "multicolumn_QzDYCN",
     "video-with-text-overlay",
+    "collage_irdHhw",
     "featured-product",
-    "image-comparison",
     "rich-text-2",
     "compact_product_bundle_EBA9Qp",
     "countdown-timer",
