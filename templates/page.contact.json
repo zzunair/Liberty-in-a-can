@@ -104,6 +104,19 @@
             "text": "<p>info@drinklic.com</p>"
           }
         },
+        "custom_field_FPhUgM": {
+          "type": "custom_field",
+          "settings": {
+            "type": "select",
+            "title": "What's this about?",
+            "required": true,
+            "full_width": false,
+            "checked_value": "Yes",
+            "unchecked_value": "No",
+            "radio_options": "",
+            "select_options": "Feedback, Request Liberty In a Can™ at your favorite spot, Wholesale questions, Partnership, Shipping Questions, Misc."
+          }
+        },
         "media": {
           "type": "media",
           "settings": {
@@ -120,6 +133,7 @@
       },
       "block_order": [
         "contact-2",
+        "custom_field_FPhUgM",
         "media",
         "contact_LtmERp"
       ],
