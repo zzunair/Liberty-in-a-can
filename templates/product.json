@@ -428,7 +428,37 @@
         "text": {
           "type": "text",
           "settings": {
-            "text": "<strong>ZERO CALORIES</strong>",
+            "text": "ZERO CALORIES",
+            "text_size": 80,
+            "text_font": "heading",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "text_GqQrfA": {
+          "type": "text",
+          "settings": {
+            "text": "ZERO SWEETENERS",
+            "text_size": 80,
+            "text_font": "heading",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "text_3PhUm4": {
+          "type": "text",
+          "settings": {
+            "text": "ZERO CARBS",
+            "text_size": 80,
+            "text_font": "heading",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "text_4gKdaL": {
+          "type": "text",
+          "settings": {
+            "text": "ZERO SODIUM",
             "text_size": 80,
             "text_font": "heading",
             "highlighted_text": "none",
@@ -437,7 +467,10 @@
         }
       },
       "block_order": [
-        "text"
+        "text",
+        "text_GqQrfA",
+        "text_3PhUm4",
+        "text_4gKdaL"
       ],
       "settings": {
         "direction": "left",
@@ -600,153 +633,6 @@
         "divider": false,
         "full_width": true,
         "rounded": false
-      }
-    },
-    "collage": {
-      "type": "collage",
-      "blocks": {
-        "video_4Rqbyf": {
-          "type": "video",
-          "settings": {
-            "subheading": "",
-            "heading": "",
-            "link": "",
-            "invert_subheading_heading": false,
-            "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
-            "description": "",
-            "enable_video_autoplay": true,
-            "enable_video_looping": false,
-            "image_ratio": "portrait",
-            "content_position": "md:items-end md:justify-start",
-            "text_alignment": "center",
-            "video_url_mobile": "",
-            "image_ratio_mobile": "landscape",
-            "content_position_mobile": "items-end justify-start",
-            "text_alignment_mobile": "left",
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle",
-            "color_text": "#ffffff",
-            "color_highlight": "",
-            "gradient_highlight": "",
-            "color_overlay": "#171717",
-            "overlay_opacity": 10
-          }
-        },
-        "video_TNLqpF": {
-          "type": "video",
-          "settings": {
-            "subheading": "",
-            "heading": "",
-            "link": "",
-            "invert_subheading_heading": false,
-            "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
-            "description": "",
-            "enable_video_autoplay": false,
-            "enable_video_looping": false,
-            "image_ratio": "portrait",
-            "content_position": "md:items-end md:justify-start",
-            "text_alignment": "left",
-            "video_url_mobile": "",
-            "image_ratio_mobile": "landscape",
-            "content_position_mobile": "items-end justify-start",
-            "text_alignment_mobile": "left",
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle",
-            "color_text": "#ffffff",
-            "color_highlight": "",
-            "gradient_highlight": "",
-            "color_overlay": "#171717",
-            "overlay_opacity": 10
-          }
-        },
-        "video_RTjhpU": {
-          "type": "video",
-          "settings": {
-            "subheading": "",
-            "heading": "",
-            "link": "",
-            "invert_subheading_heading": false,
-            "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
-            "description": "",
-            "enable_video_autoplay": true,
-            "enable_video_looping": false,
-            "image_ratio": "portrait",
-            "content_position": "md:items-end md:justify-start",
-            "text_alignment": "left",
-            "video_url_mobile": "",
-            "image_ratio_mobile": "landscape",
-            "content_position_mobile": "items-end justify-start",
-            "text_alignment_mobile": "left",
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle",
-            "color_text": "#ffffff",
-            "color_highlight": "",
-            "gradient_highlight": "",
-            "color_overlay": "#171717",
-            "overlay_opacity": 10
-          }
-        },
-        "video_hPqWEt": {
-          "type": "video",
-          "settings": {
-            "subheading": "",
-            "heading": "",
-            "link": "",
-            "invert_subheading_heading": false,
-            "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
-            "description": "",
-            "enable_video_autoplay": true,
-            "enable_video_looping": true,
-            "image_ratio": "portrait",
-            "content_position": "md:items-end md:justify-start",
-            "text_alignment": "left",
-            "video_url_mobile": "",
-            "image_ratio_mobile": "landscape",
-            "content_position_mobile": "items-end justify-start",
-            "text_alignment_mobile": "left",
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle",
-            "color_text": "#ffffff",
-            "color_highlight": "",
-            "gradient_highlight": "",
-            "color_overlay": "#171717",
-            "overlay_opacity": 10
-          }
-        }
-      },
-      "block_order": [
-        "video_4Rqbyf",
-        "video_TNLqpF",
-        "video_RTjhpU",
-        "video_hPqWEt"
-      ],
-      "settings": {
-        "heading": "Collage",
-        "heading_size": "title-md",
-        "heading_alignment": "text-left md:items-end md:flex-row",
-        "heading_tag": "h2",
-        "subheading": "",
-        "description": "<p>Share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>",
-        "button_label": "View more",
-        "button_link": "",
-        "button_external": false,
-        "button_icon": true,
-        "highlighted_text": "scribble",
-        "highlighted_scribble": "basic-underline",
-        "color_text": "",
-        "color_background": "",
-        "gradient_background": "",
-        "color_highlight": "",
-        "gradient_highlight": "",
-        "color_button_text": "",
-        "color_button_background": "",
-        "color_button_gradient": "",
-        "padding_top": 72,
-        "padding_bottom": 0,
-        "divider": false,
-        "full_width": false,
-        "rounded": false,
-        "enable_parallax": true
       }
     },
     "image-with-text-1": {
@@ -956,7 +842,6 @@
     "scrolling-text",
     "help-drawer",
     "video-hero",
-    "collage",
     "image-with-text-1",
     "image-with-text-2",
     "product-recommendations",
