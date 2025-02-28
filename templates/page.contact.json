@@ -107,13 +107,13 @@
         "custom_field_FPhUgM": {
           "type": "custom_field",
           "settings": {
-            "type": "select",
+            "type": "radio",
             "title": "What's this about?",
             "required": true,
             "full_width": false,
             "checked_value": "Yes",
             "unchecked_value": "No",
-            "radio_options": "",
+            "radio_options": "Feedback, Request Liberty In a Can™ at your favorite spot, Wholesale questions, Partnership, Shipping Questions, Misc.",
             "select_options": "Feedback, Request Liberty In a Can™ at your favorite spot, Wholesale questions, Partnership, Shipping Questions, Misc."
           }
         },
