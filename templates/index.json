@@ -959,7 +959,7 @@
         "text_DtcT9J": {
           "type": "text",
           "settings": {
-            "text": "<p>Pair text with an image to focus on your chosen product, collection, or blog post. Add details on availability, style, or even provide a review.</p>",
+            "text": "<p>save when you purchase a combo of both Lime and Watermelon!</p>",
             "text_size": "subtext-md",
             "text_max_size": 32,
             "text_font": "body",
@@ -1578,7 +1578,7 @@
     "calendar_events_rMg6tN": {
       "type": "calendar-events",
       "settings": {
-        "bg-color": "#0D253F"
+        "bg-color": "#0d253f"
       }
     },
     "newsletter_RxDNzw": {
