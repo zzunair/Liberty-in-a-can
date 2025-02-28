@@ -889,6 +889,7 @@
         "read_more",
         "spinning_text"
       ],
+      "disabled": true,
       "settings": {
         "product": "5mg-δ9-thc-live-resin-seltzer-with-lime-essence",
         "enable_sticky_info": true,
@@ -908,6 +909,151 @@
         "divider": false,
         "full_width": false,
         "rounded": true
+      }
+    },
+    "testimonials_a3WEUy": {
+      "type": "testimonials",
+      "blocks": {
+        "testimonial_6e3f6A": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "quote",
+            "text": "<p>I’m gonna drink this all night until you're out</p>",
+            "author": "Manny",
+            "author_info": "",
+            "author_url": "",
+            "image_ratio": "rounded",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "testimonial_h7BHaN": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "quote",
+            "text": "<p>They slapped. Watermelon is absolutely fire and my wife loved the lime</p>",
+            "author": "Mike",
+            "author_info": "",
+            "author_url": "",
+            "image_ratio": "rounded",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "testimonial_HXw3PT": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "quote",
+            "text": "<p>I slept 9 hours last night and have no anxiety. Some have ice cream at night, I have a 🗽Liberty In a Can. I am feeling so much better... the solitude, no alcohol. I don’t get a head high which I do not like, it’s just relaxing. I am going to become your best customer in Delray!!!</p>",
+            "author": "Pam",
+            "author_info": "",
+            "author_url": "",
+            "image_ratio": "rounded",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "testimonial_3nQLmY": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "quote",
+            "text": "<p>My husband and his friends loved Liberty In a Can so much that they drank them all when I was out of town so we will definitely be ordering more!</p>",
+            "author": "Christie",
+            "author_info": "",
+            "author_url": "",
+            "image_ratio": "rounded",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "testimonial_LkAeRA": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "quote",
+            "text": "<p>Liberty makes me feel like I’m kicking back at the beach with a joint but I’m sipping a sparkling water feeling refreshed instead with the same effects. It tastes delicious going down and has all the things I want to feel relaxed</p>",
+            "author": "Adam",
+            "author_info": "",
+            "author_url": "",
+            "image_ratio": "rounded",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "testimonial_VGj6NQ": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "quote",
+            "text": "<p>I like how its only 5mg but its live resin, so it actually hits. I've had other drinks that claim 25 or 50 mg but I didn't even feel anything.</p>",
+            "author": "Nav",
+            "author_info": "",
+            "author_url": "",
+            "image_ratio": "rounded",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "testimonial_6yKAUa": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "quote",
+            "text": "<p>You're drink actually tastes good. I have had a lot of these THC drinks and so many of them taste bad and they have so much sugar.</p>",
+            "author": "Natalie",
+            "author_info": "",
+            "author_url": "",
+            "image_ratio": "rounded",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        },
+        "testimonial_AnKhnt": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "quote",
+            "text": "<p>I don't drink (alcohol) anymore so these are perfect for me and I still feel included in drinking with friends</p>",
+            "author": "Stacy",
+            "author_info": "",
+            "author_url": "",
+            "image_ratio": "rounded",
+            "highlighted_text": "none",
+            "highlighted_scribble": "circle"
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_6e3f6A",
+        "testimonial_h7BHaN",
+        "testimonial_HXw3PT",
+        "testimonial_3nQLmY",
+        "testimonial_LkAeRA",
+        "testimonial_VGj6NQ",
+        "testimonial_6yKAUa",
+        "testimonial_AnKhnt"
+      ],
+      "settings": {
+        "heading": "Testimonials",
+        "heading_size": "title-md",
+        "heading_alignment": "text-center md:items-center",
+        "heading_tag": "h2",
+        "subheading": "",
+        "description": "",
+        "button_label": "",
+        "button_link": "",
+        "button_external": false,
+        "button_icon": true,
+        "highlighted_text": "none",
+        "highlighted_scribble": "circle",
+        "color_text": "",
+        "color_background": "",
+        "gradient_background": "",
+        "color_highlight": "",
+        "gradient_highlight": "",
+        "color_button_text": "",
+        "color_button_background": "",
+        "color_button_gradient": "",
+        "padding_top": 72,
+        "padding_bottom": 72,
+        "divider": false,
+        "rounded": false
       }
     },
     "rich-text-2": {
@@ -1162,109 +1308,6 @@
         "divider": false,
         "full_width": false,
         "rounded": true
-      }
-    },
-    "testimonials_a3WEUy": {
-      "type": "testimonials",
-      "blocks": {
-        "testimonial_6e3f6A": {
-          "type": "testimonial",
-          "settings": {
-            "icon": "quote",
-            "text": "<p>I’m gonna drink this all night until you're out</p>",
-            "author": "Manny",
-            "author_info": "",
-            "author_url": "",
-            "image_ratio": "rounded",
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        },
-        "testimonial_h7BHaN": {
-          "type": "testimonial",
-          "settings": {
-            "icon": "quote",
-            "text": "<p>They slapped. Watermelon is absolutely fire and my wife loved the lime</p>",
-            "author": "Mike",
-            "author_info": "",
-            "author_url": "",
-            "image_ratio": "rounded",
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        },
-        "testimonial_HXw3PT": {
-          "type": "testimonial",
-          "settings": {
-            "icon": "quote",
-            "text": "<p>I slept 9 hours last night and have no anxiety. Some have ice cream at night, I have a 🗽Liberty In a Can. I am feeling so much better... the solitude, no alcohol. I don’t get a head high which I do not like, it’s just relaxing. I am going to become your best customer in Delray!!!</p>",
-            "author": "Pam",
-            "author_info": "",
-            "author_url": "",
-            "image_ratio": "rounded",
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        },
-        "testimonial_3nQLmY": {
-          "type": "testimonial",
-          "settings": {
-            "icon": "quote",
-            "text": "<p>My husband and his friends loved Liberty In a Can so much that they drank them all when I was out of town so we will definitely be ordering more!</p>",
-            "author": "Christie",
-            "author_info": "",
-            "author_url": "",
-            "image_ratio": "rounded",
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        },
-        "testimonial_LkAeRA": {
-          "type": "testimonial",
-          "settings": {
-            "icon": "quote",
-            "text": "<p>Liberty makes me feel like I’m kicking back at the beach with a joint but I’m sipping a sparkling water feeling refreshed instead with the same effects. It tastes delicious going down and has all the things I want to feel relaxed</p>",
-            "author": "Adam",
-            "author_info": "",
-            "author_url": "",
-            "image_ratio": "rounded",
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        }
-      },
-      "block_order": [
-        "testimonial_6e3f6A",
-        "testimonial_h7BHaN",
-        "testimonial_HXw3PT",
-        "testimonial_3nQLmY",
-        "testimonial_LkAeRA"
-      ],
-      "settings": {
-        "heading": "Testimonials",
-        "heading_size": "title-md",
-        "heading_alignment": "text-center md:items-center",
-        "heading_tag": "h2",
-        "subheading": "",
-        "description": "",
-        "button_label": "",
-        "button_link": "",
-        "button_external": false,
-        "button_icon": true,
-        "highlighted_text": "none",
-        "highlighted_scribble": "circle",
-        "color_text": "",
-        "color_background": "",
-        "gradient_background": "",
-        "color_highlight": "",
-        "gradient_highlight": "",
-        "color_button_text": "",
-        "color_button_background": "",
-        "color_button_gradient": "",
-        "padding_top": 72,
-        "padding_bottom": 72,
-        "divider": false,
-        "rounded": false
       }
     },
     "testimonials-banner": {
@@ -1648,11 +1691,11 @@
     "video-with-text-overlay",
     "collage_irdHhw",
     "featured-product",
+    "testimonials_a3WEUy",
     "rich-text-2",
     "compact_product_bundle_EBA9Qp",
     "countdown-timer",
     "shop-the-look",
-    "testimonials_a3WEUy",
     "testimonials-banner",
     "featured-collections",
     "scrolling-text-2",
