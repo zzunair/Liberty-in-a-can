@@ -68,6 +68,7 @@ function nextMonth() {
 
 function selectDate(dateString) {
   const clearDateBtn = document.querySelector('.clear-date-btn');
+  const showMoreBtn = document.querySelector('.show-more-events');
   
   // Show all events if no date is selected (null)
   if (dateString === null) {
@@ -80,12 +81,17 @@ function selectDate(dateString) {
       }
     });
     
-    // Reset show more button text
-    const showMoreButton = document.querySelector('.show-more-events');
-    if (showMoreButton) {
-      showMoreButton.textContent = 'Show all events';
+    // Show the show more button and reset its text
+    if (showMoreBtn) {
+      showMoreBtn.style.display = 'block';
+      showMoreBtn.textContent = 'Show all events';
     }
     return;
+  }
+
+  // Hide show more button when date is selected
+  if (showMoreBtn) {
+    showMoreBtn.style.display = 'none';
   }
 
   // Show/hide events based on date
@@ -213,12 +219,25 @@ function closeEventPopup() {
 
 function clearDate() {
   const clearDateBtn = document.querySelector('.clear-date-btn');
+  const showMoreBtn = document.querySelector('.show-more-events');
   
-  // Show all events
-  document.querySelectorAll('.event-item').forEach(event => {
-    event.style.display = 'flex';
+  // Show only first 3 events
+  document.querySelectorAll('.event-item').forEach((event, index) => {
+    if (index < 3) {
+      event.style.display = 'flex';
+      event.classList.remove('hidden-event');
+    } else {
+      event.style.display = 'none';
+      event.classList.add('hidden-event');
+    }
   });
   
+  // Show and reset show more button
+  if (showMoreBtn) {
+    showMoreBtn.style.display = 'block';
+    showMoreBtn.textContent = 'Show all events';
+  }
+
   // Remove active state from calendar days
   document.querySelectorAll('.calendar-day').forEach(day => {
     day.classList.remove('active');
@@ -228,7 +247,7 @@ function clearDate() {
   clearDateBtn.style.opacity = '0';
   setTimeout(() => {
     clearDateBtn.style.display = 'none';
-  }, 500); // Hide after fade animation
+  }, 500);
 }
 
 // Function to parse rich text JSON into HTML
@@ -347,14 +366,20 @@ generateCalendar(currentMonth, currentYear);
 // Add this new function
 function toggleEvents() {
   const button = document.querySelector('.show-more-events');
-  const hiddenEvents = document.querySelectorAll('.hidden-event');
+  const allEvents = document.querySelectorAll('.event-item');
   const isShowingAll = button.textContent === 'Show less';
 
-  hiddenEvents.forEach(event => {
-    if (isShowingAll) {
-      event.classList.remove('show-event');
-    } else {
-      event.classList.add('show-event');
+  allEvents.forEach((event, index) => {
+    if (index >= 3) {  // Only affect events after the first 3
+      if (isShowingAll) {
+        // Hiding events (Show Less clicked)
+        event.style.display = 'none';
+        event.classList.add('hidden-event');
+      } else {
+        // Showing events (Show all events clicked)
+        event.style.display = 'flex';
+        event.classList.remove('hidden-event');
+      }
     }
   });
 
