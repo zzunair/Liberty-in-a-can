@@ -8,7 +8,7 @@
 .calendar-events .custom-container{
     display: grid;
     grid-template-columns: 350px 1fr;
-    align-items: center;
+    /* align-items: center; */
     gap: 2rem;
     max-width: 1600px;
     width: 100%;
@@ -16,9 +16,10 @@
 }
 
 .calendar-events__container {
-    background: #242937;
+    background: #0B141F;
     padding: 1.5rem;
     border-radius: 8px;
+    height: max-content
 }
 
 .calendar-header {
@@ -102,7 +103,7 @@
     display: flex;
     gap: 1.5rem;
     padding: 1.5rem;
-    background: #242937;
+    background: #0B141F;
     border-radius: 8px;
     transition: transform 0.2s ease;
     cursor: pointer;
@@ -180,6 +181,8 @@
 .calendar-actions {
     text-align: center;
     margin-top: 1rem;
+    display: flex;
+    justify-content: center;
 }
 
 .clear-date-btn {
@@ -240,7 +243,7 @@
   width: 90%;
   max-width: 800px;
   max-height: 90vh;
-  background: #242937;
+  background: #0B141F;
   border-radius: 12px;
   z-index: 1000;
   overflow-y: auto;
@@ -393,6 +396,8 @@
 .show-more-container {
   text-align: center;
   margin-top: 2rem;
+  display: flex;
+  justify-content: center;
 }
 
 .show-more-events {
@@ -459,7 +464,7 @@
 
   .event-item {
     flex-direction: column;
-    background: #242937;
+    background: #0B141F;
     border-radius: 12px;
     padding: 1.5rem;
     gap: 1rem;
