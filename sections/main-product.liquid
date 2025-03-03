@@ -1,3 +1,16 @@
+{%- liquid
+  assign show_product = true
+  if product.tags contains 'wholesale-product'
+    assign show_product = false
+    if customer
+      if customer.tags contains 'wholesale-customer'
+        assign show_product = true
+      endif
+    endif
+  endif
+-%}
+
+{%- if show_product -%}
 <style>
   #shopify-section-{{ section.id }} {
     --section-padding-top: {{ section.settings.padding_top }}px;
@@ -827,6 +840,8 @@
     {{- product | structured_data -}}
   </script>  
 </div>
+{%- endif -%}
+
 
 {% schema %}
 {
