@@ -40,7 +40,7 @@
     {%- if featured_media -%}
       <div class="product-card__media relative h-auto{% unless show_secondary_image and product.media.size > 1 %} overflow-hidden{% endunless %}">
         {%- if show_wholesale_badge -%}
-          <div class="wholesale-badge absolute top-2 left-2 z-2 bg-primary text-white text-xs px-2 py-1 rounded">
+          <div class="wholesale-badge">
             Wholesale
           </div>
         {%- endif -%}
