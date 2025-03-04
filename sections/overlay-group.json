@@ -286,7 +286,7 @@
           "type": "floating",
           "settings": {
             "heading": "Get 20% Off",
-            "content_position": "left-0",
+            "content_position": "right-0",
             "show_social": true,
             "social_heading": "Follow us",
             "mobile_disabled": true,
