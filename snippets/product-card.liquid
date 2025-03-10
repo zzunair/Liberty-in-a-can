@@ -378,3 +378,40 @@
 {%- else -%}
   {%- render 'product-card-placeholder', placeholder: 'image', image_ratio: image_ratio, text_alignment: text_alignment, show_vendor: show_vendor, show_rating: show_rating -%}
 {%- endif -%}
+
+
+<style>
+/* Override Flickity's transform effect */
+.product-card__carousel .flickity-slider {
+  transform: none !important;
+}
+
+.product-card__carousel .flickity-cell {
+  opacity: 0;
+  transition: opacity 0.5s ease;
+  transform: none !important;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+.product-card__carousel .flickity-cell.is-selected {
+  opacity: 1;
+  transition: opacity 0.5s ease;
+}
+
+/* Hide default image when carousel is visible */
+.product-card__media:hover > img {
+  opacity: 0;
+}
+
+/* Ensure carousel container is properly positioned */
+.product-card__carousel {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+</style>
