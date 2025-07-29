@@ -188,7 +188,7 @@
           "type": "question",
           "settings": {
             "title": "Will I get anxious? ",
-            "text": "<p>Our unique premium input of Live resin goes beyond standard THC distillate - the combination of terpenes and minor cannabinoids  with THC create a synergistic effect, creating a blissful high for everyone to enjoy.</p>",
+            "text": "<p>Everyone is different, so it is important that you are in tune with how you interact with THC. We recommend to start low and go slow to find the pace that's right for you.</p>",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
@@ -197,16 +197,7 @@
           "type": "question",
           "settings": {
             "title": "How will Liberty make me feel? ",
-            "text": "<p>Liberty In a Can offers an unmatched drinking experience. You’ll first feel a quick, energized elevation followed by a sensation of comfort and bliss. Liberty is alcohol-free but said to feel similar to a glass of wine or beer: light, buzzy, and sociable without feeling out of control. The drinking experience you’ve always wanted.</p>",
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        },
-        "question-5": {
-          "type": "question",
-          "settings": {
-            "title": "How many seltzers should I have? ",
-            "text": "<p>Liberty is intended to be a sessionable drink, meaning you can control and build your buzz. But your limit is unique to you.</p><ul><li><strong>New(ish) to cannabis?</strong> We typically recommend starting slow and low. Try one Liberty In a Can, wait 10 minutes, and see how you feel. </li><li><strong>Slightly more cannabis experience?</strong> We suggest opting for our double strength 10mg dose). </li><li><strong>Cannabis veterans? </strong>Pair Liberty with a pre-roll or your favorite way to co-consume. </li></ul>",
+            "text": "<p>Liberty In a Can™ offers an unmatched drinking experience. Consumers report feeling a quick, energized elevation followed by a sensation of comfort and bliss. Liberty is alcohol-free but satisfy as much as to a glass of wine or beer: light, buzzy, and sociable without feeling out of control. The drinking experience you’ve always wanted.</p>",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
@@ -431,7 +422,7 @@
           "type": "question",
           "settings": {
             "title": "How do I log Into my account?",
-            "text": "<p>To log in to your account, enter your email and password here. However, you must select “Create Account” when logging in to your customer profile for the first time.</p>",
+            "text": "<p>To log in to your account, enter your email and password in the customer portal. However, you must select “Create Account” when logging in to your customer profile for the first time.</p>",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
@@ -440,7 +431,7 @@
           "type": "question",
           "settings": {
             "title": "Why does it say that no account is recognized with my email? ",
-            "text": "<p>This is likely because you have yet to set up an account with us. After your first purchase, select “Create Account” and enter the email used to make your purchase. For all following logins, simply enter your email and password here.</p>",
+            "text": "<p>This is likely because you have yet to set up an account with us. After your first purchase, select “Create Account” and enter the email used to make your purchase. For all following logins, simply enter your email and password in your customer portal.</p>",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
@@ -457,8 +448,8 @@
         "contact": {
           "type": "contact",
           "settings": {
-            "heading": "Didn’t find your answer?",
-            "text": "<p>Don't hestitate to contact us</p>",
+            "heading": "Need assistance?",
+            "text": "<p>Don't hesitate to contact us!</p>",
             "show_phone": false,
             "avatar_height": 60,
             "highlighted_text": "none",
@@ -471,7 +462,6 @@
         "question-1",
         "question-2",
         "question-4",
-        "question-5",
         "question-8",
         "question-9",
         "question-10",

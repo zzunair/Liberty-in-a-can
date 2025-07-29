@@ -1105,7 +1105,7 @@
         "text_DtcT9J": {
           "type": "text",
           "settings": {
-            "text": "<p>save when you purchase a combo of both Lime and Watermelon!</p>",
+            "text": "<p>Save when you purchase a combo of both Lime and Watermelon!</p>",
             "text_size": "subtext-md",
             "text_max_size": 32,
             "text_font": "body",
@@ -1528,7 +1528,14 @@
           "settings": {
             "title": "",
             "title_color": "",
+            "title_size_v2": 0,
             "alignment": "center",
+            "instafeed_margin_top": 0,
+            "instafeed_margin_bottom": 0,
+            "instafeed_margin_sides": 0,
+            "show_instagram_link": false,
+            "link_alignment": "left",
+            "link_color": "#000000",
             "background_color": "",
             "feed_id": "",
             "html_area": ""

@@ -18,7 +18,7 @@
           "type": "announcement",
           "settings": {
             "icon": "truck",
-            "text": "Free shipping and returns",
+            "text": "Free & Discreet Shipping",
             "link": "",
             "hide_icon_mobile": true,
             "text_mobile": "",
@@ -30,7 +30,7 @@
           "type": "announcement",
           "settings": {
             "icon": "email",
-            "text": "A question? Visit our contact page",
+            "text": "Questions? Visit our Contact Page",
             "link": "",
             "hide_icon_mobile": true,
             "text_mobile": "",

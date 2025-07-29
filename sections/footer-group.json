@@ -20,7 +20,7 @@
             "icon": "lightning",
             "custom_icon": "",
             "heading": "Customer service",
-            "text": "<p>We’re here to help—because good vibes and great service should come together.</p>",
+            "text": "<p>We’re here to help—because good vibes and great service should come standard.</p>",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
@@ -30,8 +30,8 @@
           "settings": {
             "icon": "box",
             "custom_icon": "",
-            "heading": "Discreet Shipping",
-            "text": "<p>Ships in 2-5 business days.</p>",
+            "heading": "Fast & Discreet Shipping",
+            "text": "<p>Get free shipping on orders of $150 or more</p>",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
@@ -42,7 +42,7 @@
             "icon": "users",
             "custom_icon": "",
             "heading": "Refer a friend",
-            "text": "<p>Give 15% and get 15% off your next order.</p>",
+            "text": "<p>Refer a friend and get 15% off each other.</p>",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
@@ -126,19 +126,19 @@
             "container_width": 20
           }
         },
-        "link_list_h7KQbf": {
-          "type": "link_list",
-          "settings": {
-            "heading": "Navigation",
-            "menu": "footer-navigation",
-            "container_width": 20
-          }
-        },
         "link_list_FKyejP": {
           "type": "link_list",
           "settings": {
             "heading": "Store",
             "menu": "footer-store",
+            "container_width": 20
+          }
+        },
+        "link_list_h7KQbf": {
+          "type": "link_list",
+          "settings": {
+            "heading": "Navigation",
+            "menu": "footer-navigation",
             "container_width": 20
           }
         },
@@ -178,8 +178,8 @@
         "logo_social",
         "link_list-1",
         "link_list-2",
-        "link_list_h7KQbf",
         "link_list_FKyejP",
+        "link_list_h7KQbf",
         "link_list_8EfpNC",
         "link_list_rW4HDb",
         "brand_information"
