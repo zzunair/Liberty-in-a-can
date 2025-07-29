@@ -20,7 +20,7 @@
             "icon": "lightning",
             "custom_icon": "",
             "heading": "Customer service",
-            "text": "<p>We’re here to help—because good vibes and great service should come standard.</p>",
+            "text": "<p>We’re here to help—because good vibes and great service should come together.</p>",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
@@ -30,8 +30,8 @@
           "settings": {
             "icon": "box",
             "custom_icon": "",
-            "heading": "Fast Free Shipping",
-            "text": "<p>Get free shipping on orders of $150 or more</p>",
+            "heading": "Discreet Shipping",
+            "text": "<p>Ships in 2-5 business days.</p>",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
@@ -42,7 +42,7 @@
             "icon": "users",
             "custom_icon": "",
             "heading": "Refer a friend",
-            "text": "<p>Refer a friend and get 15% off each other.</p>",
+            "text": "<p>Give 15% and get 15% off your next order.</p>",
             "highlighted_text": "none",
             "highlighted_scribble": "circle"
           }
