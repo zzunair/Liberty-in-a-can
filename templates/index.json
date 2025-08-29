@@ -891,7 +891,7 @@
       ],
       "disabled": true,
       "settings": {
-        "product": "5mg-δ9-thc-live-resin-seltzer-with-lime-essence",
+        "product": "5mg-δ9-thc-full-spectrum-seltzer-with-lime-essence",
         "enable_sticky_info": true,
         "media_size": 64,
         "gallery_layout": "thumbnail",
@@ -1122,7 +1122,7 @@
       "settings": {
         "collection": "beverages",
         "products": [
-          "5mg-δ9-thc-live-resin-seltzer-with-lime-essence",
+          "5mg-δ9-thc-full-spectrum-seltzer-with-lime-essence",
           "5mg-δ9-thc-live-resin-seltzer-with-lime-essence-copy"
         ],
         "product_limit": 2,
