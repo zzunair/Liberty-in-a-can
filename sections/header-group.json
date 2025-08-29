@@ -88,7 +88,7 @@
             "promo_heading_2": "Liberty in a Can™ Watermelon",
             "promo_subtext_2": "THC SELTZER",
             "promo_overlay_content_2": true,
-            "promo_link_2": "shopify://products/5mg-δ9-thc-live-resin-seltzer-with-lime-essence-copy",
+            "promo_link_2": "shopify://products/5mg-δ9-thc-full-spectrum-seltzer-with-lime-essence-copy",
             "promo_tag_2": "{{ shop.metaobjects[\"shopify--flavor\"].watermelon.label.value }}",
             "promo_color_text_2": "#fcfbe7",
             "promo_color_overlay_2": "#000000",
