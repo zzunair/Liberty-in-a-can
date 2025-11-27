@@ -1,0 +1,312 @@
+<style>
+  #shopify-section-{{ section.id }} {
+    --section-padding-top: {{ section.settings.padding_top }}px;
+    --section-padding-bottom: {{ section.settings.padding_bottom }}px;
+  }
+</style>
+
+{{ 'customer.css' | asset_url | stylesheet_tag }}
+
+<div class="section section--padding{% if section.settings.divider %} section--divider{% endif %}{% if section.settings.rounded %} section--rounded relative{% endif %}">
+  <div class="page-width relative">
+    <div class="title-wrapper{% if section.settings.heading_size == 'title-xl' %} title-wrapper-lg{% endif %} text-center leading-none">
+      <{{ section.settings.heading_tag }} class="heading {{ section.settings.heading_size }}">
+        <split-words class="split-words block" data-animate="fade-up-large">Wholesale Registration</split-words>
+      </{{ section.settings.heading_tag }}>
+    </div>
+    
+    <div class="customer">
+      {%- form 'create_customer', class: 'grid gap-12' -%}
+        {%- if form.errors -%}
+          <div class="alert alert--error">
+            <h2 class="sr-only">{{ 'templates.contact.form.error_heading' | t }}</h2>
+            <ul>
+              {%- for field in form.errors -%}
+                <li>
+                  {%- if field == 'form' -%}
+                    {{ form.errors.messages[field] }}
+                  {%- else -%}
+                    <a href="#{{ field }}">
+                      {{ form.errors.translated_fields[field] | capitalize }}
+                      {{ form.errors.messages[field] }}
+                    </a>
+                  {%- endif -%}
+                </li>
+              {%- endfor -%}
+            </ul>
+          </div>
+        {%- endif -%}
+
+        <div class="grid gap-5">
+          <div class="field">
+            <input
+              type="text"
+              class="input is-floating"
+              name="customer[first_name]"
+              id="RegisterFormFirstName"
+              {% if form.first_name %}value="{{ form.first_name }}"{% endif %}
+              autocomplete="given-name"
+              placeholder="{{ 'customer.register.first_name' | t | escape }}"
+              required
+            />
+            <label class="label is-floating" for="RegisterFormFirstName">{{ 'customer.register.first_name' | t }}</label>
+          </div>
+          <div class="field">
+            <input
+              type="text"
+              class="input is-floating"
+              name="customer[last_name]"
+              id="RegisterFormLastName"
+              {% if form.last_name %}value="{{ form.last_name }}"{% endif %}
+              autocomplete="family-name"
+              placeholder="{{ 'customer.register.last_name' | t | escape }}"
+              required
+            />
+            <label class="label is-floating" for="RegisterFormLastName">{{ 'customer.register.last_name' | t }}</label>
+          </div>
+          <div class="field">
+            <input
+              required
+              class="input is-floating{% if form.errors contains 'email' %} invalid{% endif %}"
+              type="email"
+              name="customer[email]"
+              id="RegisterFormEmail"
+              spellcheck="false"
+              autocapitalize="off"
+              autocomplete="email"
+              placeholder="{{ 'customer.register.email' | t | escape }}"
+              {%- if form.email %} value="{{ form.email }}"{% endif -%}
+            />
+            <label class="label is-floating" for="RegisterFormEmail">{{ 'customer.register.email' | t }}</label>
+          </div>
+          <div class="field">
+            <input
+              required
+              class="input is-floating{% if form.errors contains 'password' %} invalid{% endif %}"
+              type="password"
+              name="customer[password]"
+              id="RegisterFormPassword"
+              placeholder="{{ 'customer.register.password' | t | escape }}"
+            />
+            <label class="label is-floating" for="RegisterFormPassword">{{ 'customer.register.password' | t }}</label>
+          </div>
+
+          <!-- Wholesale specific fields -->
+          <div class="field">
+            <input
+              required
+              type="text"
+              class="input is-floating"
+              name="customer[note][company_name]"
+              id="RegisterFormCompanyName"
+              placeholder="Company Name"
+            />
+            <label class="label is-floating" for="RegisterFormCompanyName">Company Name</label>
+          </div>
+
+          <div class="field">
+            <input
+              required
+              type="text"
+              class="input is-floating"
+              name="customer[note][business_phone]"
+              id="RegisterFormBusinessPhone"
+              placeholder="Business Phone"
+            />
+            <label class="label is-floating" for="RegisterFormBusinessPhone">Business Phone</label>
+          </div>
+
+          <div class="field">
+            <input
+              required
+              type="text"
+              class="input is-floating"
+              name="customer[note][tax_id]"
+              id="RegisterFormTaxId"
+              placeholder="Tax ID / Business Number"
+            />
+            <label class="label is-floating" for="RegisterFormTaxId">Tax ID / Business Number</label>
+          </div>
+
+          <div class="field">
+            <textarea
+              required
+              class="textarea is-floating"
+              name="customer[note][business_address]"
+              id="RegisterFormBusinessAddress"
+              placeholder="Business Address"
+              rows="3"
+            ></textarea>
+            <label class="label is-floating" for="RegisterFormBusinessAddress">Business Address</label>
+          </div>
+
+          <!-- Hidden field for wholesale tag -->
+          <input type="hidden" name="customer[tags]" value="wholesale-customer" />
+          
+          <!-- Success/Error Messages -->
+          {%- if form.posted_successfully? -%}
+            <div class="alert alert--success">
+              <p>Thank you for registering! Your wholesale account has been created successfully.</p>
+            </div>
+          {%- endif -%}
+
+          {%- if section.settings.show_email_consent -%}
+            <div class="field">
+              <label for="RegisterFormEmailConsent" class="flex items-center gap-3">
+                <input
+                  type="checkbox"
+                  id="RegisterFormEmailConsent"
+                  name="customer[accepts_marketing]"
+                  value="1"
+                />
+                {{- 'customer.register.accepts_marketing' | t -}}
+              </label>
+            </div>
+          {%- endif -%}
+        </div>
+
+        <div class="grid gap-8">
+          <div class="button-group grid gap-4 md:grid-cols-2">
+            <button class="button button--primary button--fixed" type="submit" is="hover-button">
+              <span class="btn-fill" data-fill></span>
+              <span class="btn-text">Register as Wholesale Customer</span>
+            </button>
+            <a class="button button--secondary button--fixed" href="{{ routes.account_login_url }}" is="hover-link" rel="nofollow">
+              <span class="btn-fill" data-fill></span>
+              <span class="btn-text">{{ 'customer.register.sign_in' | t }}</span>
+            </a>
+          </div>
+          
+          <p class="text-center">
+            <a class="inline-flex gap-2" href="{{ routes.root_url }}">
+              {%- render 'icon', icon: 'return', size: 'sm' -%}
+              <span class="link text-lg leading-none">{{ 'customer.register.return' | t }}</span>
+            </a>
+          </p>
+        </div>
+      {%- endform -%}  
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Wholesale Register",
+  "settings": [
+    {
+      "type": "header",
+      "content": "Heading Settings"
+    },
+    {
+      "type": "select",
+      "id": "heading_size",
+      "options": [
+        {
+          "value": "title-sm",
+          "label": "Small"
+        },
+        {
+          "value": "title-md",
+          "label": "Medium"
+        },
+        {
+          "value": "title-lg tracking-heading",
+          "label": "Large"
+        },
+        {
+          "value": "title-xl tracking-heading",
+          "label": "Extra Large"
+        }
+      ],
+      "default": "title-xl tracking-heading",
+      "label": "Heading Size"
+    },
+    {
+      "type": "select",
+      "id": "heading_tag",
+      "options": [
+        {
+          "value": "h1",
+          "label": "H1"
+        },
+        {
+          "value": "h2",
+          "label": "H2"
+        },
+        {
+          "value": "h3",
+          "label": "H3"
+        },
+        {
+          "value": "h4",
+          "label": "H4"
+        },
+        {
+          "value": "h5",
+          "label": "H5"
+        },
+        {
+          "value": "h6",
+          "label": "H6"
+        },
+        {
+          "value": "div",
+          "label": "div"
+        },
+        {
+          "value": "span",
+          "label": "span"
+        },
+        {
+          "value": "p",
+          "label": "p"
+        }
+      ],
+      "default": "h1",
+      "label": "Heading Tag"
+    },
+    {
+      "type": "checkbox",
+      "id": "show_email_consent",
+      "label": "Show email marketing consent",
+      "default": true
+    },
+    {
+      "type": "header",
+      "content": "Section Settings"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 120,
+      "step": 4,
+      "unit": "px",
+      "label": "Top Padding",
+      "default": 72
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 120,
+      "step": 4,
+      "unit": "px",
+      "label": "Bottom Padding",
+      "default": 100
+    },
+    {
+      "type": "checkbox",
+      "id": "divider",
+      "label": "Show section divider",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "rounded",
+      "default": false,
+      "label": "Enable rounded corners"
+    }
+  ]
+}
+{% endschema %}

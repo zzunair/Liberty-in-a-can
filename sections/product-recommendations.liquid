@@ -31,23 +31,42 @@
         <slider-element id="Slider-{{ section.id }}" class="grid slider{% if section.settings.carousel_on_desktop %} slider--desktop{% endif %}{% if section.settings.swipe_on_mobile %} slider--tablet{% endif %}" selector=".card-grid>.card">
           <motion-list class="card-grid card-grid--{{ section.settings.columns }} mobile:card-grid--{{ section.settings.columns_mobile }} grid">
             {%- for recommendation in recommendations.products -%}
-              {%- render 'product-card',
-                product: recommendation,
-                product_id: recommendation.id,
-                section_id: section.id,
-                lazy_load: false,
-                image_ratio: settings.product_image_ratio,
-                image_fill: settings.product_image_fill,
-                show_secondary_image: settings.product_secondary_image,
-                show_vendor: settings.product_vendor,
-                show_rating: settings.product_rating,
-                show_color_swatches: settings.product_color_swatches,
-                show_countdown: settings.product_countdown,
-                show_quick_add: settings.product_quick_add,
-                show_quick_view: settings.product_quick_view,
-                show_save_amount: settings.product_save_amount,
-                save_type: settings.product_save_type
-              -%}
+              {%- assign show_product = true -%}
+              {%- if customer == nil -%}
+                {%- # If customer is not logged in, check if product contains wholesale in title or tags -%}
+                {%- if recommendation.title contains 'wholesale' or recommendation.title contains 'Wholesale' -%}
+                  {%- assign show_product = false -%}
+                {%- endif -%}
+                {%- for tag in recommendation.tags -%}
+                  {%- if tag contains 'wholesale' or tag contains 'Wholesale' -%}
+                    {%- assign show_product = false -%}
+                    {%- break -%}
+                  {%- endif -%}
+                {%- endfor -%}
+              {%- elsif customer.tags contains 'wholesale-customer' -%}
+                {%- # If customer has wholesale-customer tag, show all products -%}
+                {%- assign show_product = true -%}
+              {%- endif -%}
+
+              {%- if show_product -%}
+                {%- render 'product-card',
+                  product: recommendation,
+                  product_id: recommendation.id,
+                  section_id: section.id,
+                  lazy_load: false,
+                  image_ratio: settings.product_image_ratio,
+                  image_fill: settings.product_image_fill,
+                  show_secondary_image: settings.product_secondary_image,
+                  show_vendor: settings.product_vendor,
+                  show_rating: settings.product_rating,
+                  show_color_swatches: settings.product_color_swatches,
+                  show_countdown: settings.product_countdown,
+                  show_quick_add: settings.product_quick_add,
+                  show_quick_view: settings.product_quick_view,
+                  show_save_amount: settings.product_save_amount,
+                  save_type: settings.product_save_type
+                -%}
+              {%- endif -%}
             {%- endfor -%}
           </motion-list>
 

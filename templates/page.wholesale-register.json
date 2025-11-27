@@ -1,0 +1,17 @@
+{
+  "sections": {
+    "main": {
+      "type": "main-wholesale-register",
+      "settings": {
+        "rounded": false,
+        "heading_size": "title-xl tracking-heading",
+        "show_email_consent": true,
+        "padding_top": 72,
+        "padding_bottom": 100
+      }
+    }
+  },
+  "order": [
+    "main"
+  ]
+}

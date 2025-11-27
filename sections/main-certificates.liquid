@@ -1,0 +1,243 @@
+<style>
+  #shopify-section-{{ section.id }} {
+    --section-padding-top: {{ section.settings.padding_top }}px;
+    --section-padding-bottom: {{ section.settings.padding_bottom }}px;
+  }
+
+  .certificate-links{
+    margin-top: 1rem;
+  }
+
+  .title{
+    margin-bottom: 0.5rem;
+  }
+
+  .certificate-link{
+    margin-bottom: 0.5rem;
+  }
+
+  .certificates-wrapper {
+    margin-top: 50px;
+  }
+
+  /* .certificate-block{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  } */
+</style>
+
+<div class="section--padding">
+  <div class="page-width">
+    <div class="title-wrapper text-center">
+      <h1 class="title title-xl">{{ section.settings.title }}</h1>
+    </div>
+
+    {% if section.settings.warning_statements != blank %}
+      <div class="rte mt-8">
+        {{ section.settings.warning_statements }}
+      </div>
+    {% endif %}
+
+    <div class="certificates-wrapper mt-12">
+      {% for block in section.blocks %}
+        {% if block.type == 'product_certificates' %}
+          <div class="certificate-block mb-12" {{ block.shopify_attributes }}>
+            <h2 class="title title-m mb-4">{{ block.settings.product_title }}</h2>
+            {% if block.settings.description != blank %}
+              <div class="rte mb-6">{{ block.settings.description }}</div>
+            {% endif %}
+            
+            <div class="certificate-links">
+              {% for i in (1..10) %}
+                {% assign title_key = 'cert_title_' | append: i %}
+                {% assign link_key = 'cert_link_' | append: i %}
+                {% if block.settings[title_key] != blank and block.settings[link_key] != blank %}
+                  <div class="certificate-link mt-4 mb-2">
+                    <a href="{{ block.settings[link_key] }}" class="link text-lg" target="_blank">
+                      {{ block.settings[title_key] }}
+                    </a>
+                  </div>
+                {% endif %}
+              {% endfor %}
+            </div>
+          </div>
+        {% endif %}
+      {% endfor %}
+    </div>
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Certificates of Analysis",
+  "settings": [
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Title",
+      "default": "Certificates of Analysis"
+    },
+    {
+      "type": "richtext",
+      "id": "warning_statements",
+      "label": "Warning Statements",
+      "default": "<ul><li>Contains: THC</li><li>This product is intended for use by adults 21 years and older keep out of reach of children.</li><li>There may be health risks associated with the consumption of this product.</li><li>There may be additional health risks associated with the consumption of this product for women who are pregnant, breastfeeding, or plan to become pregnant.</li><li>The intoxicating effects of this product maybe delayed by two or more hours.</li><li>Do not drive a motor vehicle or operate machinery while using this product.</li><li>Use of this product may result in a positive drug screen.</li></ul>"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Padding top",
+      "default": 36
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 100,
+      "step": 4,
+      "unit": "px",
+      "label": "Padding bottom",
+      "default": 36
+    }
+  ],
+  "blocks": [
+    {
+      "type": "product_certificates",
+      "name": "Product Certificates",
+      "settings": [
+        {
+          "type": "text",
+          "id": "product_title",
+          "label": "Product Title",
+          "default": "MILD HARE"
+        },
+        {
+          "type": "richtext",
+          "id": "description",
+          "label": "Product Description",
+          "default": "<p>Made with only 5MG of D9, this all natural, easy going recipe is made for those looking for a \"take it easy\" buzz.</p>"
+        },
+        {
+          "type": "header",
+          "content": "Certificate Links"
+        },
+        {
+          "type": "text",
+          "id": "cert_title_1",
+          "label": "Certificate 1 Title"
+        },
+        {
+          "type": "text",
+          "id": "cert_link_1",
+          "label": "Certificate 1 Link"
+        },
+        {
+          "type": "text",
+          "id": "cert_title_2",
+          "label": "Certificate 2 Title"
+        },
+        {
+          "type": "text",
+          "id": "cert_link_2",
+          "label": "Certificate 2 Link"
+        },
+        {
+          "type": "text",
+          "id": "cert_title_3",
+          "label": "Certificate 3 Title"
+        },
+        {
+          "type": "text",
+          "id": "cert_link_3",
+          "label": "Certificate 3 Link"
+        },
+        {
+          "type": "text",
+          "id": "cert_title_4",
+          "label": "Certificate 4 Title"
+        },
+        {
+          "type": "text",
+          "id": "cert_link_4",
+          "label": "Certificate 4 Link"
+        },
+        {
+          "type": "text",
+          "id": "cert_title_5",
+          "label": "Certificate 5 Title"
+        },
+        {
+          "type": "text",
+          "id": "cert_link_5",
+          "label": "Certificate 5 Link"
+        },
+        {
+          "type": "text",
+          "id": "cert_title_6",
+          "label": "Certificate 6 Title"
+        },
+        {
+          "type": "text",
+          "id": "cert_link_6",
+          "label": "Certificate 6 Link"
+        },
+        {
+          "type": "text",
+          "id": "cert_title_7",
+          "label": "Certificate 7 Title"
+        },
+        {
+          "type": "text",
+          "id": "cert_link_7",
+          "label": "Certificate 7 Link"
+        },
+        {
+          "type": "text",
+          "id": "cert_title_8",
+          "label": "Certificate 8 Title"
+        },
+        {
+          "type": "text",
+          "id": "cert_link_8",
+          "label": "Certificate 8 Link"
+        },
+        {
+          "type": "text",
+          "id": "cert_title_9",
+          "label": "Certificate 9 Title"
+        },
+        {
+          "type": "text",
+          "id": "cert_link_9",
+          "label": "Certificate 9 Link"
+        },
+        {
+          "type": "text",
+          "id": "cert_title_10",
+          "label": "Certificate 10 Title"
+        },
+        {
+          "type": "text",
+          "id": "cert_link_10",
+          "label": "Certificate 10 Link"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Certificates of Analysis",
+      "blocks": [
+        {
+          "type": "product_certificates"
+        }
+      ]
+    }
+  ]
+}
+{% endschema %}

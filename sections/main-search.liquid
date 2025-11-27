@@ -45,8 +45,37 @@
       {%- render 'predictive-search', section_id: section.id, context: 'page' -%}
     </div>
 
+    {%- assign filtered_results_count = 0 -%}
+    {%- for item in search.results -%}
+      {%- if item.object_type == 'product' -%}
+        {%- assign show_product = true -%}
+        {%- if item.title contains 'wholesale' or item.title contains 'Wholesale' or item.handle contains 'wholesale' or item.handle contains 'Wholesale' -%}
+          {%- assign show_product = false -%}
+          {%- if customer and customer.tags contains 'wholesale-customer' -%}
+            {%- assign show_product = true -%}
+          {%- endif -%}
+        {%- endif -%}
+        {%- if show_product -%}
+          {%- for tag in item.tags -%}
+            {%- if tag contains 'wholesale' or tag contains 'Wholesale' -%}
+              {%- assign show_product = false -%}
+              {%- if customer and customer.tags contains 'wholesale-customer' -%}
+                {%- assign show_product = true -%}
+              {%- endif -%}
+              {%- break -%}
+            {%- endif -%}
+          {%- endfor -%}
+        {%- endif -%}
+        {%- if show_product -%}
+          {%- assign filtered_results_count = filtered_results_count | plus: 1 -%}
+        {%- endif -%}
+      {%- else -%}
+        {%- assign filtered_results_count = filtered_results_count | plus: 1 -%}
+      {%- endif -%}
+    {%- endfor -%}
+    
     {%- paginate search.results by section.settings.products_per_page -%}
-      {%- if search.results_count > 0 -%}
+      {%- if filtered_results_count > 0 -%}
         {%- render 'facets-sticky',
           results: search,
           collapsed: section.settings.filter_collapsed,
@@ -59,14 +88,14 @@
       {%- endif -%}
 
       {%- unless enable_filtering or enable_sorting -%}
-        {%- if search.results_count > 0 -%}
+        {%- if filtered_results_count > 0 -%}
           <div class="collection__topbar hidden xl:flex items-center gap-4">
-            <p class="text-base lg:text-lg" role="status">{{ 'general.search.results_with_count_and_term' | t: terms: search.terms, count: search.results_count }}</p>
+            <p class="text-base lg:text-lg" role="status">{{ 'general.search.results_with_count_and_term' | t: terms: search.terms, count: filtered_results_count }}</p>
           </div>
         {%- endif -%}
       {%- endunless -%}
 
-      {%- if search.results_count > 0 -%}
+      {%- if filtered_results_count > 0 -%}
         {%- if enable_filtering or enable_sorting -%}
           <div class="collection__topbar hidden xl:flex items-center gap-4">
             {%- if enable_filtering -%}
@@ -104,8 +133,8 @@
 
             <p id="ProductCount" class="text-base lg:text-lg" role="status">
               {%- liquid
-                if search.results_count
-                  echo 'general.search.results_with_count' | t: terms: search.terms, count: search.results_count
+                if filtered_results_count > 0
+                  echo 'general.search.results_with_count' | t: terms: search.terms, count: filtered_results_count
                 elsif search.products_count == search.all_products_count
                   echo 'collections.general.product_count_simple' | t: count: search.products_count
                 else
@@ -161,7 +190,7 @@
       -%}
 
       <div class="collection__content flex">
-        {%- if enable_filtering and filter_type == 'sidebar' and search.results_count > 0 -%}
+        {%- if enable_filtering and filter_type == 'sidebar' and filtered_results_count > 0 -%}
           <div class="hidden xl:block" id="FacetFiltersContainer">
             <sticky-element class="facets__scroll block sticky top-0">
               {%- render 'facets',
@@ -178,7 +207,7 @@
         {%- endif -%}
 
         <div class="flex flex-col gap-12 grow" id="ProductGridContainer">
-          {%- if search.performed and search.results.size == 0 -%}
+          {%- if search.performed and filtered_results_count == 0 -%}
             <div class="empty-state flex flex-col items-center justify-center text-center gap-6">
               {%- render 'icon', icon: 'empty', size: 'xxxl' -%}
               <div class="flex flex-col items-center gap-4">
@@ -190,7 +219,7 @@
             </div>
           {%- endif -%}
 
-          {%- if search.results_count > 0 -%}
+          {%- if filtered_results_count > 0 -%}
             <motion-list class="card-grid card-grid--{{ section.settings.columns }} mobile:card-grid--{{ section.settings.columns_mobile }} grid relative">
               {%- for item in search.results -%}
                 {%- liquid
@@ -212,23 +241,43 @@
 
                 {%- case item.object_type -%}
                   {%- when 'product' -%}
-                    {%- render 'product-card',
-                      product: item,
-                      product_id: item.id,
-                      section_id: section.id,
-                      lazy_load: lazy_load,
-                      image_ratio: settings.product_image_ratio,
-                      image_fill: settings.product_image_fill,
-                      show_secondary_image: settings.product_secondary_image,
-                      show_vendor: settings.product_vendor,
-                      show_rating: settings.product_rating,
-                      show_color_swatches: settings.product_color_swatches,
-                      show_countdown: settings.product_countdown,
-                      show_quick_add: settings.product_quick_add,
-                      show_quick_view: settings.product_quick_view,
-                      show_save_amount: settings.product_save_amount,
-                      save_type: settings.product_save_type
-                    -%}
+                    {%- assign show_product = true -%}
+                    {%- if item.title contains 'wholesale' or item.title contains 'Wholesale' or item.handle contains 'wholesale' or item.handle contains 'Wholesale' -%}
+                      {%- assign show_product = false -%}
+                      {%- if customer and customer.tags contains 'wholesale-customer' -%}
+                        {%- assign show_product = true -%}
+                      {%- endif -%}
+                    {%- endif -%}
+                    {%- if show_product -%}
+                      {%- for tag in item.tags -%}
+                        {%- if tag contains 'wholesale' or tag contains 'Wholesale' -%}
+                          {%- assign show_product = false -%}
+                          {%- if customer and customer.tags contains 'wholesale-customer' -%}
+                            {%- assign show_product = true -%}
+                          {%- endif -%}
+                          {%- break -%}
+                        {%- endif -%}
+                      {%- endfor -%}
+                    {%- endif -%}
+                    {%- if show_product -%}
+                      {%- render 'product-card',
+                        product: item,
+                        product_id: item.id,
+                        section_id: section.id,
+                        lazy_load: lazy_load,
+                        image_ratio: settings.product_image_ratio,
+                        image_fill: settings.product_image_fill,
+                        show_secondary_image: settings.product_secondary_image,
+                        show_vendor: settings.product_vendor,
+                        show_rating: settings.product_rating,
+                        show_color_swatches: settings.product_color_swatches,
+                        show_countdown: settings.product_countdown,
+                        show_quick_add: settings.product_quick_add,
+                        show_quick_view: settings.product_quick_view,
+                        show_save_amount: settings.product_save_amount,
+                        save_type: settings.product_save_type
+                      -%}
+                    {%- endif -%}
 
                   {%- when 'article' -%}
                     {%- liquid

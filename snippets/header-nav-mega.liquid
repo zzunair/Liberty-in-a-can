@@ -23,7 +23,7 @@
                 endif
               endif
             -%}
-            {%- if show_menu_item -%}
+            
               <li class="opacity-0">
                 {%- if block.settings.show_menu_image and childlink.type == 'collection_link' and childlink.object.image != blank -%}
                   <a href="{{ childlink.url }}" class="media media--wide block relative overflow-hidden">
@@ -34,6 +34,7 @@
                   {{- childlink.title | escape -}}
                 </a>
                 {%- if childlink.links != blank -%}
+                  {%- if show_menu_item -%}
                   <ul>
                     {%- for grandchildlink in childlink.links -%}
                       <li>
@@ -43,9 +44,9 @@
                       </li>
                     {%- endfor -%}
                   </ul>
+                  {%-endif -%}
                 {%- endif -%}
               </li>
-            {%- endif -%}
           {%- endfor -%}
         </ul>
         {%- if block.settings.button_label != blank -%}

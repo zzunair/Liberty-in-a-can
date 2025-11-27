@@ -1,1715 +1,1777 @@
-/*
- * ------------------------------------------------------------
- * IMPORTANT: The contents of this file are auto-generated.
- *
- * This file may be updated by the Shopify admin theme editor
- * or related systems. Please exercise caution as any changes
- * made to this file may be overwritten.
- * ------------------------------------------------------------
- */
 {
-  "sections": {
-    "video_with_text_overlay_TaepaX": {
-      "type": "video-with-text-overlay",
-      "blocks": {
-        "subheading_WKzbLf": {
-          "type": "subheading",
-          "settings": {
-            "subheading": "DISCOVER AMERICA'S THC SELTZER™",
-            "subheading_size": "subtitle-md",
-            "secondary_color": true
-          }
+    "sections": {
+        "video_with_text_overlay_TaepaX": {
+            "type": "video-with-text-overlay",
+            "blocks": {
+                "subheading_WKzbLf": {
+                    "type": "subheading",
+                    "settings": {
+                        "subheading": "DISCOVER AMERICA'S THC SELTZER™",
+                        "subheading_size": "subtitle-md",
+                        "secondary_color": true
+                    }
+                },
+                "heading_bUyEhV": {
+                    "type": "heading",
+                    "settings": {
+                        "heading": "Taste the Flavors of Freedom",
+                        "heading_size": "title-xl tracking-heading",
+                        "heading_tag": "h2",
+                        "highlighted_text": "none",
+                        "highlighted_scribble": "circle"
+                    }
+                },
+                "text_9rdMxK": {
+                    "type": "text",
+                    "settings": {
+                        "text": "<p><a href=\"http:\/\/www.drinklic.com\/\"><strong>At Liberty In a Can™<\/strong><\/a>, we’re passionate about revolutionizing the cannabis-industry with our premium, patriotic THC seltzers.<\/p>",
+                        "text_size": "subtext-md",
+                        "text_max_size": 32,
+                        "text_font": "body",
+                        "secondary_color": false,
+                        "highlighted_text": "none",
+                        "highlighted_scribble": "circle"
+                    }
+                },
+                "button_nejQTE": {
+                    "type": "button",
+                    "settings": {
+                        "button_label": "Shop Now",
+                        "button_link": "shopify:\/\/collections\/all",
+                        "button_style": "secondary",
+                        "button_size": "sm",
+                        "button_external": false,
+                        "button_icon": true
+                    }
+                }
+            },
+            "block_order": [
+                "subheading_WKzbLf",
+                "heading_bUyEhV",
+                "text_9rdMxK",
+                "button_nejQTE"
+            ],
+            "settings": {
+                "transparent_header": false,
+                "video": "shopify:\/\/files\/videos\/LIC-Video.mp4",
+                "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+                "description": "",
+                "enable_video_autoplay": true,
+                "enable_video_looping": true,
+                "image_height": "650px",
+                "content_width": "small",
+                "content_position": "md:items-start md:justify-start",
+                "text_alignment": "left",
+                "video_mobile": "",
+                "video_url_mobile": "",
+                "image_height_mobile": "auto",
+                "content_position_mobile": "items-center justify-center",
+                "text_alignment_mobile": "center",
+                "color_text": "#fcfbe7",
+                "color_highlight": "#e11d48",
+                "gradient_highlight": "",
+                "color_button_text": "#0b61cd",
+                "color_button_background": "#fcfbe7",
+                "color_button_gradient": "",
+                "color_overlay": "#171717",
+                "overlay_opacity": 70,
+                "padding_top": 0,
+                "padding_bottom": 0,
+                "divider": false,
+                "full_width": true,
+                "rounded": false
+            }
         },
-        "heading_bUyEhV": {
-          "type": "heading",
-          "settings": {
-            "heading": "Taste the Flavors of Freedom",
-            "heading_size": "title-xl tracking-heading",
-            "heading_tag": "h2",
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
+        "image_with_text_overlay_AcnrqM": {
+            "type": "image-with-text-overlay",
+            "blocks": {
+                "subheading_bkwcb3": {
+                    "type": "subheading",
+                    "settings": {
+                        "subheading": "DISCOVER AMERICA'S THC SELTZER",
+                        "subheading_size": "subtitle-md",
+                        "secondary_color": false
+                    }
+                },
+                "heading_KPrhQH": {
+                    "type": "heading",
+                    "settings": {
+                        "heading": "Taste the Flavors of Freedom",
+                        "heading_size": "title-xl tracking-heading",
+                        "heading_tag": "h2",
+                        "highlighted_text": "scribble",
+                        "highlighted_scribble": "circle"
+                    }
+                },
+                "text_xraj8X": {
+                    "type": "text",
+                    "settings": {
+                        "text": "<p><a href=\"http:\/\/www.drinklic.com\/\"><strong>At Liberty In A Can™<\/strong><\/a>, we’re passionate about revolutionizing the <a href=\"https:\/\/thecannabisindustry.org\/\">cannabis-industry<\/a> with our premium, patriotic THC seltzers.<\/p>",
+                        "text_size": "subtext-md",
+                        "text_max_size": 32,
+                        "text_font": "body",
+                        "secondary_color": false,
+                        "highlighted_text": "scribble",
+                        "highlighted_scribble": "circle"
+                    }
+                },
+                "button_ACn74H": {
+                    "type": "button",
+                    "settings": {
+                        "button_label": "Choose Your Flavor",
+                        "button_link": "",
+                        "button_style": "primary",
+                        "button_size": "md",
+                        "button_external": false,
+                        "button_icon": true
+                    }
+                }
+            },
+            "block_order": [
+                "subheading_bkwcb3",
+                "heading_KPrhQH",
+                "text_xraj8X",
+                "button_ACn74H"
+            ],
+            "disabled": true,
+            "settings": {
+                "transparent_header": false,
+                "image": "shopify:\/\/shop_images\/LIC-BANNER.png",
+                "image_height": "650px",
+                "content_width": "medium",
+                "content_position": "md:items-start md:justify-start",
+                "text_alignment": "left",
+                "image_height_mobile": "auto",
+                "content_position_mobile": "items-end justify-start",
+                "text_alignment_mobile": "left",
+                "color_text": "#fcfbe7",
+                "color_highlight": "#e11d48",
+                "gradient_highlight": "",
+                "color_button_text": "#fcfbe7",
+                "color_button_background": "#0b61cd",
+                "color_button_gradient": "",
+                "color_overlay": "#171717",
+                "overlay_opacity": 70,
+                "padding_top": 0,
+                "padding_bottom": 0,
+                "divider": false,
+                "full_width": true,
+                "rounded": false,
+                "enable_parallax": true,
+                "parallax_direction": "horizontal"
+            }
         },
-        "text_9rdMxK": {
-          "type": "text",
-          "settings": {
-            "text": "<p><a href=\"http://www.drinklic.com/\"><strong>At Liberty In A Can™</strong></a>, we’re passionate about revolutionizing the <a href=\"https://thecannabisindustry.org/\">cannabis-industry</a> with our premium, patriotic THC seltzers.</p>",
-            "text_size": "subtext-md",
-            "text_max_size": 32,
-            "text_font": "body",
-            "secondary_color": false,
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
+        "images_with_text_overlay_Gp7DK8": {
+            "type": "images-with-text-overlay",
+            "blocks": {
+                "subheading_FAJtdp": {
+                    "type": "subheading",
+                    "settings": {
+                        "subheading": "Add a tagline",
+                        "subheading_size": "subtitle-md",
+                        "secondary_color": true
+                    }
+                },
+                "heading_jEaVfh": {
+                    "type": "heading",
+                    "settings": {
+                        "heading": "Image with text overlay",
+                        "heading_size": "title-lg tracking-heading",
+                        "heading_tag": "h2",
+                        "highlighted_text": "none",
+                        "highlighted_scribble": "circle"
+                    }
+                }
+            },
+            "block_order": [
+                "subheading_FAJtdp",
+                "heading_jEaVfh"
+            ],
+            "disabled": true,
+            "settings": {
+                "transparent_header": false,
+                "image_height": "650px",
+                "content_width": "medium",
+                "content_position": "md:items-end md:justify-start",
+                "text_alignment": "left",
+                "image_1": "shopify:\/\/shop_images\/FMS-Watermelon-e1729291027520-1113x800.webp",
+                "image_2": "shopify:\/\/shop_images\/IMG_1107-1536x1024.webp",
+                "image_3": "shopify:\/\/shop_images\/IMG_0600-2-1055x800.webp",
+                "image_height_mobile": "auto",
+                "content_position_mobile": "items-end justify-start",
+                "text_alignment_mobile": "left",
+                "color_text": "#ffffff",
+                "color_background": "#0d253f",
+                "gradient_background": "",
+                "color_highlight": "#e0a580",
+                "gradient_highlight": "",
+                "color_button_text": "#171717",
+                "color_button_background": "#ffffff",
+                "color_button_gradient": "",
+                "padding_top": 0,
+                "padding_bottom": 0,
+                "divider": false,
+                "full_width": true,
+                "rounded": false,
+                "enable_parallax": true
+            }
         },
-        "button_nejQTE": {
-          "type": "button",
-          "settings": {
-            "button_label": "Shop Now",
-            "button_link": "shopify://collections/all",
-            "button_style": "secondary",
-            "button_size": "sm",
-            "button_external": false,
-            "button_icon": true
-          }
+        "slideshow": {
+            "type": "slideshow",
+            "blocks": {
+                "slide-3": {
+                    "type": "video",
+                    "settings": {
+                        "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+                        "description": "",
+                        "video_url_mobile": "",
+                        "heading": "Discover the Flavors of Freedom",
+                        "heading_size": "title-xl tracking-heading",
+                        "heading_tag": "h1",
+                        "button_label": "Shop Now",
+                        "button_link": "",
+                        "button_style": "primary",
+                        "button_external": false,
+                        "button_icon": false
+                    }
+                }
+            },
+            "block_order": [
+                "slide-3"
+            ],
+            "disabled": true,
+            "settings": {
+                "autoplay": false,
+                "autoplay_speed": 7,
+                "show_navigation": true,
+                "image_height": "750px",
+                "content_width": "medium",
+                "image_height_mobile": "500px",
+                "color_text": "#fcfbe7",
+                "color_background": "#7bc3b9",
+                "gradient_background": "",
+                "color_button_text": "#0d253f",
+                "color_button_background": "#fcfbe7",
+                "color_button_gradient": "",
+                "color_overlay": "#000000",
+                "overlay_opacity": 20,
+                "padding_top": 0,
+                "padding_bottom": 0,
+                "divider": false,
+                "full_width": true,
+                "rounded": false,
+                "enable_parallax": true,
+                "parallax_direction": "vertical"
+            }
+        },
+        "rich-text-1": {
+            "type": "rich-text",
+            "blocks": {
+                "text": {
+                    "type": "text",
+                    "settings": {
+                        "text": "<p><a href=\"http:\/\/www.drinklic.com\/\"><strong>At Liberty In a Can™<\/strong><\/a>, we believe in living life to the fullest, and we’re dedicated to creating products that help you make the most of every moment. Our seltzers are crafted with the finest cannabis to ensure a clean, pure, and refreshing experience.<\/p>",
+                        "text_size": "subtext-md",
+                        "text_max_size": 32,
+                        "text_font": "body",
+                        "secondary_color": false,
+                        "highlighted_text": "none",
+                        "highlighted_scribble": "circle"
+                    }
+                },
+                "button_Y78htQ": {
+                    "type": "button",
+                    "settings": {
+                        "button_label": "Our Story",
+                        "button_link": "shopify:\/\/pages\/about",
+                        "button_style": "secondary",
+                        "button_size": "md",
+                        "button_external": false,
+                        "button_icon": true
+                    }
+                },
+                "spacing_K7jCqD": {
+                    "type": "spacing",
+                    "settings": {
+                        "height": 40,
+                        "height_mobile": 28
+                    }
+                }
+            },
+            "block_order": [
+                "text",
+                "button_Y78htQ",
+                "spacing_K7jCqD"
+            ],
+            "settings": {
+                "text_alignment": "left",
+                "text_alignment_mobile": "left",
+                "heading": "Live the Moments™",
+                "heading_size": "title-lg tracking-heading",
+                "heading_alignment": "text-left md:items-end md:flex-row",
+                "heading_width": "small",
+                "heading_tag": "h2",
+                "subheading": "",
+                "description": "",
+                "button_label": "",
+                "button_link": "shopify:\/\/pages\/contact",
+                "button_external": false,
+                "button_icon": true,
+                "highlighted_text": "scribble",
+                "highlighted_scribble": "basic-underline",
+                "color_text": "rgba(0,0,0,0)",
+                "color_background": "rgba(0,0,0,0)",
+                "gradient_background": "",
+                "color_highlight": "",
+                "gradient_highlight": "",
+                "color_button_text": "#fcfbe7",
+                "color_button_background": "#0b61cd",
+                "color_button_gradient": "",
+                "padding_top": 72,
+                "padding_bottom": 0,
+                "divider": false,
+                "narrow": false,
+                "rounded": false
+            }
+        },
+        "empty_space_AFKfjC": {
+            "type": "empty-space",
+            "settings": {
+                "desktop_height": 52,
+                "mobile_height": 28,
+                "color_background": "",
+                "gradient_background": ""
+            }
+        },
+        "scrolling-text-1": {
+            "type": "scrolling-text",
+            "blocks": {
+                "text": {
+                    "type": "text",
+                    "settings": {
+                        "text": "ZERO CALORIES",
+                        "text_size": 90,
+                        "text_font": "heading",
+                        "highlighted_text": "scribble",
+                        "highlighted_scribble": "basic-underline"
+                    }
+                },
+                "text_hiLzEW": {
+                    "type": "text",
+                    "settings": {
+                        "text": "ZERO Sweeteners",
+                        "text_size": 90,
+                        "text_font": "heading",
+                        "highlighted_text": "none",
+                        "highlighted_scribble": "circle"
+                    }
+                },
+                "text_wDncgF": {
+                    "type": "text",
+                    "settings": {
+                        "text": "ZER0 CARBS",
+                        "text_size": 90,
+                        "text_font": "heading",
+                        "highlighted_text": "none",
+                        "highlighted_scribble": "circle"
+                    }
+                },
+                "text_Xg3Wrm": {
+                    "type": "text",
+                    "settings": {
+                        "text": "ZERO SODIUM",
+                        "text_size": 90,
+                        "text_font": "heading",
+                        "highlighted_text": "none",
+                        "highlighted_scribble": "circle"
+                    }
+                }
+            },
+            "block_order": [
+                "text",
+                "text_hiLzEW",
+                "text_wDncgF",
+                "text_Xg3Wrm"
+            ],
+            "settings": {
+                "direction": "left",
+                "speed": 20,
+                "grid_horizontal": 70,
+                "enable_twin": false,
+                "enable_parallax": true,
+                "color_text": "#fcfbe7",
+                "color_background": "#e11d48",
+                "gradient_background": "",
+                "color_highlight": "",
+                "gradient_highlight": "",
+                "padding_top": 40,
+                "padding_bottom": 40,
+                "divider": false,
+                "rounded": false
+            }
+        },
+        "multicolumn_QzDYCN": {
+            "type": "multicolumn",
+            "blocks": {
+                "column_XHCgnc": {
+                    "type": "column",
+                    "settings": {
+                        "show_border": true,
+                        "text_alignment": "center",
+                        "text_alignment_mobile": "center",
+                        "image": "shopify:\/\/shop_images\/LIC-Innovation.png",
+                        "image_ratio": "adapt",
+                        "heading": "Pure Fun",
+                        "heading_size": "text-2xl lg:text-3xl",
+                        "text": "<p>Liberty is an unmatched experience In every Can. (LIC™ )<\/p>",
+                        "button_label": "",
+                        "button_link": "",
+                        "button_style": "secondary",
+                        "button_external": false,
+                        "button_icon": true,
+                        "highlighted_text": "none",
+                        "highlighted_scribble": "circle"
+                    }
+                },
+                "column_mrVMkf": {
+                    "type": "column",
+                    "settings": {
+                        "show_border": true,
+                        "text_alignment": "center",
+                        "text_alignment_mobile": "center",
+                        "image": "shopify:\/\/shop_images\/LIC-Elevated.png",
+                        "image_ratio": "adapt",
+                        "heading": "Elevated Experience",
+                        "heading_size": "text-2xl lg:text-3xl",
+                        "text": "<p>Elevate your social experiences, wellness journey, and relaxation time with our refreshing and delicious flavors.<\/p>",
+                        "button_label": "",
+                        "button_link": "",
+                        "button_style": "secondary",
+                        "button_external": false,
+                        "button_icon": true,
+                        "highlighted_text": "none",
+                        "highlighted_scribble": "circle"
+                    }
+                },
+                "column_w8YpjW": {
+                    "type": "column",
+                    "settings": {
+                        "show_border": true,
+                        "text_alignment": "center",
+                        "text_alignment_mobile": "center",
+                        "image": "shopify:\/\/shop_images\/LIC-Ribbon.png",
+                        "image_ratio": "adapt",
+                        "heading": "Full Spectrum THC",
+                        "heading_size": "text-2xl lg:text-3xl",
+                        "text": "<p>High-quality cannabis, precise dosing, and rigorous testing.<\/p>",
+                        "button_label": "",
+                        "button_link": "",
+                        "button_style": "secondary",
+                        "button_external": false,
+                        "button_icon": true,
+                        "highlighted_text": "none",
+                        "highlighted_scribble": "circle"
+                    }
+                }
+            },
+            "block_order": [
+                "column_XHCgnc",
+                "column_mrVMkf",
+                "column_w8YpjW"
+            ],
+            "settings": {
+                "gap": "large",
+                "columns": 3,
+                "columns_mobile": "1",
+                "swipe_on_mobile": true,
+                "heading": "Elevated Experiences with Liberty In a Can™",
+                "heading_size": "title-lg tracking-heading",
+                "heading_alignment": "text-center md:items-center",
+                "heading_tag": "h2",
+                "subheading": "DISCOVER AMERICA'S THC SELTZER™",
+                "description": "",
+                "button_label": "",
+                "button_link": "",
+                "button_external": false,
+                "button_icon": true,
+                "highlighted_text": "none",
+                "highlighted_scribble": "circle",
+                "color_text": "",
+                "color_background": "",
+                "gradient_background": "",
+                "color_highlight": "",
+                "gradient_highlight": "",
+                "color_button_text": "",
+                "color_button_background": "",
+                "color_button_gradient": "",
+                "padding_top": 72,
+                "padding_bottom": 72,
+                "divider": false,
+                "full_width": false,
+                "rounded": false
+            }
+        },
+        "video-with-text-overlay": {
+            "type": "video-with-text-overlay",
+            "blocks": {
+                "heading": {
+                    "type": "heading",
+                    "settings": {
+                        "heading": "Video with text overlay",
+                        "heading_size": "title-md",
+                        "heading_tag": "h2",
+                        "highlighted_text": "none",
+                        "highlighted_scribble": "circle"
+                    }
+                },
+                "text": {
+                    "type": "text",
+                    "settings": {
+                        "text": "<p>Give customers details about the banner image(s) or content on the template.<\/p>",
+                        "text_size": "subtext-md",
+                        "text_max_size": 32,
+                        "text_font": "body",
+                        "secondary_color": true,
+                        "highlighted_text": "none",
+                        "highlighted_scribble": "circle"
+                    }
+                },
+                "button": {
+                    "type": "button",
+                    "settings": {
+                        "button_label": "Shop Now",
+                        "button_link": "",
+                        "button_style": "primary",
+                        "button_size": "md",
+                        "button_external": false,
+                        "button_icon": true
+                    }
+                }
+            },
+            "block_order": [
+                "heading",
+                "text",
+                "button"
+            ],
+            "disabled": true,
+            "settings": {
+                "transparent_header": false,
+                "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+                "description": "",
+                "enable_video_autoplay": true,
+                "enable_video_looping": true,
+                "image_height": "750px",
+                "content_width": "medium",
+                "content_position": "md:items-center md:justify-center",
+                "text_alignment": "center",
+                "video_url_mobile": "",
+                "image_height_mobile": "auto",
+                "content_position_mobile": "items-center justify-center",
+                "text_alignment_mobile": "center",
+                "color_text": "#ffffff",
+                "color_highlight": "#e0a580",
+                "gradient_highlight": "",
+                "color_button_text": "#171717",
+                "color_button_background": "#ffffff",
+                "color_button_gradient": "",
+                "color_overlay": "#000000",
+                "overlay_opacity": 50,
+                "padding_top": 0,
+                "padding_bottom": 0,
+                "divider": false,
+                "full_width": true,
+                "rounded": true
+            }
+        },
+        "collage_irdHhw": {
+            "type": "collage",
+            "blocks": {
+                "image_APHpcj": {
+                    "type": "image",
+                    "settings": {
+                        "subheading": "",
+                        "heading": "",
+                        "link": "",
+                        "invert_subheading_heading": false,
+                        "image": "shopify:\/\/shop_images\/july2025chattanooga-87.jpg",
+                        "image_ratio": "portrait",
+                        "content_position": "md:items-end md:justify-start",
+                        "text_alignment": "left",
+                        "image_ratio_mobile": "portrait",
+                        "content_position_mobile": "items-end justify-start",
+                        "text_alignment_mobile": "left",
+                        "highlighted_text": "none",
+                        "highlighted_scribble": "circle",
+                        "color_text": "#ffffff",
+                        "color_highlight": "",
+                        "gradient_highlight": "",
+                        "color_overlay": "#171717",
+                        "overlay_opacity": 10
+                    }
+                },
+                "video_PTaaWK": {
+                    "type": "video",
+                    "settings": {
+                        "subheading": "",
+                        "heading": "",
+                        "link": "",
+                        "invert_subheading_heading": false,
+                        "video": "shopify:\/\/files\/videos\/25086d6983554b29b3cb35cb91724dff.MOV",
+                        "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+                        "description": "",
+                        "enable_video_autoplay": true,
+                        "enable_video_looping": true,
+                        "image_ratio": "portrait",
+                        "content_position": "md:items-end md:justify-start",
+                        "text_alignment": "left",
+                        "video_url_mobile": "",
+                        "image_ratio_mobile": "landscape",
+                        "content_position_mobile": "items-end justify-start",
+                        "text_alignment_mobile": "left",
+                        "highlighted_text": "none",
+                        "highlighted_scribble": "circle",
+                        "color_text": "#ffffff",
+                        "color_highlight": "",
+                        "gradient_highlight": "",
+                        "color_overlay": "#171717",
+                        "overlay_opacity": 10
+                    }
+                },
+                "image_tUdHm3": {
+                    "type": "image",
+                    "settings": {
+                        "subheading": "",
+                        "heading": "",
+                        "link": "",
+                        "invert_subheading_heading": false,
+                        "image": "shopify:\/\/shop_images\/IMG_9089.heic",
+                        "image_ratio": "portrait",
+                        "content_position": "md:items-end md:justify-start",
+                        "text_alignment": "left",
+                        "image_mobile": "shopify:\/\/shop_images\/IMG_9089.heic",
+                        "image_ratio_mobile": "portrait",
+                        "content_position_mobile": "items-end justify-start",
+                        "text_alignment_mobile": "left",
+                        "highlighted_text": "none",
+                        "highlighted_scribble": "circle",
+                        "color_text": "#ffffff",
+                        "color_highlight": "",
+                        "gradient_highlight": "",
+                        "color_overlay": "#171717",
+                        "overlay_opacity": 10
+                    }
+                },
+                "video_JcftAX": {
+                    "type": "video",
+                    "settings": {
+                        "subheading": "",
+                        "heading": "",
+                        "link": "",
+                        "invert_subheading_heading": false,
+                        "video": "shopify:\/\/files\/videos\/4ec554b48ece4f1a97498f4218bb1259.MOV",
+                        "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+                        "description": "",
+                        "enable_video_autoplay": true,
+                        "enable_video_looping": true,
+                        "image_ratio": "portrait",
+                        "content_position": "md:items-end md:justify-start",
+                        "text_alignment": "left",
+                        "video_url_mobile": "",
+                        "image_ratio_mobile": "landscape",
+                        "content_position_mobile": "items-end justify-start",
+                        "text_alignment_mobile": "left",
+                        "highlighted_text": "none",
+                        "highlighted_scribble": "circle",
+                        "color_text": "#ffffff",
+                        "color_highlight": "",
+                        "gradient_highlight": "",
+                        "color_overlay": "#171717",
+                        "overlay_opacity": 10
+                    }
+                },
+                "image_3WnLiW": {
+                    "type": "image",
+                    "settings": {
+                        "subheading": "",
+                        "heading": "",
+                        "link": "",
+                        "invert_subheading_heading": false,
+                        "image": "shopify:\/\/shop_images\/20240803_223522545_iOS.heic",
+                        "image_ratio": "portrait",
+                        "content_position": "md:items-end md:justify-start",
+                        "text_alignment": "left",
+                        "image_ratio_mobile": "portrait",
+                        "content_position_mobile": "items-end justify-start",
+                        "text_alignment_mobile": "left",
+                        "highlighted_text": "none",
+                        "highlighted_scribble": "circle",
+                        "color_text": "#ffffff",
+                        "color_highlight": "",
+                        "gradient_highlight": "",
+                        "color_overlay": "#171717",
+                        "overlay_opacity": 10
+                    }
+                },
+                "video_GWiXeP": {
+                    "type": "video",
+                    "settings": {
+                        "subheading": "",
+                        "heading": "",
+                        "link": "",
+                        "invert_subheading_heading": false,
+                        "video": "shopify:\/\/files\/videos\/copy_609e91e0-adac-4e31-a11e-f98bd62d719c.MOV",
+                        "video_url": "https:\/\/www.youtube.com\/watch?v=_9VUPq3SxOc",
+                        "description": "",
+                        "enable_video_autoplay": true,
+                        "enable_video_looping": true,
+                        "image_ratio": "portrait",
+                        "content_position": "md:items-end md:justify-start",
+                        "text_alignment": "left",
+                        "video_url_mobile": "",
+                        "image_ratio_mobile": "landscape",
+                        "content_position_mobile": "items-end justify-start",
+                        "text_alignment_mobile": "left",
+                        "highlighted_text": "none",
+                        "highlighted_scribble": "circle",
+                        "color_text": "#ffffff",
+                        "color_highlight": "",
+                        "gradient_highlight": "",
+                        "color_overlay": "#171717",
+                        "overlay_opacity": 10
+                    }
+                }
+            },
+            "block_order": [
+                "image_APHpcj",
+                "video_PTaaWK",
+                "image_tUdHm3",
+                "video_JcftAX",
+                "image_3WnLiW",
+                "video_GWiXeP"
+            ],
+            "settings": {
+                "heading": "share the moments",
+                "heading_size": "title-md",
+                "heading_alignment": "text-left md:items-end md:flex-row",
+                "heading_tag": "h2",
+                "subheading": "RAISE A CAN",
+                "description": "<p>Liberty In a Can™ is a freedom party, everyone is invited to celebrate.<\/p><p>Snap a pic, tag us on <a href=\"https:\/\/www.instagram.com\/drink.lic\/\" target=\"_blank\" title=\"https:\/\/www.instagram.com\/drink.lic\/\">Instagram<\/a>, and share your pursuit of happiness with <strong>#DrinkLIC<\/strong> for a chance to be featured!<\/p>",
+                "button_label": "",
+                "button_link": "",
+                "button_external": false,
+                "button_icon": true,
+                "highlighted_text": "none",
+                "highlighted_scribble": "circle",
+                "color_text": "",
+                "color_background": "",
+                "gradient_background": "",
+                "color_highlight": "",
+                "gradient_highlight": "",
+                "color_button_text": "",
+                "color_button_background": "",
+                "color_button_gradient": "",
+                "padding_top": 0,
+                "padding_bottom": 0,
+                "divider": false,
+                "full_width": false,
+                "rounded": false,
+                "enable_parallax": true
+            }
+        },
+        "featured-product": {
+            "type": "featured-product",
+            "blocks": {
+                "text": {
+                    "type": "text",
+                    "settings": {
+                        "text": "{{ section.settings.product.vendor }}",
+                        "text_size": "text-base"
+                    }
+                },
+                "title": {
+                    "type": "title",
+                    "settings": {
+                        "title_size": "product-title-md",
+                        "title_size_mobile": "product-title-md",
+                        "show_price": true,
+                        "show_rating": true
+                    }
+                },
+                "description": {
+                    "type": "description",
+                    "settings": {
+                        "text_size": "text-base"
+                    }
+                },
+                "countdown": {
+                    "type": "countdown",
+                    "settings": {
+                        "heading": "Hurry up!",
+                        "subheading": "Sale end in:",
+                        "color_text": "#e11d48",
+                        "color_background": "#fff1f2",
+                        "gradient_background": ""
+                    }
+                },
+                "variant_picker": {
+                    "type": "variant_picker",
+                    "settings": {
+                        "show_variant_labels": true,
+                        "picker_type": "button",
+                        "enable_color_swatches": true,
+                        "color_swatch_type": "color",
+                        "size_chart": ""
+                    }
+                },
+                "inventory": {
+                    "type": "inventory",
+                    "settings": {
+                        "inventory_threshold": 15,
+                        "show_inventory_transfer": true,
+                        "show_inventory_quantity": "low",
+                        "color_scheme": "accent-1"
+                    }
+                },
+                "buy_buttons": {
+                    "type": "buy_buttons",
+                    "settings": {
+                        "show_quantity_selector": false,
+                        "show_dynamic_checkout": false,
+                        "show_gift_card_recipient": false,
+                        "enable_back_in_stock": false,
+                        "show_back_in_stock_name": false,
+                        "show_back_in_stock_phone": false
+                    }
+                },
+                "pickup_availability": {
+                    "type": "pickup_availability",
+                    "settings": {}
+                },
+                "share": {
+                    "type": "share",
+                    "settings": {
+                        "share_label": "Share",
+                        "show_help_desk": true,
+                        "help_label": "Need help?",
+                        "help_page": ""
+                    }
+                },
+                "read_more": {
+                    "type": "read_more",
+                    "settings": {}
+                },
+                "spinning_text": {
+                    "type": "spinning_text",
+                    "settings": {
+                        "text": "AMERICA'S THC  SELTZER™"
+                    }
+                }
+            },
+            "block_order": [
+                "text",
+                "title",
+                "description",
+                "countdown",
+                "variant_picker",
+                "inventory",
+                "buy_buttons",
+                "pickup_availability",
+                "share",
+                "read_more",
+                "spinning_text"
+            ],
+            "disabled": true,
+            "settings": {
+                "product": "5mg-δ9-thc-full-spectrum-seltzer-with-lime-essence",
+                "enable_sticky_info": true,
+                "media_size": 64,
+                "gallery_layout": "thumbnail",
+                "thumbnail_position": "beside",
+                "image_ratio": "adapt_first",
+                "image_zoom": "lightbox",
+                "hide_variants": false,
+                "enable_video_autoplay": true,
+                "enable_video_looping": true,
+                "mobile_layout": "full_width",
+                "image_ratio_mobile": "adapt_first",
+                "mobile_thumbnail": false,
+                "padding_top": 120,
+                "padding_bottom": 0,
+                "divider": false,
+                "full_width": false,
+                "rounded": true
+            }
+        },
+        "testimonials_a3WEUy": {
+            "type": "testimonials",
+            "blocks": {
+                "testimonial_6e3f6A": {
+                    "type": "testimonial",
+                    "settings": {
+                        "icon": "quote",
+                        "text": "<p>I’m gonna drink this all night until you're out<\/p>",
+                        "author": "Manny",
+                        "author_info": "",
+                        "author_url": "",
+                        "image_ratio": "rounded",
+                        "highlighted_text": "none",
+                        "highlighted_scribble": "circle"
+                    }
+                },
+                "testimonial_h7BHaN": {
+                    "type": "testimonial",
+                    "settings": {
+                        "icon": "quote",
+                        "text": "<p>They slapped. Watermelon is absolutely fire and my wife and I love them.<\/p>",
+                        "author": "Mike",
+                        "author_info": "",
+                        "author_url": "",
+                        "image_ratio": "rounded",
+                        "highlighted_text": "none",
+                        "highlighted_scribble": "circle"
+                    }
+                },
+                "testimonial_HXw3PT": {
+                    "type": "testimonial",
+                    "settings": {
+                        "icon": "quote",
+                        "text": "<p>I slept 9 hours last night and have no anxiety. Some have ice cream at night, I have a 🗽Liberty In a Can. I am feeling so much better... the solitude, no alcohol. I don’t get a head high which I do not like, it’s just relaxing. I am going to become your best customer!!!<\/p>",
+                        "author": "Pam",
+                        "author_info": "",
+                        "author_url": "",
+                        "image_ratio": "rounded",
+                        "highlighted_text": "none",
+                        "highlighted_scribble": "circle"
+                    }
+                },
+                "testimonial_3nQLmY": {
+                    "type": "testimonial",
+                    "settings": {
+                        "icon": "quote",
+                        "text": "<p>My husband and his friends loved Liberty In a Can so much that they drank them all when I was out of town so we will definitely be ordering more!<\/p>",
+                        "author": "Christie",
+                        "author_info": "",
+                        "author_url": "",
+                        "image_ratio": "rounded",
+                        "highlighted_text": "none",
+                        "highlighted_scribble": "circle"
+                    }
+                },
+                "testimonial_LkAeRA": {
+                    "type": "testimonial",
+                    "settings": {
+                        "icon": "quote",
+                        "text": "<p>Liberty makes me feel like I’m kicking back at the beach with a joint but I’m sipping a sparkling water feeling refreshed instead with the same effects. It tastes delicious going down and has all the things I want to feel relaxed<\/p>",
+                        "author": "Adam",
+                        "author_info": "",
+                        "author_url": "",
+                        "image_ratio": "rounded",
+                        "highlighted_text": "none",
+                        "highlighted_scribble": "circle"
+                    }
+                },
+                "testimonial_VGj6NQ": {
+                    "type": "testimonial",
+                    "settings": {
+                        "icon": "quote",
+                        "text": "<p>I like how its only 5mg but its full-spectrum, so it actually hits. I've had other drinks that claim 25 or 50 mg but I didn't even feel anything.<\/p>",
+                        "author": "Nav",
+                        "author_info": "",
+                        "author_url": "",
+                        "image_ratio": "rounded",
+                        "highlighted_text": "none",
+                        "highlighted_scribble": "circle"
+                    }
+                },
+                "testimonial_6yKAUa": {
+                    "type": "testimonial",
+                    "settings": {
+                        "icon": "quote",
+                        "text": "<p>You're drink actually tastes good. I have had a lot of these THC drinks and so many of them taste bad and they have so much sugar.<\/p>",
+                        "author": "Natalie",
+                        "author_info": "",
+                        "author_url": "",
+                        "image_ratio": "rounded",
+                        "highlighted_text": "none",
+                        "highlighted_scribble": "circle"
+                    }
+                },
+                "testimonial_AnKhnt": {
+                    "type": "testimonial",
+                    "settings": {
+                        "icon": "quote",
+                        "text": "<p>I don't drink (alcohol) anymore so these are perfect for me and I still feel included  drinking with friends.<\/p>",
+                        "author": "Stacy",
+                        "author_info": "",
+                        "author_url": "",
+                        "image_ratio": "rounded",
+                        "highlighted_text": "none",
+                        "highlighted_scribble": "circle"
+                    }
+                }
+            },
+            "block_order": [
+                "testimonial_6e3f6A",
+                "testimonial_h7BHaN",
+                "testimonial_HXw3PT",
+                "testimonial_3nQLmY",
+                "testimonial_LkAeRA",
+                "testimonial_VGj6NQ",
+                "testimonial_6yKAUa",
+                "testimonial_AnKhnt"
+            ],
+            "settings": {
+                "heading": "Testimonials",
+                "heading_size": "title-md",
+                "heading_alignment": "text-center md:items-center",
+                "heading_tag": "h2",
+                "subheading": "",
+                "description": "",
+                "button_label": "",
+                "button_link": "",
+                "button_external": false,
+                "button_icon": true,
+                "highlighted_text": "none",
+                "highlighted_scribble": "circle",
+                "color_text": "",
+                "color_background": "",
+                "gradient_background": "",
+                "color_highlight": "",
+                "gradient_highlight": "",
+                "color_button_text": "",
+                "color_button_background": "",
+                "color_button_gradient": "",
+                "padding_top": 72,
+                "padding_bottom": 72,
+                "divider": false,
+                "rounded": false
+            }
+        },
+        "rich-text-2": {
+            "type": "rich-text",
+            "settings": {
+                "text_alignment": "left",
+                "text_alignment_mobile": "left",
+                "heading": "Build your <em>Bundle<\/em>",
+                "heading_size": "title-md",
+                "heading_alignment": "text-left md:items-end md:flex-row",
+                "heading_width": "large",
+                "heading_tag": "h2",
+                "subheading": "",
+                "description": "<p>The choice is yours. With our bundle builder, you can select any combination from our range of products. The easiest way to keep everyone happy.<\/p>",
+                "button_label": "",
+                "button_link": "",
+                "button_external": false,
+                "button_icon": true,
+                "highlighted_text": "scribble",
+                "highlighted_scribble": "squiggle-underline",
+                "color_text": "",
+                "color_background": "",
+                "gradient_background": "",
+                "color_highlight": "",
+                "gradient_highlight": "",
+                "color_button_text": "",
+                "color_button_background": "",
+                "color_button_gradient": "",
+                "padding_top": 120,
+                "padding_bottom": 52,
+                "divider": false,
+                "narrow": false,
+                "rounded": false
+            }
+        },
+        "compact_product_bundle_EBA9Qp": {
+            "type": "compact-product-bundle",
+            "blocks": {
+                "heading_3cfeP3": {
+                    "type": "heading",
+                    "settings": {
+                        "heading": "Product bundle",
+                        "heading_size": "title-md",
+                        "heading_tag": "h2",
+                        "highlighted_text": "none",
+                        "highlighted_scribble": "circle"
+                    }
+                },
+                "text_DtcT9J": {
+                    "type": "text",
+                    "settings": {
+                        "text": "<p>Save when you purchase a combo of both Lime and Watermelon!<\/p>",
+                        "text_size": "subtext-md",
+                        "text_max_size": 32,
+                        "text_font": "body",
+                        "secondary_color": false,
+                        "highlighted_text": "none",
+                        "highlighted_scribble": "circle"
+                    }
+                }
+            },
+            "block_order": [
+                "heading_3cfeP3",
+                "text_DtcT9J"
+            ],
+            "settings": {
+                "collection": "beverages",
+                "products": [
+                    "5mg-δ9-thc-full-spectrum-seltzer-with-lime-essence",
+                    "5mg-δ9-thc-full-spectrum-seltzer-with-lime-essence-copy"
+                ],
+                "product_limit": 2,
+                "image": "shopify:\/\/shop_images\/20240615_210631740_iOS.jpg",
+                "layout": "image_first",
+                "content_position": "md:items-center",
+                "text_alignment": "center",
+                "image_height_mobile": "adapt",
+                "content_position_mobile": "items-center",
+                "text_alignment_mobile": "center",
+                "swipe_on_mobile": true,
+                "show_variant_labels": true,
+                "picker_type": "button",
+                "enable_color_swatches": true,
+                "color_swatch_type": "color",
+                "color_text": "",
+                "color_background": "",
+                "gradient_background": "",
+                "color_highlight": "",
+                "gradient_highlight": "",
+                "color_button_text": "",
+                "color_button_background": "",
+                "color_button_gradient": "",
+                "color_overlay": "#171717",
+                "overlay_opacity": 40,
+                "padding_top": 72,
+                "padding_bottom": 72,
+                "divider": false,
+                "full_width": false,
+                "rounded": false,
+                "enable_parallax": true,
+                "parallax_direction": "vertical"
+            }
+        },
+        "countdown-timer": {
+            "type": "countdown-timer",
+            "blocks": {
+                "text": {
+                    "type": "text",
+                    "settings": {
+                        "text": "<p>Countdown timer<\/p>",
+                        "text_size": "subtext-custom",
+                        "text_max_size": 32,
+                        "text_font": "body",
+                        "secondary_color": false,
+                        "highlighted_text": "none",
+                        "highlighted_scribble": "circle"
+                    }
+                },
+                "spacing": {
+                    "type": "spacing",
+                    "settings": {
+                        "height": 24,
+                        "height_mobile": 16
+                    }
+                },
+                "timer": {
+                    "type": "timer",
+                    "settings": {
+                        "year": "2026",
+                        "month": "01",
+                        "day": "1",
+                        "hour": "03",
+                        "minute": "00",
+                        "text_font": "heading",
+                        "text_size": "title-lg tracking-heading",
+                        "message": ""
+                    }
+                },
+                "button": {
+                    "type": "button",
+                    "settings": {
+                        "button_label": "Shop Now",
+                        "button_link": "",
+                        "button_style": "secondary",
+                        "button_size": "md",
+                        "button_external": false,
+                        "button_icon": true
+                    }
+                }
+            },
+            "block_order": [
+                "text",
+                "spacing",
+                "timer",
+                "button"
+            ],
+            "disabled": true,
+            "settings": {
+                "transparent_header": false,
+                "image_height": "750px",
+                "content_width": "medium",
+                "content_position": "md:items-center md:justify-center",
+                "text_alignment": "center",
+                "image_height_mobile": "500px",
+                "content_position_mobile": "items-center justify-center",
+                "text_alignment_mobile": "center",
+                "color_text": "#ffffff",
+                "color_highlight": "#fcd34d",
+                "gradient_highlight": "",
+                "color_button_text": "#171717",
+                "color_button_background": "#ffffff",
+                "color_button_gradient": "",
+                "color_overlay": "#000000",
+                "overlay_opacity": 30,
+                "padding_top": 0,
+                "padding_bottom": 0,
+                "divider": false,
+                "full_width": true,
+                "rounded": true,
+                "enable_parallax": true,
+                "parallax_direction": "vertical"
+            }
+        },
+        "shop-the-look": {
+            "type": "shop-the-look",
+            "blocks": {
+                "product-1": {
+                    "type": "product",
+                    "settings": {
+                        "product": "",
+                        "color_text": "#ffffff",
+                        "vertical": 35,
+                        "horizontal": 15,
+                        "vertical_mobile": 25,
+                        "horizontal_mobile": 25
+                    }
+                },
+                "product-2": {
+                    "type": "product",
+                    "settings": {
+                        "product": "",
+                        "color_text": "#ffffff",
+                        "vertical": 65,
+                        "horizontal": 38,
+                        "vertical_mobile": 75,
+                        "horizontal_mobile": 65
+                    }
+                },
+                "product-3": {
+                    "type": "product",
+                    "settings": {
+                        "product": "",
+                        "color_text": "#ffffff",
+                        "vertical": 50,
+                        "horizontal": 62,
+                        "vertical_mobile": 50,
+                        "horizontal_mobile": 50
+                    }
+                }
+            },
+            "block_order": [
+                "product-1",
+                "product-2",
+                "product-3"
+            ],
+            "disabled": true,
+            "settings": {
+                "heading": "Shop the <em>look<\/em>",
+                "heading_size": "title-sm",
+                "heading_alignment": "text-center md:items-center",
+                "heading_tag": "h2",
+                "subheading": "Add a tagline",
+                "description": "",
+                "button_label": "",
+                "button_link": "",
+                "button_external": false,
+                "button_icon": true,
+                "highlighted_text": "scribble",
+                "highlighted_scribble": "squiggle-underline",
+                "color_text": "",
+                "color_background": "",
+                "gradient_background": "",
+                "color_highlight": "",
+                "gradient_highlight": "",
+                "color_button_text": "",
+                "color_button_background": "",
+                "color_button_gradient": "",
+                "color_overlay": "#171717",
+                "overlay_opacity": 40,
+                "padding_top": 100,
+                "padding_bottom": 100,
+                "divider": false,
+                "full_width": false,
+                "rounded": true
+            }
+        },
+        "testimonials-banner": {
+            "type": "testimonials-banner",
+            "blocks": {
+                "testimonial-1": {
+                    "type": "testimonial",
+                    "settings": {
+                        "icon": "quote",
+                        "text": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
+                        "author": "Author's name",
+                        "author_info": "",
+                        "author_url": "",
+                        "image_ratio": "rounded",
+                        "highlighted_text": "none",
+                        "highlighted_scribble": "circle"
+                    }
+                },
+                "testimonial-2": {
+                    "type": "testimonial",
+                    "settings": {
+                        "icon": "quote",
+                        "text": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
+                        "author": "Author's name",
+                        "author_info": "",
+                        "author_url": "",
+                        "image_ratio": "rounded",
+                        "highlighted_text": "none",
+                        "highlighted_scribble": "circle"
+                    }
+                },
+                "testimonial-3": {
+                    "type": "testimonial",
+                    "settings": {
+                        "icon": "quote",
+                        "text": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.<\/p>",
+                        "author": "Author's name",
+                        "author_info": "",
+                        "author_url": "",
+                        "image_ratio": "rounded",
+                        "highlighted_text": "none",
+                        "highlighted_scribble": "circle"
+                    }
+                }
+            },
+            "block_order": [
+                "testimonial-1",
+                "testimonial-2",
+                "testimonial-3"
+            ],
+            "disabled": true,
+            "settings": {
+                "transparent_header": false,
+                "image_height": "750px",
+                "content_position": "md:items-center md:justify-center",
+                "image_height_mobile": "500px",
+                "content_position_mobile": "items-center justify-center",
+                "color_text": "#ffffff",
+                "color_highlight": "",
+                "gradient_highlight": "",
+                "color_overlay": "#171717",
+                "overlay_opacity": 40,
+                "padding_top": 0,
+                "padding_bottom": 0,
+                "divider": false,
+                "rounded": true,
+                "enable_parallax": true,
+                "parallax_direction": "vertical"
+            }
+        },
+        "featured-collections": {
+            "type": "featured-collections",
+            "blocks": {
+                "collection-1": {
+                    "type": "collection",
+                    "settings": {
+                        "collection": "",
+                        "products": [],
+                        "title": "Collection 1"
+                    }
+                },
+                "collection-2": {
+                    "type": "collection",
+                    "settings": {
+                        "collection": "",
+                        "products": [],
+                        "title": "Collection 2"
+                    }
+                },
+                "collection-3": {
+                    "type": "collection",
+                    "settings": {
+                        "collection": "",
+                        "products": [],
+                        "title": "Collection 3"
+                    }
+                }
+            },
+            "block_order": [
+                "collection-1",
+                "collection-2",
+                "collection-3"
+            ],
+            "disabled": true,
+            "settings": {
+                "product_limit": 6,
+                "columns": 4,
+                "carousel_on_desktop": true,
+                "show_view_all": false,
+                "columns_mobile": "1",
+                "swipe_on_mobile": true,
+                "heading": "Best Sellers",
+                "heading_size": "title-md",
+                "heading_alignment": "text-left md:items-end md:flex-row",
+                "heading_tag": "h2",
+                "subheading": "",
+                "description": "",
+                "highlighted_text": "none",
+                "highlighted_scribble": "circle",
+                "color_text": "",
+                "color_background": "",
+                "gradient_background": "",
+                "color_highlight": "",
+                "gradient_highlight": "",
+                "color_button_text": "",
+                "color_button_background": "",
+                "color_button_gradient": "",
+                "padding_top": 100,
+                "padding_bottom": 100,
+                "divider": false,
+                "full_width": false,
+                "rounded": true
+            }
+        },
+        "scrolling-text-2": {
+            "type": "scrolling-text",
+            "blocks": {
+                "text_TjYxTQ": {
+                    "type": "text",
+                    "settings": {
+                        "text": "America's THC Seltzer™",
+                        "text_size": 66,
+                        "text_font": "heading",
+                        "highlighted_text": "none",
+                        "highlighted_scribble": "circle"
+                    }
+                },
+                "image-6": {
+                    "type": "image",
+                    "settings": {
+                        "image": "shopify:\/\/shop_images\/LIC-ReverseIcon.png",
+                        "height": 72
+                    }
+                }
+            },
+            "block_order": [
+                "text_TjYxTQ",
+                "image-6"
+            ],
+            "settings": {
+                "direction": "right",
+                "speed": 5,
+                "grid_horizontal": 125,
+                "enable_twin": true,
+                "enable_parallax": true,
+                "color_text": "#7bc3b9",
+                "color_background": "#18598c",
+                "gradient_background": "",
+                "color_highlight": "#0b61cd",
+                "gradient_highlight": "",
+                "padding_top": 20,
+                "padding_bottom": 20,
+                "divider": false,
+                "rounded": false
+            }
+        },
+        "blog-posts-collage": {
+            "type": "blog-posts-collage",
+            "disabled": true,
+            "settings": {
+                "blog": "news",
+                "post_limit": 3,
+                "show_view_all": true,
+                "image_ratio": "landscape",
+                "show_tags": true,
+                "show_date": true,
+                "show_comments": true,
+                "show_author": false,
+                "show_excerpt": true,
+                "heading": "What's <em>Happening<\/em>?",
+                "heading_size": "title-lg tracking-heading",
+                "heading_alignment": "text-left md:items-end md:flex-row",
+                "heading_tag": "h2",
+                "subheading": "IN THE NEWS",
+                "description": "",
+                "highlighted_text": "scribble",
+                "highlighted_scribble": "circle",
+                "color_text": "#0d253f",
+                "color_background": "rgba(0,0,0,0)",
+                "gradient_background": "",
+                "color_highlight": "#0b61cd",
+                "gradient_highlight": "",
+                "color_button_text": "",
+                "color_button_background": "#0b61cd",
+                "color_button_gradient": "",
+                "padding_top": 100,
+                "padding_bottom": 100,
+                "divider": false,
+                "full_width": false,
+                "rounded": false
+            }
+        },
+        "review_blocks_RdF6G7": {
+            "type": "review-blocks",
+            "blocks": {
+                "review_TW3HRN": {
+                    "type": "review",
+                    "settings": {
+                        "column": "column1",
+                        "question": "How Is this legal?",
+                        "answer": "<p>Our THC seltzers are fully compliant and federally legal under the 2018 Farm Bill. We use naturally extracted Delta-9 THC derived from hemp which accounts for no more than 0.3% of the net weight of the product. Compliant and responsibly crafted for your enjoyment<\/p>"
+                    }
+                },
+                "review_LqwXit": {
+                    "type": "review",
+                    "settings": {
+                        "column": "column2",
+                        "question": "Is It legal everywhere?",
+                        "answer": "<p>Almost! We currently ship everywhere in the continental US except the following states: Alaska, District of Columbia, Idaho, Kansas, Washington<\/p>"
+                    }
+                },
+                "review_wMApKj": {
+                    "type": "review",
+                    "settings": {
+                        "column": "column3",
+                        "question": "What is Full Spectrum THC? ",
+                        "answer": "<p>At Liberty, quality is our top priority. That's why we use Full Spectrum THC in our beverages, guaranteeing the best flavors and effects that cannabis has to offer. <\/p>"
+                    }
+                },
+                "review_mCDCPr": {
+                    "type": "review",
+                    "settings": {
+                        "column": "column1",
+                        "question": "How many seltzers should I have? ",
+                        "answer": "<p>Depending on your tolerance, we’ve found that one will relax you while a second will create a nice buzz. However, everyone is different! We recommend starting slow until you find your perfect dosage.<\/p>"
+                    }
+                },
+                "review_rp9XqW": {
+                    "type": "review",
+                    "settings": {
+                        "column": "column3",
+                        "question": "How are LIC's THC Seltzers different from traditional edibles? ",
+                        "answer": "<p>Traditional edibles (like gummies or chocolate bars) typically take anywhere from 45 minutes to two-plus hours to kick in. Why so long?  <\/p><p>THC-infused beverages are infused with a water-soluble formulation, meaning the cannabinoids are absorbed through your mouth then your tongue then the digestive tract. The immediate absorption means you can feel the effects 5 to 15 minutes later. Consumers new to cannabis might feel effects more immediately or intensely.  <\/p><p>The perk of a faster onset? You’ll quickly know how you feel so you’re in control of your buzz. Take a few sips, wait 10-15 minutes, and adjust. This allows you to confidently control their buzz.  <\/p>"
+                    }
+                },
+                "review_Vxfbcg": {
+                    "type": "review",
+                    "settings": {
+                        "column": "column2",
+                        "question": "Will I get anxious?",
+                        "answer": "<p>Our unique premium input of Full Spectrum THC goes beyond standard THC distillate - the combination of terpenes and minor cannabinoids  with THC create a synergistic effect, creating a blissful high for everyone to enjoy.<\/p>"
+                    }
+                }
+            },
+            "block_order": [
+                "review_TW3HRN",
+                "review_LqwXit",
+                "review_wMApKj",
+                "review_mCDCPr",
+                "review_rp9XqW",
+                "review_Vxfbcg"
+            ],
+            "settings": {
+                "title": "Product FAQS"
+            }
+        },
+        "173947741544d5c56e": {
+            "type": "apps",
+            "blocks": {
+                "instafeed_app_block_BcPYmc": {
+                    "type": "shopify:\/\/apps\/instafeed\/blocks\/app-block\/c447db20-095d-4a10-9725-b5977662c9d5",
+                    "settings": {
+                        "title": "",
+                        "title_color": "",
+                        "title_size_v2": 0,
+                        "alignment": "center",
+                        "instafeed_margin_top": 0,
+                        "instafeed_margin_bottom": 0,
+                        "instafeed_margin_sides": 0,
+                        "show_instagram_link": false,
+                        "link_alignment": "left",
+                        "link_color": "#000000",
+                        "background_color": "",
+                        "feed_id": "",
+                        "html_area": ""
+                    }
+                }
+            },
+            "block_order": [
+                "instafeed_app_block_BcPYmc"
+            ],
+            "settings": {
+                "color_text": "",
+                "color_background": "rgba(0,0,0,0)",
+                "gradient_background": "",
+                "color_highlight": "",
+                "gradient_highlight": "",
+                "color_button_text": "",
+                "color_button_background": "",
+                "color_button_gradient": "",
+                "padding_top": 72,
+                "padding_bottom": 72,
+                "divider": false,
+                "full_width": false,
+                "rounded": false
+            }
+        },
+        "calendar_events_rMg6tN": {
+            "type": "calendar-events",
+            "settings": {
+                "bg-color": "#0d253f"
+            }
+        },
+        "newsletter_RxDNzw": {
+            "type": "newsletter",
+            "blocks": {
+                "heading_9R6cQW": {
+                    "type": "heading",
+                    "settings": {
+                        "heading": "GET 20% OFF YOUR FIRST ORDER",
+                        "heading_size": "title-lg tracking-heading",
+                        "heading_tag": "h2",
+                        "highlighted_text": "none",
+                        "highlighted_scribble": "basic-underline"
+                    }
+                },
+                "text_d7de8W": {
+                    "type": "text",
+                    "settings": {
+                        "text": "<p>Subscribe to our newsletter and be the first to hear about our new arrivals, special promotions and online exclusives.<\/p>",
+                        "text_size": "subtext-md",
+                        "text_max_size": 34,
+                        "text_font": "body",
+                        "secondary_color": false,
+                        "highlighted_text": "none",
+                        "highlighted_scribble": "circle"
+                    }
+                },
+                "form_cx9RNQ": {
+                    "type": "form",
+                    "settings": {}
+                }
+            },
+            "block_order": [
+                "heading_9R6cQW",
+                "text_d7de8W",
+                "form_cx9RNQ"
+            ],
+            "disabled": true,
+            "settings": {
+                "content_width": "large",
+                "text_alignment": "center",
+                "text_alignment_mobile": "center",
+                "color_text": "#fcfbe7",
+                "color_background": "#18598c",
+                "gradient_background": "",
+                "color_highlight": "",
+                "gradient_highlight": "",
+                "color_button_text": "#e11d48",
+                "color_button_background": "#fcfbe7",
+                "color_button_gradient": "",
+                "padding_top": 32,
+                "padding_bottom": 32,
+                "divider": false,
+                "narrow": true,
+                "rounded": false
+            }
+        },
+        "rich_text_GA9j6d": {
+            "type": "rich-text",
+            "blocks": {
+                "heading_yJEhh7": {
+                    "type": "heading",
+                    "settings": {
+                        "heading": "GET 20% OFF YOUR FIRST ORDER",
+                        "heading_size": "title-lg tracking-heading",
+                        "heading_tag": "h2",
+                        "highlighted_text": "none",
+                        "highlighted_scribble": "circle"
+                    }
+                },
+                "text_8qxz8i": {
+                    "type": "text",
+                    "settings": {
+                        "text": "<p>Subscribe to our newsletter and be the first to hear about our new arrivals, special promotions and online exclusives.<\/p>",
+                        "text_size": "subtext-md",
+                        "text_max_size": 32,
+                        "text_font": "body",
+                        "secondary_color": false,
+                        "highlighted_text": "none",
+                        "highlighted_scribble": "circle"
+                    }
+                },
+                "klaviyo_email_marketing_sms_form_embed_block_jyUgNU": {
+                    "type": "shopify:\/\/apps\/klaviyo-email-marketing-sms\/blocks\/form-embed-block\/2632fe16-c075-4321-a88b-50b567f42507",
+                    "settings": {
+                        "formId": "<div class=\"klaviyo-form-VEiH7G\"><\/div>"
+                    }
+                }
+            },
+            "block_order": [
+                "heading_yJEhh7",
+                "text_8qxz8i",
+                "klaviyo_email_marketing_sms_form_embed_block_jyUgNU"
+            ],
+            "name": "t:sections.rich-text.presets.name",
+            "settings": {
+                "text_alignment": "center",
+                "text_alignment_mobile": "center",
+                "heading": "",
+                "heading_size": "title-md",
+                "heading_alignment": "text-left md:items-end md:flex-row",
+                "heading_width": "small",
+                "heading_tag": "h2",
+                "subheading": "",
+                "description": "",
+                "button_label": "",
+                "button_link": "",
+                "button_external": false,
+                "button_icon": true,
+                "highlighted_text": "none",
+                "highlighted_scribble": "circle",
+                "color_text": "#fcfbe7",
+                "color_background": "#18598c",
+                "gradient_background": "",
+                "color_highlight": "",
+                "gradient_highlight": "",
+                "color_button_text": "",
+                "color_button_background": "",
+                "color_button_gradient": "",
+                "padding_top": 72,
+                "padding_bottom": 72,
+                "divider": false,
+                "narrow": true,
+                "rounded": false
+            }
         }
-      },
-      "block_order": [
-        "subheading_WKzbLf",
-        "heading_bUyEhV",
-        "text_9rdMxK",
-        "button_nejQTE"
-      ],
-      "settings": {
-        "transparent_header": false,
-        "video": "shopify://files/videos/LIC-Video.mp4",
-        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
-        "description": "",
-        "enable_video_autoplay": true,
-        "enable_video_looping": true,
-        "image_height": "650px",
-        "content_width": "small",
-        "content_position": "md:items-start md:justify-start",
-        "text_alignment": "left",
-        "video_mobile": "shopify://files/videos/LIC-Video.mp4",
-        "video_url_mobile": "",
-        "image_height_mobile": "auto",
-        "content_position_mobile": "items-center justify-center",
-        "text_alignment_mobile": "center",
-        "color_text": "#fcfbe7",
-        "color_highlight": "#e11d48",
-        "gradient_highlight": "",
-        "color_button_text": "#0b61cd",
-        "color_button_background": "#fcfbe7",
-        "color_button_gradient": "",
-        "color_overlay": "#171717",
-        "overlay_opacity": 70,
-        "padding_top": 0,
-        "padding_bottom": 0,
-        "divider": false,
-        "full_width": true,
-        "rounded": false
-      }
     },
-    "image_with_text_overlay_AcnrqM": {
-      "type": "image-with-text-overlay",
-      "blocks": {
-        "subheading_bkwcb3": {
-          "type": "subheading",
-          "settings": {
-            "subheading": "DISCOVER AMERICA'S THC SELTZER",
-            "subheading_size": "subtitle-md",
-            "secondary_color": false
-          }
-        },
-        "heading_KPrhQH": {
-          "type": "heading",
-          "settings": {
-            "heading": "Taste the Flavors of Freedom",
-            "heading_size": "title-xl tracking-heading",
-            "heading_tag": "h2",
-            "highlighted_text": "scribble",
-            "highlighted_scribble": "circle"
-          }
-        },
-        "text_xraj8X": {
-          "type": "text",
-          "settings": {
-            "text": "<p><a href=\"http://www.drinklic.com/\"><strong>At Liberty In A Can™</strong></a>, we’re passionate about revolutionizing the <a href=\"https://thecannabisindustry.org/\">cannabis-industry</a> with our premium, patriotic THC seltzers.</p>",
-            "text_size": "subtext-md",
-            "text_max_size": 32,
-            "text_font": "body",
-            "secondary_color": false,
-            "highlighted_text": "scribble",
-            "highlighted_scribble": "circle"
-          }
-        },
-        "button_ACn74H": {
-          "type": "button",
-          "settings": {
-            "button_label": "Choose Your Flavor",
-            "button_link": "",
-            "button_style": "primary",
-            "button_size": "md",
-            "button_external": false,
-            "button_icon": true
-          }
-        }
-      },
-      "block_order": [
-        "subheading_bkwcb3",
-        "heading_KPrhQH",
-        "text_xraj8X",
-        "button_ACn74H"
-      ],
-      "disabled": true,
-      "settings": {
-        "transparent_header": false,
-        "image": "shopify://shop_images/LIC-BANNER.png",
-        "image_height": "650px",
-        "content_width": "medium",
-        "content_position": "md:items-start md:justify-start",
-        "text_alignment": "left",
-        "image_height_mobile": "auto",
-        "content_position_mobile": "items-end justify-start",
-        "text_alignment_mobile": "left",
-        "color_text": "#fcfbe7",
-        "color_highlight": "#e11d48",
-        "gradient_highlight": "",
-        "color_button_text": "#fcfbe7",
-        "color_button_background": "#0b61cd",
-        "color_button_gradient": "",
-        "color_overlay": "#171717",
-        "overlay_opacity": 70,
-        "padding_top": 0,
-        "padding_bottom": 0,
-        "divider": false,
-        "full_width": true,
-        "rounded": false,
-        "enable_parallax": true,
-        "parallax_direction": "horizontal"
-      }
-    },
-    "images_with_text_overlay_Gp7DK8": {
-      "type": "images-with-text-overlay",
-      "blocks": {
-        "subheading_FAJtdp": {
-          "type": "subheading",
-          "settings": {
-            "subheading": "Add a tagline",
-            "subheading_size": "subtitle-md",
-            "secondary_color": true
-          }
-        },
-        "heading_jEaVfh": {
-          "type": "heading",
-          "settings": {
-            "heading": "Image with text overlay",
-            "heading_size": "title-lg tracking-heading",
-            "heading_tag": "h2",
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        }
-      },
-      "block_order": [
-        "subheading_FAJtdp",
-        "heading_jEaVfh"
-      ],
-      "disabled": true,
-      "settings": {
-        "transparent_header": false,
-        "image_height": "650px",
-        "content_width": "medium",
-        "content_position": "md:items-end md:justify-start",
-        "text_alignment": "left",
-        "image_1": "shopify://shop_images/FMS-Watermelon-e1729291027520-1113x800.webp",
-        "image_2": "shopify://shop_images/IMG_1107-1536x1024.webp",
-        "image_3": "shopify://shop_images/IMG_0600-2-1055x800.webp",
-        "image_height_mobile": "auto",
-        "content_position_mobile": "items-end justify-start",
-        "text_alignment_mobile": "left",
-        "color_text": "#ffffff",
-        "color_background": "#0d253f",
-        "gradient_background": "",
-        "color_highlight": "#e0a580",
-        "gradient_highlight": "",
-        "color_button_text": "#171717",
-        "color_button_background": "#ffffff",
-        "color_button_gradient": "",
-        "padding_top": 0,
-        "padding_bottom": 0,
-        "divider": false,
-        "full_width": true,
-        "rounded": false,
-        "enable_parallax": true
-      }
-    },
-    "slideshow": {
-      "type": "slideshow",
-      "blocks": {
-        "slide-3": {
-          "type": "video",
-          "settings": {
-            "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
-            "description": "",
-            "video_url_mobile": "",
-            "heading": "Discover the Flavors of Freedom",
-            "heading_size": "title-xl tracking-heading",
-            "heading_tag": "h1",
-            "button_label": "Shop Now",
-            "button_link": "",
-            "button_style": "primary",
-            "button_external": false,
-            "button_icon": false
-          }
-        }
-      },
-      "block_order": [
-        "slide-3"
-      ],
-      "disabled": true,
-      "settings": {
-        "autoplay": false,
-        "autoplay_speed": 7,
-        "show_navigation": true,
-        "image_height": "750px",
-        "content_width": "medium",
-        "image_height_mobile": "500px",
-        "color_text": "#fcfbe7",
-        "color_background": "#7bc3b9",
-        "gradient_background": "",
-        "color_button_text": "#0d253f",
-        "color_button_background": "#fcfbe7",
-        "color_button_gradient": "",
-        "color_overlay": "#000000",
-        "overlay_opacity": 20,
-        "padding_top": 0,
-        "padding_bottom": 0,
-        "divider": false,
-        "full_width": true,
-        "rounded": false,
-        "enable_parallax": true,
-        "parallax_direction": "vertical"
-      }
-    },
-    "rich-text-1": {
-      "type": "rich-text",
-      "blocks": {
-        "text": {
-          "type": "text",
-          "settings": {
-            "text": "<p><a href=\"http://www.drinklic.com/\"><strong>At Liberty In A Can™</strong></a>, we’re passionate about revolutionizing the <a href=\"https://thecannabisindustry.org/\">cannabis-industry </a>with our premium, patriotic THC seltzers. We believe in living life to the fullest, and we’re dedicated to creating products that help you make the most of every moment.Our seltzers are crafted with the finest <a href=\"https://www.cbsnews.com/sanfrancisco/news/clean-weed-organic-buzz-among-cannabis-users-growers/\">all-natural cannabis </a>and utilizes patented <a href=\"https://poweredbysends.com/pages/technology\">SENDS™ </a>technology ensuring a clean, pure, and refreshing experience.</p>",
-            "text_size": "subtext-md",
-            "text_max_size": 32,
-            "text_font": "body",
-            "secondary_color": false,
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        },
-        "button_Y78htQ": {
-          "type": "button",
-          "settings": {
-            "button_label": "Our Story",
-            "button_link": "shopify://pages/about",
-            "button_style": "secondary",
-            "button_size": "md",
-            "button_external": false,
-            "button_icon": true
-          }
-        },
-        "spacing_K7jCqD": {
-          "type": "spacing",
-          "settings": {
-            "height": 40,
-            "height_mobile": 28
-          }
-        }
-      },
-      "block_order": [
-        "text",
-        "button_Y78htQ",
-        "spacing_K7jCqD"
-      ],
-      "settings": {
-        "text_alignment": "left",
-        "text_alignment_mobile": "left",
-        "heading": "Live the Moments™",
-        "heading_size": "title-lg tracking-heading",
-        "heading_alignment": "text-left md:items-end md:flex-row",
-        "heading_width": "small",
-        "heading_tag": "h2",
-        "subheading": "",
-        "description": "",
-        "button_label": "",
-        "button_link": "shopify://pages/contact",
-        "button_external": false,
-        "button_icon": true,
-        "highlighted_text": "scribble",
-        "highlighted_scribble": "basic-underline",
-        "color_text": "rgba(0,0,0,0)",
-        "color_background": "rgba(0,0,0,0)",
-        "gradient_background": "",
-        "color_highlight": "",
-        "gradient_highlight": "",
-        "color_button_text": "#fcfbe7",
-        "color_button_background": "#0b61cd",
-        "color_button_gradient": "",
-        "padding_top": 72,
-        "padding_bottom": 0,
-        "divider": false,
-        "narrow": false,
-        "rounded": false
-      }
-    },
-    "empty_space_AFKfjC": {
-      "type": "empty-space",
-      "settings": {
-        "desktop_height": 52,
-        "mobile_height": 28,
-        "color_background": "",
-        "gradient_background": ""
-      }
-    },
-    "scrolling-text-1": {
-      "type": "scrolling-text",
-      "blocks": {
-        "text": {
-          "type": "text",
-          "settings": {
-            "text": "ZERO CALORIES",
-            "text_size": 90,
-            "text_font": "heading",
-            "highlighted_text": "scribble",
-            "highlighted_scribble": "basic-underline"
-          }
-        },
-        "text_hiLzEW": {
-          "type": "text",
-          "settings": {
-            "text": "ZERO Sweeteners",
-            "text_size": 90,
-            "text_font": "heading",
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        },
-        "text_wDncgF": {
-          "type": "text",
-          "settings": {
-            "text": "ZER0 CARBS",
-            "text_size": 90,
-            "text_font": "heading",
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        },
-        "text_Xg3Wrm": {
-          "type": "text",
-          "settings": {
-            "text": "ZERO SODIUM",
-            "text_size": 90,
-            "text_font": "heading",
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        }
-      },
-      "block_order": [
-        "text",
-        "text_hiLzEW",
-        "text_wDncgF",
-        "text_Xg3Wrm"
-      ],
-      "settings": {
-        "direction": "left",
-        "speed": 20,
-        "grid_horizontal": 70,
-        "enable_twin": false,
-        "enable_parallax": true,
-        "color_text": "#fcfbe7",
-        "color_background": "#e11d48",
-        "gradient_background": "",
-        "color_highlight": "",
-        "gradient_highlight": "",
-        "padding_top": 40,
-        "padding_bottom": 40,
-        "divider": false,
-        "rounded": false
-      }
-    },
-    "multicolumn_QzDYCN": {
-      "type": "multicolumn",
-      "blocks": {
-        "column_XHCgnc": {
-          "type": "column",
-          "settings": {
-            "show_border": true,
-            "text_alignment": "center",
-            "text_alignment_mobile": "center",
-            "image": "shopify://shop_images/LIC-Innovation.png",
-            "image_ratio": "adapt",
-            "heading": "Pure Innovation",
-            "heading_size": "text-2xl lg:text-3xl",
-            "text": "<p>Experience the industry leading technology of SENDS™, ensuring unparalleled purity and quality in every can.</p>",
-            "button_label": "",
-            "button_link": "",
-            "button_style": "secondary",
-            "button_external": false,
-            "button_icon": true,
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        },
-        "column_mrVMkf": {
-          "type": "column",
-          "settings": {
-            "show_border": true,
-            "text_alignment": "center",
-            "text_alignment_mobile": "center",
-            "image": "shopify://shop_images/LIC-Elevated.png",
-            "image_ratio": "adapt",
-            "heading": "Elevated Experience",
-            "heading_size": "text-2xl lg:text-3xl",
-            "text": "<p>Elevate your social experiences, wellness journey, and relaxation time with our refreshing and delicious flavors.</p>",
-            "button_label": "",
-            "button_link": "",
-            "button_style": "secondary",
-            "button_external": false,
-            "button_icon": true,
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        },
-        "column_w8YpjW": {
-          "type": "column",
-          "settings": {
-            "show_border": true,
-            "text_alignment": "center",
-            "text_alignment_mobile": "center",
-            "image": "shopify://shop_images/LIC-Ribbon.png",
-            "image_ratio": "adapt",
-            "heading": "Unparalleled Quality",
-            "heading_size": "text-2xl lg:text-3xl",
-            "text": "<p>Enjoy the assurance of high-quality cannabis, precise dosing, and rigorous testing, ensuring a premium product that exceeds expectations.</p>",
-            "button_label": "",
-            "button_link": "",
-            "button_style": "secondary",
-            "button_external": false,
-            "button_icon": true,
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        }
-      },
-      "block_order": [
-        "column_XHCgnc",
-        "column_mrVMkf",
-        "column_w8YpjW"
-      ],
-      "settings": {
-        "gap": "large",
-        "columns": 3,
-        "columns_mobile": "1",
-        "swipe_on_mobile": true,
-        "heading": "Elevated Experiences with Liberty In a Can™",
-        "heading_size": "title-lg tracking-heading",
-        "heading_alignment": "text-center md:items-center",
-        "heading_tag": "h2",
-        "subheading": "DISCOVER AMERICA'S THC SELTZER™",
-        "description": "",
-        "button_label": "",
-        "button_link": "",
-        "button_external": false,
-        "button_icon": true,
-        "highlighted_text": "none",
-        "highlighted_scribble": "circle",
-        "color_text": "",
-        "color_background": "",
-        "gradient_background": "",
-        "color_highlight": "",
-        "gradient_highlight": "",
-        "color_button_text": "",
-        "color_button_background": "",
-        "color_button_gradient": "",
-        "padding_top": 72,
-        "padding_bottom": 72,
-        "divider": false,
-        "full_width": false,
-        "rounded": false
-      }
-    },
-    "video-with-text-overlay": {
-      "type": "video-with-text-overlay",
-      "blocks": {
-        "heading": {
-          "type": "heading",
-          "settings": {
-            "heading": "Video with text overlay",
-            "heading_size": "title-md",
-            "heading_tag": "h2",
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        },
-        "text": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Give customers details about the banner image(s) or content on the template.</p>",
-            "text_size": "subtext-md",
-            "text_max_size": 32,
-            "text_font": "body",
-            "secondary_color": true,
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        },
-        "button": {
-          "type": "button",
-          "settings": {
-            "button_label": "Shop Now",
-            "button_link": "",
-            "button_style": "primary",
-            "button_size": "md",
-            "button_external": false,
-            "button_icon": true
-          }
-        }
-      },
-      "block_order": [
-        "heading",
-        "text",
-        "button"
-      ],
-      "disabled": true,
-      "settings": {
-        "transparent_header": false,
-        "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
-        "description": "",
-        "enable_video_autoplay": true,
-        "enable_video_looping": true,
-        "image_height": "750px",
-        "content_width": "medium",
-        "content_position": "md:items-center md:justify-center",
-        "text_alignment": "center",
-        "video_url_mobile": "",
-        "image_height_mobile": "auto",
-        "content_position_mobile": "items-center justify-center",
-        "text_alignment_mobile": "center",
-        "color_text": "#ffffff",
-        "color_highlight": "#e0a580",
-        "gradient_highlight": "",
-        "color_button_text": "#171717",
-        "color_button_background": "#ffffff",
-        "color_button_gradient": "",
-        "color_overlay": "#000000",
-        "overlay_opacity": 50,
-        "padding_top": 0,
-        "padding_bottom": 0,
-        "divider": false,
-        "full_width": true,
-        "rounded": true
-      }
-    },
-    "collage_irdHhw": {
-      "type": "collage",
-      "blocks": {
-        "image_tUdHm3": {
-          "type": "image",
-          "settings": {
-            "subheading": "",
-            "heading": "",
-            "link": "",
-            "invert_subheading_heading": false,
-            "image": "shopify://shop_images/IMG_9089.heic",
-            "image_ratio": "portrait",
-            "content_position": "md:items-end md:justify-start",
-            "text_alignment": "left",
-            "image_mobile": "shopify://shop_images/IMG_9089.heic",
-            "image_ratio_mobile": "portrait",
-            "content_position_mobile": "items-end justify-start",
-            "text_alignment_mobile": "left",
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle",
-            "color_text": "#ffffff",
-            "color_highlight": "",
-            "gradient_highlight": "",
-            "color_overlay": "#171717",
-            "overlay_opacity": 10
-          }
-        },
-        "video_PTaaWK": {
-          "type": "video",
-          "settings": {
-            "subheading": "",
-            "heading": "",
-            "link": "",
-            "invert_subheading_heading": false,
-            "video": "shopify://files/videos/25086d6983554b29b3cb35cb91724dff.MOV",
-            "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
-            "description": "",
-            "enable_video_autoplay": true,
-            "enable_video_looping": true,
-            "image_ratio": "portrait",
-            "content_position": "md:items-end md:justify-start",
-            "text_alignment": "left",
-            "video_url_mobile": "",
-            "image_ratio_mobile": "landscape",
-            "content_position_mobile": "items-end justify-start",
-            "text_alignment_mobile": "left",
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle",
-            "color_text": "#ffffff",
-            "color_highlight": "",
-            "gradient_highlight": "",
-            "color_overlay": "#171717",
-            "overlay_opacity": 10
-          }
-        },
-        "image_APHpcj": {
-          "type": "image",
-          "settings": {
-            "subheading": "",
-            "heading": "",
-            "link": "",
-            "invert_subheading_heading": false,
-            "image": "shopify://shop_images/IMG_2792.heic",
-            "image_ratio": "portrait",
-            "content_position": "md:items-end md:justify-start",
-            "text_alignment": "left",
-            "image_ratio_mobile": "portrait",
-            "content_position_mobile": "items-end justify-start",
-            "text_alignment_mobile": "left",
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle",
-            "color_text": "#ffffff",
-            "color_highlight": "",
-            "gradient_highlight": "",
-            "color_overlay": "#171717",
-            "overlay_opacity": 10
-          }
-        },
-        "video_JcftAX": {
-          "type": "video",
-          "settings": {
-            "subheading": "",
-            "heading": "",
-            "link": "",
-            "invert_subheading_heading": false,
-            "video": "shopify://files/videos/4ec554b48ece4f1a97498f4218bb1259.MOV",
-            "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
-            "description": "",
-            "enable_video_autoplay": true,
-            "enable_video_looping": true,
-            "image_ratio": "portrait",
-            "content_position": "md:items-end md:justify-start",
-            "text_alignment": "left",
-            "video_url_mobile": "",
-            "image_ratio_mobile": "landscape",
-            "content_position_mobile": "items-end justify-start",
-            "text_alignment_mobile": "left",
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle",
-            "color_text": "#ffffff",
-            "color_highlight": "",
-            "gradient_highlight": "",
-            "color_overlay": "#171717",
-            "overlay_opacity": 10
-          }
-        },
-        "image_3WnLiW": {
-          "type": "image",
-          "settings": {
-            "subheading": "",
-            "heading": "",
-            "link": "",
-            "invert_subheading_heading": false,
-            "image": "shopify://shop_images/IMG_1934.heic",
-            "image_ratio": "portrait",
-            "content_position": "md:items-end md:justify-start",
-            "text_alignment": "left",
-            "image_ratio_mobile": "portrait",
-            "content_position_mobile": "items-end justify-start",
-            "text_alignment_mobile": "left",
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle",
-            "color_text": "#ffffff",
-            "color_highlight": "",
-            "gradient_highlight": "",
-            "color_overlay": "#171717",
-            "overlay_opacity": 10
-          }
-        },
-        "video_GWiXeP": {
-          "type": "video",
-          "settings": {
-            "subheading": "",
-            "heading": "",
-            "link": "",
-            "invert_subheading_heading": false,
-            "video": "shopify://files/videos/copy_609e91e0-adac-4e31-a11e-f98bd62d719c.MOV",
-            "video_url": "https://www.youtube.com/watch?v=_9VUPq3SxOc",
-            "description": "",
-            "enable_video_autoplay": true,
-            "enable_video_looping": true,
-            "image_ratio": "portrait",
-            "content_position": "md:items-end md:justify-start",
-            "text_alignment": "left",
-            "video_url_mobile": "",
-            "image_ratio_mobile": "landscape",
-            "content_position_mobile": "items-end justify-start",
-            "text_alignment_mobile": "left",
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle",
-            "color_text": "#ffffff",
-            "color_highlight": "",
-            "gradient_highlight": "",
-            "color_overlay": "#171717",
-            "overlay_opacity": 10
-          }
-        }
-      },
-      "block_order": [
-        "image_tUdHm3",
-        "video_PTaaWK",
-        "image_APHpcj",
-        "video_JcftAX",
-        "image_3WnLiW",
-        "video_GWiXeP"
-      ],
-      "settings": {
-        "heading": "share the moment",
-        "heading_size": "title-md",
-        "heading_alignment": "text-left md:items-end md:flex-row",
-        "heading_tag": "h2",
-        "subheading": "RAISE A CAN",
-        "description": "<p>Liberty In A Can™ is more than just a drink—it’s a lifestyle. We love seeing how you celebrate freedom, adventure, and good vibes with our THC seltzers. Snap a pic, tag us on <a href=\"https://www.instagram.com/drink.lic/\" target=\"_blank\" title=\"https://www.instagram.com/drink.lic/\">Instagram</a>, and share your moments with <strong>#LibertyInACan</strong> for a chance to be featured!</p>",
-        "button_label": "",
-        "button_link": "",
-        "button_external": false,
-        "button_icon": true,
-        "highlighted_text": "none",
-        "highlighted_scribble": "circle",
-        "color_text": "",
-        "color_background": "",
-        "gradient_background": "",
-        "color_highlight": "",
-        "gradient_highlight": "",
-        "color_button_text": "",
-        "color_button_background": "",
-        "color_button_gradient": "",
-        "padding_top": 0,
-        "padding_bottom": 0,
-        "divider": false,
-        "full_width": false,
-        "rounded": false,
-        "enable_parallax": true
-      }
-    },
-    "featured-product": {
-      "type": "featured-product",
-      "blocks": {
-        "text": {
-          "type": "text",
-          "settings": {
-            "text": "{{ section.settings.product.vendor }}",
-            "text_size": "text-base"
-          }
-        },
-        "title": {
-          "type": "title",
-          "settings": {
-            "title_size": "product-title-md",
-            "title_size_mobile": "product-title-md",
-            "show_price": true,
-            "show_rating": true
-          }
-        },
-        "description": {
-          "type": "description",
-          "settings": {
-            "text_size": "text-base"
-          }
-        },
-        "countdown": {
-          "type": "countdown",
-          "settings": {
-            "heading": "Hurry up!",
-            "subheading": "Sale end in:",
-            "color_text": "#e11d48",
-            "color_background": "#fff1f2",
-            "gradient_background": ""
-          }
-        },
-        "variant_picker": {
-          "type": "variant_picker",
-          "settings": {
-            "show_variant_labels": true,
-            "picker_type": "button",
-            "enable_color_swatches": true,
-            "color_swatch_type": "color",
-            "size_chart": ""
-          }
-        },
-        "inventory": {
-          "type": "inventory",
-          "settings": {
-            "inventory_threshold": 15,
-            "show_inventory_transfer": true,
-            "show_inventory_quantity": "low",
-            "color_scheme": "accent-1"
-          }
-        },
-        "buy_buttons": {
-          "type": "buy_buttons",
-          "settings": {
-            "show_quantity_selector": false,
-            "show_dynamic_checkout": false,
-            "show_gift_card_recipient": false,
-            "enable_back_in_stock": false,
-            "show_back_in_stock_name": false,
-            "show_back_in_stock_phone": false
-          }
-        },
-        "pickup_availability": {
-          "type": "pickup_availability",
-          "settings": {}
-        },
-        "share": {
-          "type": "share",
-          "settings": {
-            "share_label": "Share",
-            "show_help_desk": true,
-            "help_label": "Need help?",
-            "help_page": ""
-          }
-        },
-        "read_more": {
-          "type": "read_more",
-          "settings": {}
-        },
-        "spinning_text": {
-          "type": "spinning_text",
-          "settings": {
-            "text": "AMERICA'S THC  SELTZER™"
-          }
-        }
-      },
-      "block_order": [
-        "text",
-        "title",
-        "description",
-        "countdown",
-        "variant_picker",
-        "inventory",
-        "buy_buttons",
-        "pickup_availability",
-        "share",
-        "read_more",
-        "spinning_text"
-      ],
-      "disabled": true,
-      "settings": {
-        "product": "5mg-δ9-thc-full-spectrum-seltzer-with-lime-essence",
-        "enable_sticky_info": true,
-        "media_size": 64,
-        "gallery_layout": "thumbnail",
-        "thumbnail_position": "beside",
-        "image_ratio": "adapt_first",
-        "image_zoom": "lightbox",
-        "hide_variants": false,
-        "enable_video_autoplay": true,
-        "enable_video_looping": true,
-        "mobile_layout": "full_width",
-        "image_ratio_mobile": "adapt_first",
-        "mobile_thumbnail": false,
-        "padding_top": 120,
-        "padding_bottom": 0,
-        "divider": false,
-        "full_width": false,
-        "rounded": true
-      }
-    },
-    "testimonials_a3WEUy": {
-      "type": "testimonials",
-      "blocks": {
-        "testimonial_6e3f6A": {
-          "type": "testimonial",
-          "settings": {
-            "icon": "quote",
-            "text": "<p>I’m gonna drink this all night until you're out</p>",
-            "author": "Manny",
-            "author_info": "",
-            "author_url": "",
-            "image_ratio": "rounded",
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        },
-        "testimonial_h7BHaN": {
-          "type": "testimonial",
-          "settings": {
-            "icon": "quote",
-            "text": "<p>They slapped. Watermelon is absolutely fire and my wife loved the lime</p>",
-            "author": "Mike",
-            "author_info": "",
-            "author_url": "",
-            "image_ratio": "rounded",
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        },
-        "testimonial_HXw3PT": {
-          "type": "testimonial",
-          "settings": {
-            "icon": "quote",
-            "text": "<p>I slept 9 hours last night and have no anxiety. Some have ice cream at night, I have a 🗽Liberty In a Can. I am feeling so much better... the solitude, no alcohol. I don’t get a head high which I do not like, it’s just relaxing. I am going to become your best customer in Delray!!!</p>",
-            "author": "Pam",
-            "author_info": "",
-            "author_url": "",
-            "image_ratio": "rounded",
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        },
-        "testimonial_3nQLmY": {
-          "type": "testimonial",
-          "settings": {
-            "icon": "quote",
-            "text": "<p>My husband and his friends loved Liberty In a Can so much that they drank them all when I was out of town so we will definitely be ordering more!</p>",
-            "author": "Christie",
-            "author_info": "",
-            "author_url": "",
-            "image_ratio": "rounded",
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        },
-        "testimonial_LkAeRA": {
-          "type": "testimonial",
-          "settings": {
-            "icon": "quote",
-            "text": "<p>Liberty makes me feel like I’m kicking back at the beach with a joint but I’m sipping a sparkling water feeling refreshed instead with the same effects. It tastes delicious going down and has all the things I want to feel relaxed</p>",
-            "author": "Adam",
-            "author_info": "",
-            "author_url": "",
-            "image_ratio": "rounded",
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        },
-        "testimonial_VGj6NQ": {
-          "type": "testimonial",
-          "settings": {
-            "icon": "quote",
-            "text": "<p>I like how its only 5mg but its live resin, so it actually hits. I've had other drinks that claim 25 or 50 mg but I didn't even feel anything.</p>",
-            "author": "Nav",
-            "author_info": "",
-            "author_url": "",
-            "image_ratio": "rounded",
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        },
-        "testimonial_6yKAUa": {
-          "type": "testimonial",
-          "settings": {
-            "icon": "quote",
-            "text": "<p>You're drink actually tastes good. I have had a lot of these THC drinks and so many of them taste bad and they have so much sugar.</p>",
-            "author": "Natalie",
-            "author_info": "",
-            "author_url": "",
-            "image_ratio": "rounded",
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        },
-        "testimonial_AnKhnt": {
-          "type": "testimonial",
-          "settings": {
-            "icon": "quote",
-            "text": "<p>I don't drink (alcohol) anymore so these are perfect for me and I still feel included in drinking with friends</p>",
-            "author": "Stacy",
-            "author_info": "",
-            "author_url": "",
-            "image_ratio": "rounded",
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        }
-      },
-      "block_order": [
-        "testimonial_6e3f6A",
-        "testimonial_h7BHaN",
-        "testimonial_HXw3PT",
-        "testimonial_3nQLmY",
-        "testimonial_LkAeRA",
-        "testimonial_VGj6NQ",
-        "testimonial_6yKAUa",
-        "testimonial_AnKhnt"
-      ],
-      "settings": {
-        "heading": "Testimonials",
-        "heading_size": "title-md",
-        "heading_alignment": "text-center md:items-center",
-        "heading_tag": "h2",
-        "subheading": "",
-        "description": "",
-        "button_label": "",
-        "button_link": "",
-        "button_external": false,
-        "button_icon": true,
-        "highlighted_text": "none",
-        "highlighted_scribble": "circle",
-        "color_text": "",
-        "color_background": "",
-        "gradient_background": "",
-        "color_highlight": "",
-        "gradient_highlight": "",
-        "color_button_text": "",
-        "color_button_background": "",
-        "color_button_gradient": "",
-        "padding_top": 72,
-        "padding_bottom": 72,
-        "divider": false,
-        "rounded": false
-      }
-    },
-    "rich-text-2": {
-      "type": "rich-text",
-      "settings": {
-        "text_alignment": "left",
-        "text_alignment_mobile": "left",
-        "heading": "Build your <em>Bundle</em>",
-        "heading_size": "title-md",
-        "heading_alignment": "text-left md:items-end md:flex-row",
-        "heading_width": "large",
-        "heading_tag": "h2",
-        "subheading": "",
-        "description": "<p>The choice is yours. With our bundle builder, you can select any combination from our range of products. The easiest way to keep everyone happy.</p>",
-        "button_label": "",
-        "button_link": "",
-        "button_external": false,
-        "button_icon": true,
-        "highlighted_text": "scribble",
-        "highlighted_scribble": "squiggle-underline",
-        "color_text": "",
-        "color_background": "",
-        "gradient_background": "",
-        "color_highlight": "",
-        "gradient_highlight": "",
-        "color_button_text": "",
-        "color_button_background": "",
-        "color_button_gradient": "",
-        "padding_top": 120,
-        "padding_bottom": 52,
-        "divider": false,
-        "narrow": false,
-        "rounded": false
-      }
-    },
-    "compact_product_bundle_EBA9Qp": {
-      "type": "compact-product-bundle",
-      "blocks": {
-        "heading_3cfeP3": {
-          "type": "heading",
-          "settings": {
-            "heading": "Product bundle",
-            "heading_size": "title-md",
-            "heading_tag": "h2",
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        },
-        "text_DtcT9J": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Save when you purchase a combo of both Lime and Watermelon!</p>",
-            "text_size": "subtext-md",
-            "text_max_size": 32,
-            "text_font": "body",
-            "secondary_color": false,
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        }
-      },
-      "block_order": [
-        "heading_3cfeP3",
-        "text_DtcT9J"
-      ],
-      "settings": {
-        "collection": "beverages",
-        "products": [
-          "5mg-δ9-thc-full-spectrum-seltzer-with-lime-essence",
-          "5mg-δ9-thc-full-spectrum-seltzer-with-lime-essence-copy"
-        ],
-        "product_limit": 2,
-        "image": "shopify://shop_images/20240615_210631740_iOS.jpg",
-        "layout": "image_first",
-        "content_position": "md:items-center",
-        "text_alignment": "center",
-        "image_height_mobile": "adapt",
-        "content_position_mobile": "items-center",
-        "text_alignment_mobile": "center",
-        "swipe_on_mobile": true,
-        "show_variant_labels": true,
-        "picker_type": "button",
-        "enable_color_swatches": true,
-        "color_swatch_type": "color",
-        "color_text": "",
-        "color_background": "",
-        "gradient_background": "",
-        "color_highlight": "",
-        "gradient_highlight": "",
-        "color_button_text": "",
-        "color_button_background": "",
-        "color_button_gradient": "",
-        "color_overlay": "#171717",
-        "overlay_opacity": 40,
-        "padding_top": 72,
-        "padding_bottom": 72,
-        "divider": false,
-        "full_width": false,
-        "rounded": false,
-        "enable_parallax": true,
-        "parallax_direction": "vertical"
-      }
-    },
-    "countdown-timer": {
-      "type": "countdown-timer",
-      "blocks": {
-        "text": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Countdown timer</p>",
-            "text_size": "subtext-custom",
-            "text_max_size": 32,
-            "text_font": "body",
-            "secondary_color": false,
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        },
-        "spacing": {
-          "type": "spacing",
-          "settings": {
-            "height": 24,
-            "height_mobile": 16
-          }
-        },
-        "timer": {
-          "type": "timer",
-          "settings": {
-            "year": "2026",
-            "month": "01",
-            "day": "1",
-            "hour": "03",
-            "minute": "00",
-            "text_font": "heading",
-            "text_size": "title-lg tracking-heading",
-            "message": ""
-          }
-        },
-        "button": {
-          "type": "button",
-          "settings": {
-            "button_label": "Shop Now",
-            "button_link": "",
-            "button_style": "secondary",
-            "button_size": "md",
-            "button_external": false,
-            "button_icon": true
-          }
-        }
-      },
-      "block_order": [
-        "text",
-        "spacing",
-        "timer",
-        "button"
-      ],
-      "disabled": true,
-      "settings": {
-        "transparent_header": false,
-        "image_height": "750px",
-        "content_width": "medium",
-        "content_position": "md:items-center md:justify-center",
-        "text_alignment": "center",
-        "image_height_mobile": "500px",
-        "content_position_mobile": "items-center justify-center",
-        "text_alignment_mobile": "center",
-        "color_text": "#ffffff",
-        "color_highlight": "#fcd34d",
-        "gradient_highlight": "",
-        "color_button_text": "#171717",
-        "color_button_background": "#ffffff",
-        "color_button_gradient": "",
-        "color_overlay": "#000000",
-        "overlay_opacity": 30,
-        "padding_top": 0,
-        "padding_bottom": 0,
-        "divider": false,
-        "full_width": true,
-        "rounded": true,
-        "enable_parallax": true,
-        "parallax_direction": "vertical"
-      }
-    },
-    "shop-the-look": {
-      "type": "shop-the-look",
-      "blocks": {
-        "product-1": {
-          "type": "product",
-          "settings": {
-            "product": "",
-            "color_text": "#ffffff",
-            "vertical": 35,
-            "horizontal": 15,
-            "vertical_mobile": 25,
-            "horizontal_mobile": 25
-          }
-        },
-        "product-2": {
-          "type": "product",
-          "settings": {
-            "product": "",
-            "color_text": "#ffffff",
-            "vertical": 65,
-            "horizontal": 38,
-            "vertical_mobile": 75,
-            "horizontal_mobile": 65
-          }
-        },
-        "product-3": {
-          "type": "product",
-          "settings": {
-            "product": "",
-            "color_text": "#ffffff",
-            "vertical": 50,
-            "horizontal": 62,
-            "vertical_mobile": 50,
-            "horizontal_mobile": 50
-          }
-        }
-      },
-      "block_order": [
-        "product-1",
-        "product-2",
-        "product-3"
-      ],
-      "disabled": true,
-      "settings": {
-        "heading": "Shop the <em>look</em>",
-        "heading_size": "title-sm",
-        "heading_alignment": "text-center md:items-center",
-        "heading_tag": "h2",
-        "subheading": "Add a tagline",
-        "description": "",
-        "button_label": "",
-        "button_link": "",
-        "button_external": false,
-        "button_icon": true,
-        "highlighted_text": "scribble",
-        "highlighted_scribble": "squiggle-underline",
-        "color_text": "",
-        "color_background": "",
-        "gradient_background": "",
-        "color_highlight": "",
-        "gradient_highlight": "",
-        "color_button_text": "",
-        "color_button_background": "",
-        "color_button_gradient": "",
-        "color_overlay": "#171717",
-        "overlay_opacity": 40,
-        "padding_top": 100,
-        "padding_bottom": 100,
-        "divider": false,
-        "full_width": false,
-        "rounded": true
-      }
-    },
-    "testimonials-banner": {
-      "type": "testimonials-banner",
-      "blocks": {
-        "testimonial-1": {
-          "type": "testimonial",
-          "settings": {
-            "icon": "quote",
-            "text": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.</p>",
-            "author": "Author's name",
-            "author_info": "",
-            "author_url": "",
-            "image_ratio": "rounded",
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        },
-        "testimonial-2": {
-          "type": "testimonial",
-          "settings": {
-            "icon": "quote",
-            "text": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.</p>",
-            "author": "Author's name",
-            "author_info": "",
-            "author_url": "",
-            "image_ratio": "rounded",
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        },
-        "testimonial-3": {
-          "type": "testimonial",
-          "settings": {
-            "icon": "quote",
-            "text": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.</p>",
-            "author": "Author's name",
-            "author_info": "",
-            "author_url": "",
-            "image_ratio": "rounded",
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        }
-      },
-      "block_order": [
-        "testimonial-1",
-        "testimonial-2",
-        "testimonial-3"
-      ],
-      "disabled": true,
-      "settings": {
-        "transparent_header": false,
-        "image_height": "750px",
-        "content_position": "md:items-center md:justify-center",
-        "image_height_mobile": "500px",
-        "content_position_mobile": "items-center justify-center",
-        "color_text": "#ffffff",
-        "color_highlight": "",
-        "gradient_highlight": "",
-        "color_overlay": "#171717",
-        "overlay_opacity": 40,
-        "padding_top": 0,
-        "padding_bottom": 0,
-        "divider": false,
-        "rounded": true,
-        "enable_parallax": true,
-        "parallax_direction": "vertical"
-      }
-    },
-    "featured-collections": {
-      "type": "featured-collections",
-      "blocks": {
-        "collection-1": {
-          "type": "collection",
-          "settings": {
-            "collection": "",
-            "products": [],
-            "title": "Collection 1"
-          }
-        },
-        "collection-2": {
-          "type": "collection",
-          "settings": {
-            "collection": "",
-            "products": [],
-            "title": "Collection 2"
-          }
-        },
-        "collection-3": {
-          "type": "collection",
-          "settings": {
-            "collection": "",
-            "products": [],
-            "title": "Collection 3"
-          }
-        }
-      },
-      "block_order": [
-        "collection-1",
-        "collection-2",
-        "collection-3"
-      ],
-      "disabled": true,
-      "settings": {
-        "product_limit": 6,
-        "columns": 4,
-        "carousel_on_desktop": true,
-        "show_view_all": false,
-        "columns_mobile": "1",
-        "swipe_on_mobile": true,
-        "heading": "Best Sellers",
-        "heading_size": "title-md",
-        "heading_alignment": "text-left md:items-end md:flex-row",
-        "heading_tag": "h2",
-        "subheading": "",
-        "description": "",
-        "highlighted_text": "none",
-        "highlighted_scribble": "circle",
-        "color_text": "",
-        "color_background": "",
-        "gradient_background": "",
-        "color_highlight": "",
-        "gradient_highlight": "",
-        "color_button_text": "",
-        "color_button_background": "",
-        "color_button_gradient": "",
-        "padding_top": 100,
-        "padding_bottom": 100,
-        "divider": false,
-        "full_width": false,
-        "rounded": true
-      }
-    },
-    "scrolling-text-2": {
-      "type": "scrolling-text",
-      "blocks": {
-        "text_TjYxTQ": {
-          "type": "text",
-          "settings": {
-            "text": "America's THC Seltzer™",
-            "text_size": 66,
-            "text_font": "heading",
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        },
-        "image-6": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/LIC-ReverseIcon.png",
-            "height": 72
-          }
-        }
-      },
-      "block_order": [
-        "text_TjYxTQ",
-        "image-6"
-      ],
-      "settings": {
-        "direction": "right",
-        "speed": 5,
-        "grid_horizontal": 125,
-        "enable_twin": true,
-        "enable_parallax": true,
-        "color_text": "#7bc3b9",
-        "color_background": "#18598c",
-        "gradient_background": "",
-        "color_highlight": "#0b61cd",
-        "gradient_highlight": "",
-        "padding_top": 20,
-        "padding_bottom": 20,
-        "divider": false,
-        "rounded": false
-      }
-    },
-    "blog-posts-collage": {
-      "type": "blog-posts-collage",
-      "disabled": true,
-      "settings": {
-        "blog": "news",
-        "post_limit": 3,
-        "show_view_all": true,
-        "image_ratio": "landscape",
-        "show_tags": true,
-        "show_date": true,
-        "show_comments": true,
-        "show_author": false,
-        "show_excerpt": true,
-        "heading": "What's <em>Happening</em>?",
-        "heading_size": "title-lg tracking-heading",
-        "heading_alignment": "text-left md:items-end md:flex-row",
-        "heading_tag": "h2",
-        "subheading": "IN THE NEWS",
-        "description": "",
-        "highlighted_text": "scribble",
-        "highlighted_scribble": "circle",
-        "color_text": "#0d253f",
-        "color_background": "rgba(0,0,0,0)",
-        "gradient_background": "",
-        "color_highlight": "#0b61cd",
-        "gradient_highlight": "",
-        "color_button_text": "",
-        "color_button_background": "#0b61cd",
-        "color_button_gradient": "",
-        "padding_top": 100,
-        "padding_bottom": 100,
-        "divider": false,
-        "full_width": false,
-        "rounded": false
-      }
-    },
-    "173947741544d5c56e": {
-      "type": "apps",
-      "blocks": {
-        "instafeed_app_block_BcPYmc": {
-          "type": "shopify://apps/instafeed/blocks/app-block/c447db20-095d-4a10-9725-b5977662c9d5",
-          "settings": {
-            "title": "",
-            "title_color": "",
-            "title_size_v2": 0,
-            "alignment": "center",
-            "instafeed_margin_top": 0,
-            "instafeed_margin_bottom": 0,
-            "instafeed_margin_sides": 0,
-            "show_instagram_link": false,
-            "link_alignment": "left",
-            "link_color": "#000000",
-            "background_color": "",
-            "feed_id": "",
-            "html_area": ""
-          }
-        }
-      },
-      "block_order": [
-        "instafeed_app_block_BcPYmc"
-      ],
-      "settings": {
-        "color_text": "",
-        "color_background": "rgba(0,0,0,0)",
-        "gradient_background": "",
-        "color_highlight": "",
-        "gradient_highlight": "",
-        "color_button_text": "",
-        "color_button_background": "",
-        "color_button_gradient": "",
-        "padding_top": 72,
-        "padding_bottom": 72,
-        "divider": false,
-        "full_width": false,
-        "rounded": false
-      }
-    },
-    "review_blocks_RdF6G7": {
-      "type": "review-blocks",
-      "blocks": {
-        "review_TW3HRN": {
-          "type": "review",
-          "settings": {
-            "column": "column1",
-            "question": "How Is this legal?",
-            "answer": "<p>Our THC seltzers are fully compliant and federally legal under the 2018 Farm Bill. We use naturally extracted Delta-9 THC derived from hemp which accounts for no more than 0.3% of the net weight of the product. Compliant and responsibly crafted for your enjoyment</p>"
-          }
-        },
-        "review_LqwXit": {
-          "type": "review",
-          "settings": {
-            "column": "column2",
-            "question": "Is It legal everywhere?",
-            "answer": "<p>Almost! We currently ship everywhere in the continental US except the following states: Alaska, District of Columbia, Idaho, Kansas, Washington</p>"
-          }
-        },
-        "review_wMApKj": {
-          "type": "review",
-          "settings": {
-            "column": "column3",
-            "question": "What is Live Resin? ",
-            "answer": "<p>At Liberty, quality is our top priority. That's why we use live resin in our beverages, guaranteeing the best flavors and effects that cannabis has to offer. </p>"
-          }
-        },
-        "review_mCDCPr": {
-          "type": "review",
-          "settings": {
-            "column": "column1",
-            "question": "How many seltzers should I have? ",
-            "answer": "<p>Depending on your tolerance, we’ve found that one will relax you while a second will create a nice buzz. However, everyone is different! We recommend starting slow until you find your perfect dosage.</p>"
-          }
-        },
-        "review_Vxfbcg": {
-          "type": "review",
-          "settings": {
-            "column": "column2",
-            "question": "Will I get anxious?",
-            "answer": "<p>Our unique premium input of Live resin goes beyond standard THC distillate - the combination of terpenes and minor cannabinoids  with THC create a synergistic effect, creating a blissful high for everyone to enjoy.</p>"
-          }
-        },
-        "review_rp9XqW": {
-          "type": "review",
-          "settings": {
-            "column": "column3",
-            "question": "How are LIC's THC Seltzers different from traditional edibles? ",
-            "answer": "<p>Traditional edibles (like gummies or chocolate bars) typically take anywhere from 45 minutes to two-plus hours to kick in. Why so long?  </p><p>THC-infused beverages are infused with a water-soluble formulation, meaning the cannabinoids are absorbed through your mouth then your tongue then the digestive tract. The immediate absorption in your mouth means you can feel the effects 5 to 15 minutes later. Consumers new to cannabis might feel effects more immediately or intensely. </p><p> </p><p>The perk of a faster onset? You’ll quickly know how you feel so you’re in control of your buzz. Take a few sips, wait 10-15 minutes, and adjust. We allow all consumers – new or experienced – the ability to confidently control their buzz.  </p>"
-          }
-        }
-      },
-      "block_order": [
-        "review_TW3HRN",
-        "review_LqwXit",
-        "review_wMApKj",
-        "review_mCDCPr",
-        "review_Vxfbcg",
-        "review_rp9XqW"
-      ],
-      "settings": {
-        "title": "Product FAQS"
-      }
-    },
-    "calendar_events_rMg6tN": {
-      "type": "calendar-events",
-      "settings": {
-        "bg-color": "#0d253f"
-      }
-    },
-    "newsletter_RxDNzw": {
-      "type": "newsletter",
-      "blocks": {
-        "heading_9R6cQW": {
-          "type": "heading",
-          "settings": {
-            "heading": "SIGN UP AND GET 20% OFF YOUR FIRST ORDER",
-            "heading_size": "title-lg tracking-heading",
-            "heading_tag": "h2",
-            "highlighted_text": "none",
-            "highlighted_scribble": "basic-underline"
-          }
-        },
-        "text_d7de8W": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Subscribe to our newsletter and be the first to hear about our new arrivals, special promotions and online exclusives.</p>",
-            "text_size": "subtext-md",
-            "text_max_size": 34,
-            "text_font": "body",
-            "secondary_color": false,
-            "highlighted_text": "none",
-            "highlighted_scribble": "circle"
-          }
-        },
-        "form_cx9RNQ": {
-          "type": "form",
-          "settings": {}
-        }
-      },
-      "block_order": [
-        "heading_9R6cQW",
-        "text_d7de8W",
-        "form_cx9RNQ"
-      ],
-      "settings": {
-        "content_width": "large",
-        "text_alignment": "center",
-        "text_alignment_mobile": "center",
-        "color_text": "#fcfbe7",
-        "color_background": "#18598c",
-        "gradient_background": "",
-        "color_highlight": "",
-        "gradient_highlight": "",
-        "color_button_text": "#e11d48",
-        "color_button_background": "#fcfbe7",
-        "color_button_gradient": "",
-        "padding_top": 32,
-        "padding_bottom": 32,
-        "divider": false,
-        "narrow": true,
-        "rounded": false
-      }
-    }
-  },
-  "order": [
-    "video_with_text_overlay_TaepaX",
-    "image_with_text_overlay_AcnrqM",
-    "images_with_text_overlay_Gp7DK8",
-    "slideshow",
-    "rich-text-1",
-    "empty_space_AFKfjC",
-    "scrolling-text-1",
-    "multicolumn_QzDYCN",
-    "video-with-text-overlay",
-    "collage_irdHhw",
-    "featured-product",
-    "testimonials_a3WEUy",
-    "rich-text-2",
-    "compact_product_bundle_EBA9Qp",
-    "countdown-timer",
-    "shop-the-look",
-    "testimonials-banner",
-    "featured-collections",
-    "scrolling-text-2",
-    "blog-posts-collage",
-    "173947741544d5c56e",
-    "review_blocks_RdF6G7",
-    "calendar_events_rMg6tN",
-    "newsletter_RxDNzw"
-  ]
+    "order": [
+        "video_with_text_overlay_TaepaX",
+        "image_with_text_overlay_AcnrqM",
+        "images_with_text_overlay_Gp7DK8",
+        "slideshow",
+        "rich-text-1",
+        "empty_space_AFKfjC",
+        "scrolling-text-1",
+        "multicolumn_QzDYCN",
+        "video-with-text-overlay",
+        "collage_irdHhw",
+        "featured-product",
+        "testimonials_a3WEUy",
+        "rich-text-2",
+        "compact_product_bundle_EBA9Qp",
+        "countdown-timer",
+        "shop-the-look",
+        "testimonials-banner",
+        "featured-collections",
+        "scrolling-text-2",
+        "blog-posts-collage",
+        "review_blocks_RdF6G7",
+        "173947741544d5c56e",
+        "calendar_events_rMg6tN",
+        "newsletter_RxDNzw",
+        "rich_text_GA9j6d"
+    ]
 }
